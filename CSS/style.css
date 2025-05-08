@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* o space-between, según lo que busques */
+}
+
+nav a img {
+    height: 40px;
+    width: auto;
+    margin: 0 10px;
+}
