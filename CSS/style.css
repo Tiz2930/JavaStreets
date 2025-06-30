@@ -1,14 +1,86 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap');
 
-nav {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /* o space-between, según lo que busques */
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
 }
 
-nav a img {
-    height: 40px;
-    width: auto;
-    margin: 0 10px;
+body {
+    background-image: url(/Imagenes/fip.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+header {
+    position: relative;
+    height: 95px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.logo-busqueda {
+    position: absolute;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.join {
+    font-weight: bold;
+    color: black;
+}
+
+.us {
+    font-weight: bold;
+    color: yellow;
+}
+
+header input {
+    padding: 5px 10px;
+    border-radius: 5px;
+    height: 30px;
+    width: 250px;
+}
+
+/* Iconos */
+
+.nav-central a img {
+    height: 50px;
+    width: 50px;
+}
+
+.nav-central {
+    position: absolute;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-derecha {
+    position: absolute;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.user img {
+    height: 50px;
+    width: 50px;
+}
+
+.nav-central a img,
+.nav-derecha a img {
+  transition: transform 0.3s ease;
+}
+
+.nav-central a:hover img,
+.nav-derecha a:hover img {
+  transform: scale(1.2);
 }
