@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap');
+
+
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-image: url('../Imagenes/fondo.png');
+    color: #222222; /* letras oscuras */
+  }
+  
+  header {
+    background: linear-gradient(to right, #ffb400, #ff8800);
+    padding: 20px;
+    text-align: center;
+    color: #000;
+  }
+  
+  .perfil-layout {
+    display: flex;
+    gap: 40px;
+    padding: 40px 20px;
+    justify-content: center;
+    align-items: stretch; /* hace que sidebar y card tengan mismo alto */
+  }
+  
+  .sidebar,
+  .card {
+    background-color: #ffffff;
+    color: #222222;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .sidebar {
+    padding: 20px;
+    width: 200px;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+  }
+  
+  .sidebar li {
+    margin-bottom: 15px;
+  }
+  
+  .sidebar a {
+    text-decoration: none;
+    color: #222222;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  .sidebar a:hover {
+    color: #0056b3;
+  }
+  
+  .eliminar-cuenta {
+    color: #cc0000;
+    font-size: 0.9em;
+    text-decoration: none;
+  }
+  
+  .eliminar-cuenta:hover {
+    text-decoration: underline;
+  }
+  
+  .card {
+    padding: 30px;
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  .foto-perfil {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+  }
+  
+  .foto-perfil img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ffb400;
+  }
+  
+  .foto-perfil button {
+    background-color: #ff9b05;
+    border: none;
+    padding: 8px 12px;
+    color: #000000;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .foto-perfil button:hover {
+    background-color: #003d80;
+  }
+  
+  .campo {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .campo label {
+    margin-bottom: 6px;
+    font-weight: bold;
+  }
+  
+  .campo input,
+  .campo textarea,
+  .campo select {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    color: #222;
+  }
+  
+  .guardar-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #ff9b05;
+    color: #000000;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.3s;
+  }
+  
+  .guardar-btn:hover {
+    background-color: #003d80;
+  }
+  
