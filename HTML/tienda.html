@@ -1,11 +1,110 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/CSS/style.css" />
     <title>Tienda</title>
 </head>
+
 <body>
-    
+    <header>
+        <div class="logo-busqueda">
+            <a class="logo-busqueda-link" href="/HTML/index.html">
+                <h1><span class="join">Join</span> <span class="us">Us</span></h1>
+            </a>
+            <input type="text" placeholder="Buscar" />
+        </div>
+
+        <div class="nav-central">
+            <a class="tienda" href="/HTML/tienda.html">
+                <img src="/Imagenes/tienda lleno.png" alt="Tienda" />
+            </a>
+            <a class="ticket" href="/HTML/ticket.html">
+                <img src="/Imagenes/ticket.png" alt="Ticket" />
+            </a>
+            <a class="comunidad" href="/HTML/comunidad.html">
+                <img src="/Imagenes/comunidad.png" alt="Comunidad" />
+            </a>
+        </div>
+
+        <div class="nav-derecha">
+            <a class="home" href="/HTML/index.html">
+                <img src="/Imagenes/home.png" alt="Home" />
+            </a>
+            <a class="add" href="#">
+                <img src="/Imagenes/add.png" alt="Add" />
+            </a>
+            <a class="msj" href="#">
+                <img src="/Imagenes/msj.png" alt="Mensajes" />
+            </a>
+            <!-- Notificación -->
+            <a class="notificacion" href="#" onclick="event.preventDefault(); toggleNotificaciones();">
+                <img src="/Imagenes/notificacion.png" alt="Notificacion" />
+            </a>
+            <!-- Usuario -->
+            <a class="user" href="#" onclick="event.preventDefault(); usuarioMenu();">
+                <img src="/Imagenes/user.png" alt="Usuario" />
+            </a>
+        </div>
+
+        <!-- Menú Usuario -->
+        <div class="sub-menu-wrap" id="subMenu">
+            <div class="sub-menu">
+                <div class="user-info">
+                    <img src="/Imagenes/user.png" alt="" />
+                    <h1>Nombre</h1>
+                </div>
+                <hr />
+                <a href="#" class="sub-menu-link">
+                    <img src="/Imagenes/Setting.png" />
+                    <p>Configuración</p>
+                </a>
+                <a href="#" class="sub-menu-link">
+                    <img src="/Imagenes/Gota.png" />
+                    <p>Apariencia</p>
+                </a>
+                <a href="#" class="sub-menu-link">
+                    <img src="/Imagenes/problema.png" />
+                    <p>Reportar problema</p>
+                </a>
+                <hr />
+                <a href="#" class="sub-menu-link">
+                    <img src="/Imagenes/eventos.png" />
+                    <p>Mis eventos</p>
+                </a>
+                <a href="#" class="sub-menu-link">
+                    <img src="/Imagenes/Chart.png" />
+                    <p>Tu actividad</p>
+                </a>
+                <hr />
+                <a class="cuenta" href="#">
+                    <p>Cambiar cuenta</p>
+                </a>
+                <a class="loguot" href="/HTML/index.html">
+                    <p>Salir</p>
+                </a>
+            </div>
+        </div>
+        <!-- Menú Notificacion -->
+        <div class="noti-menu-wrap" id="notiMenu">
+            <div class="noti">
+                <img src="/Imagenes/me gusta.png">
+                <p>A Example le gustó tu notificación</p>
+            </div>
+            <div class="noti">
+                <img src="/Imagenes/seguidor.png">
+                <p>Example comenzó a seguirte</p>
+            </div>
+            <div class="noti">
+                <img src="/Imagenes/comentarios.png">
+                <p>Recibiste un comentario</p>
+            </div>
+        </div>
+    </header>
+
+    <script src="/JS/js.js"></script>
 </body>
+
 </html>
