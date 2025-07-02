@@ -144,4 +144,15 @@ body {
   .guardar-btn:hover {
     background-color: #003d80;
   }
+
+  .sidebar a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .sidebar a img {
+    width: 20px;
+    height: 20px;
+  }
   
