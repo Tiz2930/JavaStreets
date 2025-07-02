@@ -1,14 +1,4 @@
-body {
-    margin: 0;
-    font-family: 'Segoe UI', sans-serif;
-    background-image: url('../Imagenes/fondo.png');
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-    color: #222;
-  }
-  
-  header {
+header {
     background: linear-gradient(to right, #00b4d8, #0077b6);
     color: #fff;
     padding: 25px 20px;
