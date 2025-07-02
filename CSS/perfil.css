@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap');
+
+* {
+  font-family: 'Montserrat', sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-image: url('../Imagenes/fondo.png');
+  color: #222222;
+}
+
+header {
+  background: linear-gradient(to right, #ffb400, #ff8800);
+  padding: 20px;
+  text-align: center;
+  color: #000;
+}
+
+.perfil-layout {
+  display: flex;
+  gap: 40px;
+  padding: 40px 20px;
+  justify-content: center;
+  align-items: stretch;
+  /* sidebar y card mismo alto */
+}
+
+.sidebar,
+.card {
+  background-color: #ffffff;
+  color: #222222;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar {
+  padding: 20px;
+  width: 200px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px 0;
+}
+
+.sidebar li {
+  margin-bottom: 15px;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: #222222;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  transition: font-size 0.3s;
+}
+
+.sidebar a:hover {
+  font-size: 1.1em;
+  /* No cambiar color para ítems normales */
+}
+
+.sidebar li img,
+.sidebar a img {
+  width: 36px;
+  height: 36px;
+}
+
+/* Eliminar cuenta - ajustado para el <a> con clase directa */
+a.eliminar-cuenta {
+  color: #cc0000 !important;
+  font-size: 1em;
+  font-weight: bold;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  transition: font-size 0.3s, color 0.3s;
+  margin-top: 10px;
+}
+
+a.eliminar-cuenta:hover {
+  color: red !important;
+  font-size: 1.1em;
+  text-decoration: none;
+}
+
+.card {
+  padding: 30px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.foto-perfil {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.foto-perfil img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ffb400;
+}
+
+.foto-perfil button {
+  background-color: #ff9b05;
+  border: none;
+  padding: 8px 12px;
+  color: #000000;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.foto-perfil button:hover {
+  background-color: #003d80;
+}
+
+.campo {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.campo label {
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+
+.campo input,
+.campo textarea,
+.campo select {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  color: #222;
+}
+
+.guardar-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #ff9b05;
+  color: #000000;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.3s;
+}
+
+.guardar-btn:hover {
+  background-color: #003d80;
+}
