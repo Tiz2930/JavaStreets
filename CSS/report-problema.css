@@ -89,19 +89,3 @@ button[type="submit"] {
 button[type="submit"]:hover {
   background-color: #800000;
 }
-
-/* Responsive */
-@media (max-width: 600px) {
-  .card {
-    padding: 20px;
-  }
-
-  .item h2 {
-    font-size: 1rem;
-  }
-
-  .item p,
-  form label {
-    font-size: 0.95rem;
-  }
-}
