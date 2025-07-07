@@ -1,0 +1,37 @@
+[
+    {
+        "user": "Music Fest Org",
+        "name": "Festival de Música al Aire Libre",
+        "images": ["../img/Festival de Música al Aire Libre.jfif", "../img/Festival de Música al Aire Libre2.jfif"],
+        "description": "Un festival con bandas en vivo, food trucks y actividades culturales para toda la familia.",
+        "stock": 500
+    },
+    {
+        "user": "Escuela de Gastronomía",
+        "name": "Feria Gastronómica Regional",
+        "images": ["../img/Feria Gastronómica Regional.jfif", "../img/Feria Gastronómica Regional2.jfif"],
+        "description": "Descubrí sabores autóctonos y recetas tradicionales de distintas provincias.",
+        "stock": 300
+    },
+    {
+        "user": "Municipio Local",
+        "name": "Charla Motivacional para Jóvenes",
+        "images": ["../img/Charla Motivacional para Jóvenes.jfif", "../img/Charla Motivacional para Jóvenes2.jfif"],
+        "description": "Oradores reconocidos compartirán sus historias de superación personal.",
+        "stock": 200
+    },
+    {
+        "user": "Night Club XYZ",
+        "name": "Noche de Stand Up",
+        "images": ["../img/Noche de Stand Up.jfif", "../img/Noche de Stand Up2.jfif"],
+        "description": "Una velada de comedia con los mejores talentos locales del humor.",
+        "stock": 150
+    },
+    {
+        "user": "Miranda Caicedo",
+        "name": "Encuentro de Emprendedores",
+        "images": ["../img/Encuentro de Emprendedores.jfif", "../img/Encuentro de Emprendedores2.jfif"],
+        "description": "Espacio para networking, charlas y exhibición de proyectos innovadores.",
+        "stock": 100
+    }
+]
