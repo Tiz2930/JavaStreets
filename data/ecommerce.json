@@ -1,0 +1,89 @@
+[
+    {
+        "user": "Juan Pérez",
+        "userImage": "",
+        "products": [
+            {
+                "name": "Camisa de lino",
+                "image": "https://via.assets.so/game.jpg?w=205&h=205",
+                "price": 8500
+            },
+            {
+                "name": "Camisa de lino",
+                "image": "https://via.assets.so/game.jpg?w=205&h=205",
+                "price": 8500
+            },
+            {
+                "name": "Camisa de lino",
+                "image": "https://via.assets.so/game.jpg?w=205&h=205",
+                "price": 8500
+            },
+            {
+                "name": "Camisa de lino",
+                "image": "https://via.assets.so/game.jpg?w=205&h=205",
+                "price": 8500
+            },
+            {
+                "name": "Camisa de lino",
+                "image": "https://via.assets.so/game.jpg?w=205&h=205",
+                "price": 8500
+            },
+            {
+                "name": "Camisa de lino",
+                "image": "https://via.assets.so/game.jpg?w=205&h=205",
+                "price": 8500
+            },
+            {
+                "name": "Camisa de lino",
+                "image": "https://via.assets.so/game.jpg?w=205&h=205",
+                "price": 8500
+            },
+            {
+                "name": "Camisa de lino",
+                "image": "https://via.assets.so/game.jpg?w=205&h=205",
+                "price": 8500
+            },
+            {
+                "name": "Camisa de lino",
+                "image": "https://via.assets.so/game.jpg?w=205&h=205",
+                "price": 8500
+            },
+            {
+                "name": "Camisa de lino",
+                "image": "https://via.assets.so/game.jpg?w=205&h=205",
+                "price": 8500
+            },
+            {
+                "name": "Pantalón de jean",
+                "image": "",
+                "price": 12500
+            },
+            {
+                "name": "Pantalón de jean",
+                "image": "",
+                "price": 12500
+            },
+            {
+                "name": "camisa overside",
+                "image": "",
+                "price": 12500
+            }
+        ]
+    },
+    {
+        "user": "Ana Gómez",
+        "userImage": "",
+        "products": [
+            {
+                "name": "Zapatillas deportivas",
+                "image": "",
+                "price": 19900
+            },
+            {
+                "name": "Remera básica",
+                "image": "",
+                "price": 4500
+            }
+        ]
+    }
+]

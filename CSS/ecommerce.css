@@ -1,0 +1,133 @@
+* {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    
+    contain: content;
+}
+
+body {
+    background: url(../img/fondo.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.principalDiv {
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+    scrollbar-width: none;
+}
+
+.userCard {
+    background-image: url("../img/fondo2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin: 4rem;
+    padding: 1.5rem;
+    width: 80%;
+    height: auto;
+}
+
+.divScroll{
+    width: 100%;
+    height: 100%;
+    padding-bottom: 20px;
+    overflow: scroll;
+    overflow-y: hidden;
+    scrollbar-width:thin;
+    scrollbar-color: #FDA703 #000000;
+}
+
+.userHeader {
+    height: 20%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+.userHeader:hover h2 {
+    background-color: #000000;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    color: #FDA703;
+    transition: 0.7s;
+    padding: 5px;
+}
+
+.userImage {
+    width: 55px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 1rem;
+    object-fit: contain;
+    border: 2px solid #ccc;
+}
+
+.userHeader h2 {
+    width: auto;
+    height: auto;
+    margin-top: 5px;
+    color: #333;
+}
+
+.gridFunction {
+    position: relative;
+    display: flex;
+    width: 200%;
+    height: auto;
+    gap: 20px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: 100%;
+    background-color: #9494942d;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    margin: 5px;
+    text-align: center;
+    position: sticky;
+    cursor: pointer;
+}
+
+.card:hover {
+    background-color: #FDA703;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    color: #000000;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    margin-bottom: 0.5rem;
+}
+
+.card img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+.card h3 {
+    height: 50px;
+    font-size: 1rem;
+    margin: 0.5rem 0;
+}
+
+.card p {
+    height: 30px;
+    padding-top: 10px;
+    font-weight: bold;
+    color: #000000;
+}
