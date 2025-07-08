@@ -1,36 +1,64 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap');
 
+<<<<<<< HEAD
 * {
   font-family: 'Montserrat', sans-serif;
   margin: 0;
   padding: 0;
   scrollbar-width: thin;
   scrollbar-color: #FDA703 #000000;
+=======
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+>>>>>>> 7660041ae821cdf4fd196a7b7e179c4d124dc200
 }
 
 body {
   display: flex;
   flex-direction: column;
+<<<<<<< HEAD
   align-items: center;
   width: 100%;
   height: 100%;
+=======
+>>>>>>> 7660041ae821cdf4fd196a7b7e179c4d124dc200
   min-height: 100vh;
   background-image: url(/Imagenes/fip.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+<<<<<<< HEAD
 }
 
 header {
   width: 100%;
   position: fixed;
   z-index: 1;
+=======
+  padding: 0;
+}
+
+header {
+  position: relative;
+>>>>>>> 7660041ae821cdf4fd196a7b7e179c4d124dc200
   min-height: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
+<<<<<<< HEAD
   padding: 10 20px;
+=======
+  padding: 0 20px;
+>>>>>>> 7660041ae821cdf4fd196a7b7e179c4d124dc200
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -40,7 +68,10 @@ header {
   display: flex;
   align-items: center;
   gap: 30px;
+<<<<<<< HEAD
   border-style: none;
+=======
+>>>>>>> 7660041ae821cdf4fd196a7b7e179c4d124dc200
 }
 
 .logo-busqueda-link {
@@ -236,17 +267,23 @@ main {
 /*Footer */
 
 .footer {
+<<<<<<< HEAD
   position:sticky;
   width: 70%;
+=======
+>>>>>>> 7660041ae821cdf4fd196a7b7e179c4d124dc200
   background-color: #000;
   color: #fff;
   padding: 20px 0;
   text-align: center;
+<<<<<<< HEAD
   z-index: -1;
   bottom: 0;
   margin-top: 10px;
   margin-bottom: 10px;
   border-radius: 10px;
+=======
+>>>>>>> 7660041ae821cdf4fd196a7b7e179c4d124dc200
 }
 
 .footer-content {
@@ -271,4 +308,8 @@ main {
 
 .social-icons a:hover {
   color: orange;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 7660041ae821cdf4fd196a7b7e179c4d124dc200
