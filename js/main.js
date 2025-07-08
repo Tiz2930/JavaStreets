@@ -48,6 +48,9 @@ fetch("../data/eventos.json")
             title.textContent = evento.name;
             title.className = "titleEvent";
 
+            divImg = document.createElement("div");
+            divImg.className = "divImg";
+
             const userImage = document.createElement("img");
             userImage.src = evento.userImage || "../img/user-placeholder.png";
             userImage.alt = `${evento.user} Image`;
