@@ -48,11 +48,11 @@ fetch("../data/eventos.json")
             title.textContent = evento.name;
             title.className = "titleEvent";
 
-            divImg = document.createElement("div");
+            const divImg = document.createElement("div");
             divImg.className = "divImg";
 
             const userImage = document.createElement("img");
-            userImage.src = evento.userImage || "../img/user-placeholder.png";
+            userImage.src = evento.userImage || "https://placehold.co/600x400/png";
             userImage.alt = `${evento.user} Image`;
             userImage.className = "userImage";
 
@@ -60,20 +60,25 @@ fetch("../data/eventos.json")
             const users = document.createElement("div");
             users.textContent = evento.user;
             users.className = "users";
-      
+            
+            const infoDiv = document.createElement("div");
+            infoDiv.className = "infoDiv";
+            
             const desc = document.createElement("p");
             desc.textContent = evento.description;
             desc.className = "descriptionEvent";
       
             const stock = document.createElement("p");
-            stock.textContent = "Tickets: " + evento.stock;
-
+            stock.textContent = "Entradas a la venta: " + evento.stock;
+            stock.className = "stockEvent";
       
             card.appendChild(title);
-            users.appendChild(userImage);
-            card.appendChild(users);
-            card.appendChild(desc);
-            card.appendChild(stock);
+            divImg.appendChild(userImage);
+            divImg.appendChild(users);
+            card.appendChild(divImg);   
+            infoDiv.appendChild(desc);
+            infoDiv.appendChild(stock);
+            card.appendChild(infoDiv);
             events.appendChild(card);
           });
 

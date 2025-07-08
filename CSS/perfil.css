@@ -12,6 +12,7 @@ header {
   padding: 40px 20px;
   justify-content: center;
   align-items: stretch;
+  margin-top: 85px;
   /* sidebar y card mismo alto */
 }
 
