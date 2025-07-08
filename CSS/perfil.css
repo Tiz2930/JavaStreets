@@ -3,6 +3,7 @@ header {
   padding: 20px;
   text-align: center;
   color: #000;
+  position: relative;
 }
 
 .perfil-layout {

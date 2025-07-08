@@ -3,7 +3,7 @@ function iniciarSesion() {
   const password = document.getElementById('password').value.trim();
 
   if (!nombre || !password) {
-    alert('Por favor, completá todos los campos.');
+    configComplete();
     return;
   }
 
@@ -12,7 +12,7 @@ function iniciarSesion() {
     localStorage.setItem('usuario', nombre);
     window.location.href = 'home.html';
   } else {
-    alert('Contraseña incorrecta.');
+    configIncorrecta();
   }
 }
 
@@ -30,4 +30,23 @@ window.onload = function () {
     btnEntrar.addEventListener("click", iniciarSesion);
     e.preventDefault();
   }
+};
+
+function configIncorrecta() {
+  Swal.fire({
+    title: "Contraseña incorrecta",
+    icon: "error",
+    timer: 1500,
+    showConfirmButton: false
+  });
+};
+
+
+function configComplete() {
+  Swal.fire({
+    title: "Porfavor, complete todos los campos",
+    icon: "warning",
+    timer: 1500,
+    showConfirmButton: false
+  });
 };
