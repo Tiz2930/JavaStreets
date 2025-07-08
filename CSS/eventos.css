@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #ff9900, #0f0f0f);
+    color: #fff;
+}
+
+/* Contenedor */
+.eventos-container {
+    max-width: 700px;
+    margin: 60px auto;
+    padding: 30px;
+    background-color: #111;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+/* Título principal */
+.eventos-container h2 {
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+/* Descripción */
+.eventos-container p {
+    font-size: 14px;
+    color: #ccc;
+}
+
+/* Evento individual */
+.evento {
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    border-left: 4px solid #007bff;
+}
+
+.evento h3 {
+    margin-top: 0;
+    color: #fff;
+}
+
+.evento p {
+    margin: 5px 0;
+    font-size: 14px;
+}
