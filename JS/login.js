@@ -10,7 +10,7 @@ function iniciarSesion() {
   // Simulación de contraseña básica
   if (password === '1234') {
     localStorage.setItem('usuario', nombre);
-    window.location.href = 'comunidad.html';
+    window.location.href = 'home.html';
   } else {
     alert('Contraseña incorrecta.');
   }
