@@ -31,7 +31,7 @@
 .card-grid3 {
     grid-column: 2;
     grid-row: 1 / span 2;
-    background-image: url(/Imagenes/brandi.jpg);
+    background-image: url(/img/brandi.jpg);
     border-radius: 8px;
     background-size: cover;
     background-position: center;
@@ -42,7 +42,7 @@
     grid-column: 1 / span 2;
     grid-row: 3;
     height: 180px;
-    background-image: url(/Imagenes/kuk.jpg);
+    background-image: url(/img/kuk.jpg);
     border-radius: 8px;
     background-size: cover;
     background-position: center;
