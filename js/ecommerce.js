@@ -17,7 +17,7 @@ fetch("../data/ecommerce.json")
 
 
             const userImage = document.createElement("img");
-            userImage.src = usuario.userImage || "../img/user-placeholder.png";
+            userImage.src = usuario.userImage || "https://placehold.co/600x400/png";
             userImage.alt = `${usuario.user} Image`;
             userImage.className = "userImage";
 
