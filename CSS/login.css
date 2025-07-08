@@ -90,3 +90,11 @@ body {
   display: none;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
+
+a {
+  text-decoration: none;
+  background: linear-gradient(90deg, #ffcc00, #ff9900);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
