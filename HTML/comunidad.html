@@ -5,9 +5,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/style.css" />
-    <link rel="stylesheet" href="/css/body.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-    <title>Home</title>
+    <link rel="stylesheet" href="/css/comunidad.css">
+    <title>Comunidad</title>
 </head>
 
 <body>
@@ -27,13 +27,13 @@
                 <img src="/Imagenes/ticket.png" alt="Ticket" />
             </a>
             <a class="comunidad" href="/HTML/comunidad.html">
-                <img src="/Imagenes/comunidad.png" alt="Comunidad" />
+                <img src="/Imagenes/comunidad lleno.png" alt="Comunidad" />
             </a>
         </div>
 
         <div class="nav-derecha">
             <a class="home" href="/HTML/home.html">
-                <img src="/Imagenes/home lleno.png" alt="Home" />
+                <img src="/Imagenes/home.png" alt="Home" />
             </a>
             <a class="add" href="/HTML/publicacion.html">
                 <img src="/Imagenes/add.png" alt="Add" />
@@ -55,29 +55,25 @@
         <div class="sub-menu-wrap" id="subMenu">
             <div class="sub-menu">
                 <div class="user-info">
-                    <img src="/Imagenes/user.png" />
+                    <img src="/Imagenes/user.png" alt="" />
                     <div class="user-text">
                         <h1>Nombre</h1>
                         <p class="user-email">example@gmail.com</p>
                     </div>
                 </div>
                 <hr />
-
                 <a href="/HTML/perfil.html" class="sub-menu-link">
                     <img src="/Imagenes/Setting.png" />
                     <p>Configuración</p>
                 </a>
-
                 <a href="#" class="sub-menu-link">
                     <img src="/Imagenes/Gota.png" />
                     <p>Apariencia</p>
                 </a>
-
                 <a href="/HTML/report-problema.html" class="sub-menu-link">
                     <img src="/Imagenes/problema.png" />
                     <p>Reportar problema</p>
                 </a>
-                
                 <hr />
                 <a href="#" class="sub-menu-link">
                     <img src="/Imagenes/eventos.png" />
@@ -96,39 +92,50 @@
                 </a>
             </div>
         </div>
-
         <!-- Menú Notificacion -->
         <div class="noti-menu-wrap" id="notiMenu">
             <div class="noti">
-                <img src="/Imagenes/me gusta.png" />
+                <img src="/Imagenes/me gusta.png" alt="">
                 <p>A Example le gustó tu notificación</p>
             </div>
             <div class="noti">
-                <img src="/Imagenes/seguidor.png" />
+                <img src="/Imagenes/seguidor.png" alt="">
                 <p>Example comenzó a seguirte</p>
             </div>
             <div class="noti">
-                <img src="/Imagenes/comentarios.png" />
+                <img src="/Imagenes/comentarios.png" alt="">
                 <p>Recibiste un comentario</p>
             </div>
         </div>
     </header>
 
-    
-        <section class="boxGrid">
-            <div id="boxEvents" class="gridSection">
-                <!-- js -->
-            </div>
-        </section>
-    
+    <main class="main-content">
+        <div class="card-grid">
+            <div class="card-grid1">
+                <h1>Juan05</h1>Si sos de Olavarría, seguro escuchaste hablar de Brandi. No es solo un nombre más,
+                es parte de lo que hace que esta ciudad sea tan copada. Entre el mate, las canteras y las juntadas con
+                amigos, Brandi está siempre presente, bancando lo nuestro y tirando buena onda.
 
-    
+                Olavarría tiene ese no sé qué que te atrapa, y Brandi lo sabe bien. Así que si ves algo de ella, ya
+                sabés: es gente que lleva a esta ciudad en el corazón.
+            </div>
+            <div class="card-grid2">
+                <h1>Pablo2020</h1>Sí, Olavarría se sigue poniendo las pilas y ahora se viene la inauguración de Kuk, un
+                nuevo espacio que promete ser EL punto de encuentro. Moderno, con onda y pensado para nosotros, los de
+                acá.
+
+                Este finde se inaugura y pinta planazo: buena música, gente copada y ese aire olavarriense que solo
+                entendemos nosotros. Kuk no es solo un lugar, es una experiencia que arranca con toda.
+            </div>
+            <div class="card-grid3"></div>
+            <div class="card-grid4"></div>
+        </div>
+    </main>
+
     <footer class="footer">
         <div class="footer-content">
             <p class="footer-copy">&copy; 2025 Join Us - Todos los derechos reservados</p>
-            <p class="footer-contact">
-                Contacto: info@gmail.com
-            </p>
+            <p class="footer-contact">Contacto: info@gmail.com</p>
             <div class="social-icons">
                 <a href="https://instagram.com" class="instagram" target="_blank" aria-label="Instagram">
                     <i class="fab fa-instagram"></i>
@@ -146,7 +153,6 @@
         </div>
     </footer>
 
-    <script src="/js/main.js"></script>
     <script src="/JS/js.js"></script>
 </body>
 
