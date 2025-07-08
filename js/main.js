@@ -43,50 +43,57 @@ fetch("../data/eventos.json")
             carousel.appendChild(btnNext);
             card.appendChild(carousel);
       
-            // Resto del contenido
-            const title = document.createElement("h2");
-            title.textContent = evento.name;
-            title.className = "titleEvent";
-
-            divImg = document.createElement("div");
-            divImg.className = "divImg";
-
-            const userImage = document.createElement("img");
-            userImage.src = evento.userImage || "../img/user-placeholder.png";
-            userImage.alt = `${evento.user} Image`;
-            userImage.className = "userImage";
-
-            
-            const users = document.createElement("div");
-            users.textContent = evento.user;
-            users.className = "users";
-      
-            const desc = document.createElement("p");
-            desc.textContent = evento.description;
-            desc.className = "descriptionEvent";
-      
-            const stock = document.createElement("p");
-            stock.textContent = "Tickets: " + evento.stock;
-
-      
-            card.appendChild(title);
-            users.appendChild(userImage);
-            card.appendChild(users);
-            card.appendChild(desc);
-            card.appendChild(stock);
-            events.appendChild(card);
-          });
-
-
-
-
-
-
-
-
+                       // Resto del contenido
+                       const title = document.createElement("h2");
+                       title.textContent = evento.name;
+                       title.className = "titleEvent";
+           
+                       const divImg = document.createElement("div");
+                       divImg.className = "divImg";
+           
+                       const userImage = document.createElement("img");
+                       userImage.src = evento.userImage || "../img/user-placeholder.png";
+                       userImage.alt = `${evento.user} Image`;
+                       userImage.className = "userImage";
+           
+                       const users = document.createElement("div");
+                       users.textContent = evento.user;
+                       users.className = "users";
+           
+                       const desc = document.createElement("p");
+                       desc.textContent = evento.description;
+                       desc.className = "descriptionEvent";
+           
+                       const stock = document.createElement("p");
+                       stock.textContent = "Tickets: " + evento.stock;
+           
+                       // 👉 NUEVO: Almacenar info en localStorage y redirigir al hacer clic
+                       card.style.cursor = "pointer";
+                       card.addEventListener("click", () => {
+                         const eventoSeleccionado = {
+                           titulo: evento.name,
+                           descripcion: evento.description,
+                           imagen: evento.images[0],
+                         };
+           
+                         localStorage.setItem("eventoSeleccionado", JSON.stringify(eventoSeleccionado));
+                         window.location.href = "/HTML/ticket.html";
+                       });
+           
+                       card.appendChild(title);
+                       users.appendChild(userImage);
+                       card.appendChild(users);
+                       card.appendChild(desc);
+                       card.appendChild(stock);
+                       events.appendChild(card);
+           
+          })
 
 
 
         });
+
+        
+        
 
 
