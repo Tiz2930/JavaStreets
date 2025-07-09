@@ -37,16 +37,20 @@ fetch("../data/eventos.json")
               img.src = evento.images[current];
               img.dataset.index = current;
             };
+
+            
+            const title = document.createElement("h2");
+            title.textContent = evento.name;
+            title.className = "titleEvent";
       
+            
+            card.appendChild(title);
             carousel.appendChild(btnPrev);
             carousel.appendChild(img);
             carousel.appendChild(btnNext);
             card.appendChild(carousel);
       
             // Resto del contenido
-            const title = document.createElement("h2");
-            title.textContent = evento.name;
-            title.className = "titleEvent";
 
             const divImg = document.createElement("div");
             divImg.className = "divImg";
@@ -72,7 +76,6 @@ fetch("../data/eventos.json")
             stock.textContent = "Entradas a la venta: " + evento.stock;
             stock.className = "stockEvent";
       
-            card.appendChild(title);
             divImg.appendChild(userImage);
             divImg.appendChild(users);
             card.appendChild(divImg);   
