@@ -38,17 +38,6 @@ Brindar una herramienta moderna, intuitiva y dinámica para conectar personas a 
 
 ---
 
-## 📁 Estructura del Proyecto
-
-📦 JoinUs
-├── css/ → Estilos del sitio
-├── js/ → Funciones JavaScript
-├── img/ → Imágenes utilizadas
-├── html/ → Páginas internas (home, perfil, eventos, etc.)
-└── README.md → Documentación del proyecto
-
----
-
 👥 Equipo de Desarrollo
 Tiziano Schwindt
 Juan Napoli
