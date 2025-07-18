@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="/CSS/publicacion.css">
     <title>Publicacion</title>
 </head>
 
 <body>
-       <header>
+    <header>
         <div class="logo-busqueda">
             <a class="logo-busqueda-link" href="/HTML/home.html">
                 <h1><span class="join">Join</span> <span class="us">Us</span></h1>
@@ -35,7 +36,7 @@
                 <img src="/img/home.png" alt="Home" />
             </a>
             <a class="add" href="/HTML/publicacion.html">
-                <img src="/img/add.png" alt="Add" />
+                <img src="/img/publicacion.png" alt="Add" />
             </a>
             <a class="msj" href="#">
                 <img src="/img/msj.png" alt="Mensajes" />
@@ -104,8 +105,38 @@
             </div>
         </div>
     </header>
+
     <main>
-        <!-- Contenido principal de Comunidad -->
+        <div class="container">
+            <aside class="barra">
+                <h2>Crear publicacion</h2>
+                <p>Categoria</p>
+                <button>Evento</button>
+                <button>Merch</button>
+            </aside>
+
+            <section class="principal">
+                <h2>Completa los campos</h2>
+
+                <!-- Formulario Evento -->
+
+                <form id="from-evento" style="display: none;" enctype="multipart/form-data">
+                    <label for="evento-titulo">Titulo del evento:</label>
+                    <input type="text" name="evento-titulo" id="evento-titulo" required>
+
+                    <label for="evento-fecha">Fecha de evento</label>
+                    <input type="date" name="evento-fecha" id="evento-fecha" required>
+
+                    <label for="evento-imagen">Imagen del evento</label>
+                    <input type="file" name="evento-imagen" id="evento-imagen" accept="img/" required>
+
+                    <label for="evento-desc">Descripcion del evento</label>
+                    <textarea name="evento-desc" id="evento-desc" rows="4" required></textarea>
+
+                    <button type="submit">Publicar evento</button>
+                </form>
+            </section>
+        </div>
     </main>
 
     <footer class="footer">
