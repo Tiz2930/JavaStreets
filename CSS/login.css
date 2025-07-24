@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Inter', sans-serif;
-  background: linear-gradient(135deg, #ff9900, #0f0f0f);
+  background-image: url(/img/fip.jpg);
   color: #fff;
   height: 100vh;
   display: flex;

@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="/img/favicon-96x96.png" sizes="96x96">
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
     <link rel="stylesheet" href="/CSS/publicacion.css">
@@ -12,11 +13,11 @@
 
 <body>
     <header>
+        <!-- (Tu header aquí, sin cambios) -->
         <div class="logo-busqueda">
             <a class="logo-busqueda-link" href="/HTML/home.html">
                 <h1><span class="join">Join</span> <span class="us">Us</span></h1>
             </a>
-            <input type="text" placeholder="Buscar" />
         </div>
 
         <div class="nav-central">
@@ -66,7 +67,6 @@
                     <img src="/img/Setting.png" />
                     <p>Configuración</p>
                 </a>
-                </a>
                 <a href="/HTML/report-problema.html" class="sub-menu-link">
                     <img src="/img/problema.png" />
                     <p>Reportar problema</p>
@@ -111,29 +111,62 @@
             <aside class="barra">
                 <h2>Crear publicacion</h2>
                 <p>Categoria</p>
-                <button>Evento</button>
-                <button>Merch</button>
+                <button id="btn-evento">Evento</button>
+                <button id="btn-merch">Merch</button>
             </aside>
 
             <section class="principal">
                 <h2>Completa los campos</h2>
 
                 <!-- Formulario Evento -->
+                <form id="form-evento" enctype="multipart/form-data">
+                    <h3>Publicar Evento</h3>
 
-                <form id="from-evento" style="display: none;" enctype="multipart/form-data">
-                    <label for="evento-titulo">Titulo del evento:</label>
-                    <input type="text" name="evento-titulo" id="evento-titulo" required>
+                    <label for="evento-titulo">Titulo del evento</label>
+                    <input type="text" name="evento-titulo" id="evento-titulo" placeholder="Titulo" required>
 
                     <label for="evento-fecha">Fecha de evento</label>
                     <input type="date" name="evento-fecha" id="evento-fecha" required>
 
                     <label for="evento-imagen">Imagen del evento</label>
-                    <input type="file" name="evento-imagen" id="evento-imagen" accept="img/" required>
+                    <input type="file" name="evento-imagen" id="evento-imagen" multiple accept="image/*" required>
+
+                    <!-- Este div quedará vacío al inicio; JS insertará las imágenes -->
+                    <div id="img-preview-container" class="img-preview-container"></div>
+
+                    <label for="evento-ubicacion">Ubicación del evento</label>
+                    <input type="text" name="evento-ubicacion" id="evento-ubicacion"
+                        placeholder="Busca una dirección..." required>
 
                     <label for="evento-desc">Descripcion del evento</label>
-                    <textarea name="evento-desc" id="evento-desc" rows="4" required></textarea>
+                    <textarea name="evento-desc" id="evento-desc" rows="4" required
+                        placeholder="Descripcion..."></textarea>
 
-                    <button type="submit">Publicar evento</button>
+                    <button type="submit" onclick="eventoPublicado()">Publicar evento</button>
+                </form>
+
+                <!-- Formulario Merch -->
+
+                <form id="form-merch" enctype="multipart/form-data">
+                    <h3>Publicar Merchandising</h3>
+
+                    <label for="nombre-merch">Nombre del producto</label>
+                    <input type="text" name="nombre-merch" id="nombre-merch" placeholder="Nombre del producto" required>
+
+                    <label for="merch-imagen">Imagen del producto</label>
+                    <input type="file" name="merch-imagen" id="merch-imagen" multiple accept="image/*" required>
+
+                    <div id="merch-preview-container" class="img-preview-container"></div>
+
+                    <label for="merch-precio">Precio del producto</label>
+                    <input type="number" name="merch-precio" id="merch-precio" min="0" step="0.01"
+                        placeholder="Precio del producto" required>
+
+                    <label for="merch-desc">Descripcion</label>
+                    <textarea name="merch-desc" id="merch-desc" rows="4" required placeholder="Descripcion"></textarea>
+
+                    <button type="submit" onclick="merchPublicado()">Publicar merchandising</button>
+
                 </form>
             </section>
         </div>
@@ -160,7 +193,9 @@
         </div>
     </footer>
 
-    <script src="/JS/js.js"></script>
+    <script src="/JS/menu.js"></script>
+    <script src="/JS/publicacion.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 
 </html>
