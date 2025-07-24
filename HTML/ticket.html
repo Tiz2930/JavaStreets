@@ -6,16 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/sass/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-    <title>Ticket</title>
+    <title>Home</title>
 </head>
 
 <body>
-       <header>
+    <header>
         <div class="logo-busqueda">
             <a class="logo-busqueda-link" href="/HTML/home.html">
                 <h1><span class="join">Join</span> <span class="us">Us</span></h1>
             </a>
-            <input type="text" placeholder="Buscar" />
         </div>
 
         <div class="nav-central">
@@ -23,7 +22,7 @@
                 <img src="/img/tienda.png" alt="Tienda" />
             </a>
             <a class="ticket" href="/HTML/ticket.html">
-                <img src="/img/ticket lleno.png" alt="Ticket" />
+                <img src="/img/Ticket.png" alt="Ticket" />
             </a>
             <a class="comunidad" href="/HTML/comunidad.html">
                 <img src="/img/comunidad.png" alt="Comunidad" />
@@ -32,10 +31,10 @@
 
         <div class="nav-derecha">
             <a class="home" href="/HTML/home.html">
-                <img src="/img/home.png" alt="Home" />
+                <img src="/img/home lleno.png" alt="Home" />
             </a>
             <a class="add" href="/HTML/publicacion.html">
-                <img src="/img/add.png" alt="Add" />
+                <img src="/img/publicacion.png" alt="Add" />
             </a>
             <a class="msj" href="#">
                 <img src="/img/msj.png" alt="Mensajes" />
@@ -105,14 +104,21 @@
         </div>
     </header>
 
-    <main>
-        <!-- Contenido principal (puede estar vacío o poner algo acá) -->
-    </main>
+    <!-- CUERPO PRINCIPAL -->
+
+    <section class="boxGrid">
+
+        <div id="boxEvents" class="gridSection">
+            <!-- js -->
+        </div>
+    </section>
 
     <footer class="footer">
         <div class="footer-content">
             <p class="footer-copy">&copy; 2025 Join Us - Todos los derechos reservados</p>
-            <p class="footer-contact">Contacto: info@gmail.com</p>
+            <p class="footer-contact">
+                Contacto: info@gmail.com
+            </p>
             <div class="social-icons">
                 <a href="https://instagram.com" class="instagram" target="_blank" aria-label="Instagram">
                     <i class="fab fa-instagram"></i>
@@ -130,7 +136,8 @@
         </div>
     </footer>
 
-    <script src="/JS/js.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/JS/menu.js"></script>
 </body>
 
 </html>
