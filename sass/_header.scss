@@ -1,0 +1,85 @@
+header {
+	width: 100%;
+	position: fixed;
+	z-index: 3;
+	min-height: 75px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 10 20px;
+	background-color: rgba(0, 0, 0, 0.6);
+	backdrop-filter: blur(6px);
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+	left: 0;
+	top: 0;
+	input {
+		padding: 5px 10px;
+		border-radius: 5px;
+		height: 30px;
+		width: 250px;
+	}
+}
+.boxGrid {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+	margin-top: 50px;
+	contain: content;
+	position: relative;
+	z-index: 2;
+	margin-bottom: 50px;
+}
+.logo-busqueda {
+	position: absolute;
+	left: 20px;
+	display: flex;
+	align-items: center;
+	gap: 30px;
+	border-style: none;
+}
+.logo-busqueda-link {
+	text-decoration: none;
+}
+.join {
+	color: #000;
+	background: linear-gradient(90deg, #ffcc00, #ff9900);
+	-webkit-text-fill-color: transparent;
+	font-weight: 800;
+}
+.us {
+	color: white;
+	font-weight: 800;
+}
+.nav-central {
+	position: absolute;
+	display: flex;
+	gap: 20px;
+	a {
+		img {
+			height: 50px;
+			width: 50px;
+		}
+	}
+}
+.nav-derecha {
+	position: absolute;
+	right: 20px;
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}
+.user {
+	img {
+		height: 50px;
+		width: 50px;
+	}
+}
+.nav-central a img,
+.nav-derecha a img {
+	transition: transform 0.3s ease;
+}
+.nav-central a:hover img,
+.nav-derecha a:hover img {
+	transform: scale(1.2);
+}
