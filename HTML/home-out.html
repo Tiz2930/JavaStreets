@@ -5,10 +5,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/png" href="/img/favicon-96x96.png" sizes="96x96">
-    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/CSS/style.css" />
+    <link rel="stylesheet" href="/CSS/home-banner.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-    <link rel="stylesheet" href="/css/comunidad.css">
-    <title>Comunidad</title>
+    <title>Home</title>
 </head>
 
 <body>
@@ -27,27 +27,21 @@
                 <img src="/img/Ticket.png" alt="Ticket" />
             </a>
             <a class="comunidad" href="/HTML/comunidad.html">
-                <img src="/img/comunidad lleno.png" alt="Comunidad" />
+                <img src="/img/comunidad.png" alt="Comunidad" />
             </a>
         </div>
 
         <div class="nav-derecha">
             <a class="home" href="/HTML/home.html">
-                <img src="/img/home.png" alt="Home" />
+                <img src="/img/home lleno.png" alt="Home" />
             </a>
-            <a class="add" href="/HTML/publicacion.html">
-                <img src="/img/publicacion.png" alt="Add" />
+            <!-- Crear cuenta -->
+            <a href="/HTML/registro.html">
+                <p>Crea tu cuenta</p>
             </a>
-            <a class="msj" href="/HTML/chat.html">
-                <img src="/img/msj.png" alt="Mensajes" />
-            </a>
-            <!-- Notificación -->
-            <a class="notificacion" href="#" onclick="event.preventDefault(); toggleNotificaciones();">
-                <img src="/img/notificacion.png" alt="Notificacion" />
-            </a>
-            <!-- Usuario -->
-            <a class="user" href="#" onclick="event.preventDefault(); usuarioMenu();">
-                <img src="/img/user.png" alt="Usuario" />
+            <!-- Ingresar -->
+            <a href="/HTML/login.html">
+                <p>Ingresar</p>
             </a>
         </div>
 
@@ -106,33 +100,43 @@
         </div>
     </header>
 
-    <main class="main-content">
-        <div class="card-grid">
-            <div class="card-grid1">
-                <h1>Juan05</h1>Si sos de Olavarría, seguro escuchaste hablar de Brandi. No es solo un nombre más,
-                es parte de lo que hace que esta ciudad sea tan copada. Entre el mate, las canteras y las juntadas con
-                amigos, Brandi está siempre presente, bancando lo nuestro y tirando buena onda.
+    <main>
 
-                Olavarría tiene ese no sé qué que te atrapa, y Brandi lo sabe bien. Así que si ves algo de ella, ya
-                sabés: es gente que lleva a esta ciudad en el corazón.
+        <div class="banner">
+            <div class="text-content">
+                <div class="linea-banner">
+                    <h2>DESCARGA</h2>
+                    <p>NUESTRA</p>
+                </div>
+                <h1>APP</h1>
             </div>
-            <div class="card-grid2">
-                <h1>Pablo2020</h1>Sí, Olavarría se sigue poniendo las pilas y ahora se viene la inauguración de Kuk, un
-                nuevo espacio que promete ser EL punto de encuentro. Moderno, con onda y pensado para nosotros, los de
-                acá.
 
-                Este finde se inaugura y pinta planazo: buena música, gente copada y ese aire olavarriense que solo
-                entendemos nosotros. Kuk no es solo un lugar, es una experiencia que arranca con toda.
-            </div>
-            <div class="card-grid3"></div>
-            <div class="card-grid4"></div>
+            <img src="/img/celular.png" alt="">
         </div>
+
+
+        <div class="container-cards">
+            <div class="cards1"></div>
+            <div class="cards2"></div>
+            <div class="cards3"></div>
+            <div class="cards4"></div>
+        </div>
+
+        <div class="container-cards">
+            <div class="cards5"></div>
+            <div class="cards6"></div>
+            <div class="cards7"></div>
+            <div class="cards8"></div>
+        </div>
+
     </main>
 
     <footer class="footer">
         <div class="footer-content">
             <p class="footer-copy">&copy; 2025 Join Us - Todos los derechos reservados</p>
-            <p class="footer-contact">Contacto: info@gmail.com</p>
+            <p class="footer-contact">
+                Contacto: info@gmail.com
+            </p>
             <div class="social-icons">
                 <a href="https://instagram.com" class="instagram" target="_blank" aria-label="Instagram">
                     <i class="fab fa-instagram"></i>
@@ -151,7 +155,6 @@
     </footer>
 
     <script src="/JS/menu.js"></script>
-    <script src="../JS/comunidad.js"></script>
 </body>
 
 </html>

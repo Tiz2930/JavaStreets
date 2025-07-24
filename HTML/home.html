@@ -4,8 +4,10 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="/img/favicon-96x96.png" sizes="96x96">
     <link rel="stylesheet" href="/css/body.css">
-    <link rel="stylesheet" href="/CSS/style.css"/>
+    <link rel="stylesheet" href="/CSS/style.css" />
+    <link rel="stylesheet" href="/CSS/home-banner.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
     <title>Home</title>
 </head>
@@ -16,7 +18,6 @@
             <a class="logo-busqueda-link" href="/HTML/home.html">
                 <h1><span class="join">Join</span> <span class="us">Us</span></h1>
             </a>
-            <input type="text" placeholder="Buscar" />
         </div>
 
         <div class="nav-central">
@@ -36,7 +37,7 @@
                 <img src="/img/home lleno.png" alt="Home" />
             </a>
             <a class="add" href="/HTML/publicacion.html">
-                <img src="/img/add.png" alt="Add" />
+                <img src="/img/publicacion.png" alt="Add" />
             </a>
             <a class="msj" href="/HTML/chat.html">
                 <img src="/img/msj.png" alt="Mensajes" />
@@ -84,7 +85,7 @@
                 <a class="cuenta" href="/HTML/cambiar-cuenta.html">
                     <p>Cambiar cuenta</p>
                 </a>
-                <a class="loguot" href="/HTML/login.html">
+                <a class="loguot">
                     <p>Cerrar sesion</p>
                 </a>
             </div>
@@ -106,14 +107,24 @@
         </div>
     </header>
 
-    <!-- CUERPO PRINCIPAL -->
+    <main>
 
-    <section class="boxGrid">
+        <div class="banner">
+            <div class="text-content">
+                <div class="linea-banner">
+                    <h2>DESCARGA</h2>
+                    <p>NUESTRA</p>
+                </div>
+                <h1>APP</h1>
+            </div>
 
-        <div id="boxEvents" class="gridSection">
-            <!-- js -->
+            <img src="/img/celular.png" alt="">
         </div>
-    </section>
+
+        <section class="container-cards">
+                <div id="eventos-container" class="eventos-container"></div>
+        </section>
+    </main>
 
     <footer class="footer">
         <div class="footer-content">
@@ -138,8 +149,8 @@
         </div>
     </footer>
 
-    <script src="/js/main.js" ></script>
-    <script src="/JS/js.js"></script>
+    <script src="/JS/menu.js"></script>
+    <script src="/JS/session.js"></script>
 </body>
 
 </html>
