@@ -5,7 +5,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/png" href="/img/favicon-96x96.png" sizes="96x96">
-    <link rel="stylesheet" href="/css/body.css">
     <link rel="stylesheet" href="/CSS/style.css" />
     <link rel="stylesheet" href="/CSS/home-banner.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
@@ -24,7 +23,7 @@
             <a class="tienda" href="/HTML/ecommerce.html">
                 <img src="/img/tienda.png" alt="Tienda" />
             </a>
-            <a class="ticket" href="/HTML/ecommerce.html">
+            <a class="ticket" href="/HTML/ticket.html">
                 <img src="/img/Ticket.png" alt="Ticket" />
             </a>
             <a class="comunidad" href="/HTML/comunidad.html">
@@ -36,19 +35,13 @@
             <a class="home" href="/HTML/home.html">
                 <img src="/img/home lleno.png" alt="Home" />
             </a>
-            <a class="add" href="/HTML/publicacion.html">
-                <img src="/img/publicacion.png" alt="Add" />
+            <!-- Crear cuenta -->
+            <a href="/HTML/registro.html">
+                <p>Crea tu cuenta</p>
             </a>
-            <a class="msj" href="#">
-                <img src="/img/msj.png" alt="Mensajes" />
-            </a>
-            <!-- Notificación -->
-            <a class="notificacion" href="#" onclick="event.preventDefault(); toggleNotificaciones();">
-                <img src="/img/notificacion.png" alt="Notificacion" />
-            </a>
-            <!-- Usuario -->
-            <a class="user" href="#" onclick="event.preventDefault(); usuarioMenu();">
-                <img src="/img/user.png" alt="Usuario" />
+            <!-- Ingresar -->
+            <a href="/HTML/login.html">
+                <p>Ingresar</p>
             </a>
         </div>
 
@@ -85,7 +78,7 @@
                 <a class="cuenta" href="/HTML/cambiar-cuenta.html">
                     <p>Cambiar cuenta</p>
                 </a>
-                <a class="loguot">
+                <a class="loguot" href="/HTML/login.html">
                     <p>Cerrar sesion</p>
                 </a>
             </div>
@@ -121,9 +114,21 @@
             <img src="/img/celular.png" alt="">
         </div>
 
-        <section class="container-cards">
-                <div id="eventos-container" class="eventos-container"></div>
-        </section>
+
+        <div class="container-cards">
+            <div class="cards1"></div>
+            <div class="cards2"></div>
+            <div class="cards3"></div>
+            <div class="cards4"></div>
+        </div>
+
+        <div class="container-cards">
+            <div class="cards5"></div>
+            <div class="cards6"></div>
+            <div class="cards7"></div>
+            <div class="cards8"></div>
+        </div>
+
     </main>
 
     <footer class="footer">
@@ -150,7 +155,6 @@
     </footer>
 
     <script src="/JS/menu.js"></script>
-    <script src="/JS/session.js"></script>
 </body>
 
 </html>
