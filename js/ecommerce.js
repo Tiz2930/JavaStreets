@@ -2,9 +2,9 @@ fetch("../data/ecommerce.json")
     .then((response) => response.json())
     .then((data) => {
 
-       const contDiv = document.getElementById("boxEcommerce")
+        const contDiv = document.getElementById("boxEcommerce")
 
-        data.forEach((usuario) => {  
+        data.forEach((usuario) => {
 
             //! DIV USER
 
@@ -32,13 +32,14 @@ fetch("../data/ecommerce.json")
             //? Productos 
 
             const newDiv = document.createElement("div");
-                newDiv.className = "divScroll";
-            
+            newDiv.className = "divScroll";
+
             const gridProducts = document.createElement("div");
             gridProducts.className = "gridFunction";
-            
 
             usuario.products.forEach((product) => {
+
+
                 const card = document.createElement("div");
                 card.className = "card";
 
@@ -49,7 +50,7 @@ fetch("../data/ecommerce.json")
                 <p> USD $${product.price}</p>
 
                 `;
-            
+
 
                 gridProducts.appendChild(card);
                 newDiv.appendChild(gridProducts);
@@ -57,46 +58,49 @@ fetch("../data/ecommerce.json")
 
             userDiv.appendChild(newDiv);
             contDiv.appendChild(userDiv);
+
+
+            const carousel = newDiv
+
+            let intervalo = null;
+            let direction = 1;
+            let scrollSpeed = 1;
+
+            const start = () => {
+
+                intervalo = setInterval(() => {
+                    if (carousel.scrollLeft >= carousel.scrollWidth - carousel.clientWidth - 1) {
+                        direction = -1;
+                    }
+            
+                    if (carousel.scrollLeft <= 1 && direction === -1) {
+                        direction = 1;
+                    }
+            
+                    carousel.scrollLeft += scrollSpeed * direction;
+                }, 16); // ~60fps
+
+
+            }
+
+            const stop = () => {
+
+                clearInterval(intervalo);
+
+            }
+
+            carousel.addEventListener('mouseover', () => {
+                stop(); // Detiene el movimiento al pasar el mouse
             });
 
-            //!
+            carousel.addEventListener('mouseout', () => {
+                start(); // Reanuda el movimiento al quitar el mouse
+            })
+
+            start();
+        });
+
+        //!
 
     });
-
-// const merch = document.getElementById("boxEcommerce");
-
-
-// const gridProducts = (comerce) => {
-
-//     comerce.forEach(usuario => {
-//         usuario.products.forEach(product => {
-//             const productCard = document.createElement("div");
-//             productCard.classList.add("productCard");
-
-//             productCard.innerHTML =
-
-//                 `
-//         <div class="userCard">
-//         <img class="userImage" src="${product.userImage}" alt="User Image">
-//         <p>${product.user}<p>
-//         </div>
-
-//         <section class="gridFunction">
-        
-//         <article class="card">
-//             <h2 class="titleProduct">${product.name}</h2>
-//             <img class="imgProduct" src="${product.image}" alt="">
-//             <p class="price"> USD $${product.price}</p>
-//         </article>
-
-//         </section>
-//     `
-//             merch.append(productCard)
-//         });
-
-//     });
-// }
-
-
-
 
