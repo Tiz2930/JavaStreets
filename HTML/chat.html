@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/CSS/chat.css">
+    
+    <title>Mensajes</title>
+</head>
+
+<body>
+    <div class="chat-container">
+        <div class="sidebar">
+            <h2>Mensajes</h2>
+            <ul>
+                <li class="active">Carlos López</li>
+                <li>Sofía Torres</li>
+                <li>Martín García</li>
+                <li>Lucía Fernández</li>
+            </ul>
+        </div>
+
+        <div class="chat">
+            <div class="chat-header">
+              <div class="header-left">
+                <div id="chat-title">Carlos López</div>
+              </div>
+              <div class="menu-container">
+                <button id="menu-btn">⋮</button>
+                <ul id="menu-options" class="hidden">
+                  <li id="clear-history">🗑 Limpiar historial</li>
+                </ul>
+              </div>
+            </div>
+          
+            <div class="chat-messages"></div>
+          
+            <div class="chat-input">
+              <input type="text" placeholder="Escribe un mensaje..." />
+              <button>Enviar</button>
+            </div>
+          </div>
+          
+    <script src="/JS/chat.js"></script>
+
+</body>
+
+</html>
