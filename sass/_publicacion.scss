@@ -1,0 +1,126 @@
+.containerPublicacion {
+    display: flex;
+    margin: 10% 3%;
+    color: white;
+    min-height: 700px;
+}
+
+/* Barra */
+
+.barra {
+    padding: 20px;
+    width: 250px;
+    border-radius: 16px;
+    background-color: rgba(0, 0, 0, 0.7);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(4px);
+
+    button {
+        display: block;
+        width: 100%;
+        margin-bottom: 15px;
+        padding: 10px;
+        font-size: 14px;
+        border: none;
+        background-color: #e0e0e0;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.2s;
+
+        &:hover {
+            background-color: #d3d3d3;
+        }
+    }
+
+    p {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+}
+
+/* Principal */
+
+.principal {
+    flex: 1;
+    padding: 20px;
+    margin: 0 15px;
+    width: 500px;
+    border-radius: 16px;
+    background-color: rgba(0, 0, 0, 0.7);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(4px);
+
+    h2 {
+        text-align: center;
+        padding: 5px;
+    }
+}
+
+/*Formularios*/
+
+form {
+    display: none;
+    border-radius: 10px;
+    flex-direction: column;
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+
+    input,
+    textarea {
+        width: 100%;
+        padding: 10px;
+        font-size: 14px;
+        box-sizing: border-box;
+        border-radius: 5px;
+        margin: 8px;
+        border: 1px solid;
+    }
+
+    button {
+        width: 100%;
+        padding: 10px;
+        font-size: 14px;
+        box-sizing: border-box;
+        border-radius: 5px;
+        margin: 8px;
+        border: 1px solid;
+        background-color: #ff9900;
+        color: white;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+
+        &:hover {
+            background-color: #e68200;
+        }
+    }
+
+    h3 {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+/*Imagen previsualizada*/
+
+.img-preview-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+    padding: 10px 0;
+    max-width: 100%;
+    max-height: 300px;
+    overflow-y: auto;
+    justify-content: center;
+}
+
+.img-preview {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
