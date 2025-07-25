@@ -1,0 +1,68 @@
+.nav-derecha {
+	a {
+		text-decoration: none;
+		color: white;
+		margin: 5px;
+	}
+	p {
+		font-size: 16px;
+		transition: transform 0.3s ease;
+		&:hover {
+			color: #ff9900;
+			transform: scale(1.1);
+		}
+	}
+}
+.banner {
+	display: flex;
+	align-items: center;
+	padding: 20px;
+	color: white;
+	gap: 300px;
+	margin-top: 10%;
+}
+.linea-banner {
+	display: flex;
+	align-items: baseline;
+	gap: 20px;
+	h2 {
+		font-size: 40px;
+	}
+	p {
+		font-size: 40px;
+	}
+}
+.text-content {
+	margin-left: 100px;
+	h1 {
+		display: flex;
+		gap: 10px;
+		font-weight: 800;
+		font-size: 120px;
+		justify-content: center;
+		display: flex;
+		gap: 10px;
+		font-weight: 800;
+		font-size: 120px;
+		justify-content: center;
+	}
+}
+.container-cards {
+	display: flex;
+	gap: 20px;
+	flex-wrap: wrap;
+	margin-bottom: 20px;
+}
+.productos-container {
+	border-radius: 10px;
+	background-color: white;
+	height: 300px;
+	width: 300px;
+	cursor: pointer;
+	transition: transform 0.3s ease;
+}
+.cards {
+	&:hover {
+		transform: scale(1.05);
+	}
+}
