@@ -5,68 +5,39 @@
         "products": [
             {
                 "name": "Camisa de lino",
-                "image": "https://via.assets.so/game.jpg?w=205&h=205",
-                "price": 8500
-            },
-            {
-                "name": "Camisa de lino",
-                "image": "https://via.assets.so/game.jpg?w=205&h=205",
-                "price": 8500
-            },
-            {
-                "name": "Camisa de lino",
-                "image": "https://via.assets.so/game.jpg?w=205&h=205",
-                "price": 8500
-            },
-            {
-                "name": "Camisa de lino",
-                "image": "https://via.assets.so/game.jpg?w=205&h=205",
-                "price": 8500
-            },
-            {
-                "name": "Camisa de lino",
-                "image": "https://via.assets.so/game.jpg?w=205&h=205",
-                "price": 8500
-            },
-            {
-                "name": "Camisa de lino",
-                "image": "https://via.assets.so/game.jpg?w=205&h=205",
-                "price": 8500
-            },
-            {
-                "name": "Camisa de lino",
-                "image": "https://via.assets.so/game.jpg?w=205&h=205",
-                "price": 8500
-            },
-            {
-                "name": "Camisa de lino",
-                "image": "https://via.assets.so/game.jpg?w=205&h=205",
-                "price": 8500
-            },
-            {
-                "name": "Camisa de lino",
-                "image": "https://via.assets.so/game.jpg?w=205&h=205",
-                "price": 8500
-            },
-            {
-                "name": "Camisa de lino",
-                "image": "https://via.assets.so/game.jpg?w=205&h=205",
-                "price": 8500
+                "image": "../img/Camisa de lino.jpg",
+                "price": 8500,
+                "quantity": 10
             },
             {
                 "name": "Pantalón de jean",
-                "image": "",
-                "price": 12500
-            },
-            {
-                "name": "Pantalón de jean",
-                "image": "",
-                "price": 12500
+                "image": "../img/Pantalon de jean.jpg",
+                "price": 12500,
+                "quantity": 2
             },
             {
                 "name": "Camisa overside",
-                "image": "",
-                "price": 12500
+                "image": "../img/Camisa Oversize.png",
+                "price": 12500,
+                "quantity": 1
+            },
+            {
+                "name": "Buzo canguro",
+                "image": "../img/Buzo canguro.jpg",
+                "price": 13900,
+                "quantity": 3
+            },
+            {
+                "name": "Jogging deportivo",
+                "image": "https://via.assets.so/footwear.jpg?w=205&h=205",
+                "price": 9800,
+                "quantity": 4
+            },
+            {
+                "name": "Campera rompeviento",
+                "image": "https://via.assets.so/clothes.jpg?w=205&h=205",
+                "price": 18900,
+                "quantity": 2
             }
         ]
     },
@@ -77,12 +48,38 @@
             {
                 "name": "Zapatillas deportivas",
                 "image": "",
-                "price": 19900
+                "price": 19900,
+                "quantity": 1
             },
             {
                 "name": "Remera básica",
                 "image": "",
-                "price": 4500
+                "price": 4500,
+                "quantity": 1
+            },
+            {
+                "name": "Short de baño",
+                "image": "https://via.assets.so/beachwear.jpg?w=205&h=205",
+                "price": 6200,
+                "quantity": 3
+            },
+            {
+                "name": "Top deportivo",
+                "image": "https://via.assets.so/fashion.jpg?w=205&h=205",
+                "price": 7400,
+                "quantity": 2
+            },
+            {
+                "name": "Leggings negras",
+                "image": "https://via.assets.so/fitness.jpg?w=205&h=205",
+                "price": 8900,
+                "quantity": 2
+            },
+            {
+                "name": "Campera inflable",
+                "image": "https://via.assets.so/winter.jpg?w=205&h=205",
+                "price": 21400,
+                "quantity": 1
             }
         ]
     }

@@ -6,9 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/png" href="/img/favicon-96x96.png" sizes="96x96">
     <link rel="stylesheet" href="/sass/style.css" />
-    <link rel="stylesheet" href="/CSS/home-banner.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-    <title>Home</title>
+    <title>Home - Join Us</title>
 </head>
 
 <body>
@@ -32,9 +31,6 @@
         </div>
 
         <div class="nav-derecha">
-            <a class="home" href="/HTML/home.html">
-                <img src="/img/home lleno.png" alt="Home" />
-            </a>
             <!-- Crear cuenta -->
             <a href="/HTML/registro.html">
                 <p>Crea tu cuenta</p>
@@ -43,60 +39,6 @@
             <a href="/HTML/login.html">
                 <p>Ingresar</p>
             </a>
-        </div>
-
-        <!-- Menú Usuario -->
-        <div class="sub-menu-wrap" id="subMenu">
-            <div class="sub-menu">
-                <div class="user-info">
-                    <img src="/img/user.png" />
-                    <div class="user-text">
-                        <h1>Nombre</h1>
-                        <p class="user-email">example@gmail.com</p>
-                    </div>
-                </div>
-                <hr />
-                <a href="/HTML/perfil.html" class="sub-menu-link">
-                    <img src="/img/Setting.png" />
-                    <p>Configuración</p>
-                </a>
-                </a>
-                <a href="/HTML/report-problema.html" class="sub-menu-link">
-                    <img src="/img/problema.png" />
-                    <p>Reportar problema</p>
-                </a>
-                <hr />
-                <a href="/HTML/eventos.html" class="sub-menu-link">
-                    <img src="/img/eventos.png" />
-                    <p>Mis eventos</p>
-                </a>
-                <a href="#" class="sub-menu-link">
-                    <img src="/img/Chart.png" />
-                    <p>Tu actividad</p>
-                </a>
-                <hr />
-                <a class="cuenta" href="/HTML/cambiar-cuenta.html">
-                    <p>Cambiar cuenta</p>
-                </a>
-                <a class="loguot" href="/HTML/login.html">
-                    <p>Cerrar sesion</p>
-                </a>
-            </div>
-        </div>
-        <!-- Menú Notificacion -->
-        <div class="noti-menu-wrap" id="notiMenu">
-            <div class="noti">
-                <img src="/img/me gusta.png" />
-                <p>A Example le gustó tu notificación</p>
-            </div>
-            <div class="noti">
-                <img src="/img/seguidor.png" />
-                <p>Example comenzó a seguirte</p>
-            </div>
-            <div class="noti">
-                <img src="/img/comentarios.png" />
-                <p>Recibiste un comentario</p>
-            </div>
         </div>
     </header>
 
@@ -114,20 +56,11 @@
             <img src="/img/celular.png" alt="">
         </div>
 
+        <h2>Eventos populares</h2>
+        <div class="container-cards" id="eventos-populares"></div>
 
-        <div class="container-cards">
-            <div class="cards1"></div>
-            <div class="cards2"></div>
-            <div class="cards3"></div>
-            <div class="cards4"></div>
-        </div>
-
-        <div class="container-cards">
-            <div class="cards5"></div>
-            <div class="cards6"></div>
-            <div class="cards7"></div>
-            <div class="cards8"></div>
-        </div>
+        <h2>Merch en tendencia</h2>
+        <div class="container-cards" id="merch-tendencia"></div>
 
     </main>
 
@@ -155,6 +88,7 @@
     </footer>
 
     <script src="/JS/menu.js"></script>
+    <script src="/JS/home-cards.js"></script>
 </body>
 
 </html>
