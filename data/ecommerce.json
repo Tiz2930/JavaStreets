@@ -85,5 +85,21 @@
                 "price": 4500
             }
         ]
+    },
+    {
+        "user": "Ana Gómez",
+        "userImage": "",
+        "products": [
+            {
+                "name": "Zapatillas deportivas",
+                "image": "",
+                "price": 19900
+            },
+            {
+                "name": "Remera básica",
+                "image": "",
+                "price": 4500
+            }
+        ]
     }
 ]
