@@ -30,41 +30,38 @@ let currentUser = "Carlos López";
 
 // ---------------- FUNCIONES ----------------
 
-// 1️⃣ Guardar en localStorage cuando cambia algo
 function saveChatsToLocalStorage() {
     localStorage.setItem('joinus-chats', JSON.stringify(chats));
 }
 
-// 2️⃣ Mostrar los mensajes del usuario actual
 function loadChat(user) {
     currentUser = user;
-    chatTitle.textContent = user; // SOLO cambiar el título, no todo el header
+    chatTitle.textContent = user;
     chatMessages.innerHTML = "";
 
     chats[user].forEach(msg => {
         const div = document.createElement("div");
         div.classList.add("message");
         div.classList.add(msg.from === "Tú" ? "sent" : "received");
-    
+
         const msgText = document.createElement("div");
         msgText.textContent = msg.text;
-    
+
         const msgDate = document.createElement("div");
         msgDate.textContent = msg.date || "";
         msgDate.style.fontSize = "0.75em";
         msgDate.style.opacity = "0.6";
         msgDate.style.marginTop = "5px";
-    
+
         div.appendChild(msgText);
         if (msg.date) div.appendChild(msgDate);
-    
+
         chatMessages.appendChild(div);
     });
 
     chatMessages.scrollTop = chatMessages.scrollHeight;
 }
 
-// 3️⃣ Agregar un nuevo mensaje
 function sendMessage() {
     const text = input.value.trim();
     if (!text) return;
@@ -98,10 +95,9 @@ input.addEventListener("keydown", e => {
     if (e.key === "Enter") sendMessage();
 });
 
-// ---------------- INICIO ----------------
 loadChat(currentUser);
 
-// Menú desplegable (mostrar/ocultar)
+// Menú desplegable
 const menuBtn = document.getElementById("menu-btn");
 const menuOptions = document.getElementById("menu-options");
 
@@ -109,23 +105,41 @@ menuBtn.addEventListener("click", () => {
     menuOptions.classList.toggle("hidden");
 });
 
-// Limpiar historial
+// ✅ Limpiar historial usando SweetAlert2
 const clearHistoryBtn = document.getElementById("clear-history");
 
 clearHistoryBtn.addEventListener("click", () => {
     if (!currentUser) return;
 
-    const confirmDelete = confirm(`¿Estás seguro que querés borrar el historial con ${currentUser}?`);
-    if (!confirmDelete) return;
+    Swal.fire({
+        title: '¿Estás seguro?',
+        text: `¿Querés borrar el historial con ${currentUser}?`,
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#ff9d00',
+        cancelButtonColor: '#333',
+        confirmButtonText: 'Sí, borrar',
+        cancelButtonText: 'Cancelar'
+    }).then((result) => {
+        if (result.isConfirmed) {
+            chats[currentUser] = [];
+            saveChatsToLocalStorage();
+            loadChat(currentUser);
 
-    chats[currentUser] = [];
-    saveChatsToLocalStorage();
-    loadChat(currentUser);
+            Swal.fire({
+                title: 'Borrado',
+                text: `El historial con ${currentUser} fue eliminado.`,
+                icon: 'success',
+                timer: 1800,
+                showConfirmButton: false
+            });
+        }
+    });
 });
 
-// Cerrar menú si clickeas fuera
+// Cerrar menú al hacer clic fuera
 document.addEventListener("click", (e) => {
-  if (!menuBtn.contains(e.target) && !menuOptions.contains(e.target)) {
-    menuOptions.classList.add("hidden");
-  }
+    if (!menuBtn.contains(e.target) && !menuOptions.contains(e.target)) {
+        menuOptions.classList.add("hidden");
+    }
 });
