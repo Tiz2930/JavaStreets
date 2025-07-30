@@ -13,25 +13,25 @@
 <body>
     <header>
         <div class="logo-busqueda">
-            <a class="logo-busqueda-link" href="/HTML/home.html">
+            <a class="logo-busqueda-link" onclick="homeOut()">
                 <h1><span class="join">Join</span> <span class="us">Us</span></h1>
             </a>
         </div>
 
         <div class="nav-central">
-            <a class="tienda" href="/HTML/login.html">
+            <a class="tienda" href="#" onclick="homeOut(event)">
                 <img src="/img/tienda.png" alt="Tienda" />
             </a>
-            <a class="ticket" href="/HTML/login.html">
+            <a class="ticket" href="#" onclick="homeOut(event)">
                 <img src="/img/Ticket.png" alt="Ticket" />
             </a>
-            <a class="comunidad" href="/HTML/login.html">
+            <a class="comunidad" href="#" onclick="homeOut(event)">
                 <img src="/img/comunidad.png" alt="Comunidad" />
             </a>
         </div>
 
         <div class="nav-derecha">
-            <a class="home" href="/HTML/home.html">
+            <a class="home" href="#" onclick="homeOut(event)">
                 <img src="/img/home lleno.png" alt="Home" />
             </a>
             <!-- Crear cuenta -->
@@ -92,6 +92,8 @@
 
     <script src="/JS/menu.js"></script>
     <script src="/JS/home-cards.js"></script>
+    <script src="/JS/session.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 
 </html>
