@@ -32,7 +32,7 @@ Brindar una herramienta moderna, intuitiva y dinámica para conectar personas a 
 
 - HTML
 - CSS
-- Sass
+- SCSS
 - JavaScript
 - Visual Studio Code  
 - Git y GitHub  
