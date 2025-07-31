@@ -1702,7 +1702,6 @@ textarea:focus:invalid {
   padding: 20px;
   color: #ffffff;
   gap: 200px;
-  margin-top: 6%;
 }
 
 .text-content {
@@ -2213,6 +2212,7 @@ header {
   font-weight: 700;
   font-size: 18px;
   margin: 0;
+  color: black;
 }
 
 .user-email {
@@ -2276,6 +2276,7 @@ header {
   align-items: center;
   padding: 10px;
   border-bottom: 1px solid #eee;
+  color: black;
 }
 .noti img {
   width: 40px;
