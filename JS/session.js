@@ -139,7 +139,7 @@ function cerrarSesion() {
   console.log("Cerrando sesión...");
   localStorage.clear();
   sessionStorage.clear();
-  window.location.href = "/HTML/home-out.html";
+  window.location.href = "/html/home-out.html";
 }
 
 //Boton home de home-out
