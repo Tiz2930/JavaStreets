@@ -1,0 +1,110 @@
+.principalDiv {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	overflow: scroll;
+	scrollbar-width: none;
+	margin: 5%;
+	padding-bottom: 20px;
+	overflow: hidden;
+	z-index: 2;
+}
+.userCard {
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+	margin-top: 1rem;
+	padding: 1.5rem;
+	width: 60%;
+	height: auto;
+}
+.divScroll {
+	width: 100%;
+	height: 100%;
+	padding-bottom: 20px;
+	overflow: scroll;
+	overflow-y: hidden;
+	scrollbar-width: thin;
+	scrollbar-color: #FDA703 #000000;
+}
+.userHeader {
+	height: 20%;
+	display: flex;
+	align-items: center;
+	margin-bottom: 1rem;
+	cursor: pointer;
+	&:hover {
+		h2 {
+			background-color: #000000;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgb(0, 0, 0);
+			color: #FDA703;
+			transition: 0.7s;
+			padding: 5px;
+		}
+	}
+	h2 {
+		width: auto;
+		height: auto;
+		margin-top: 5px;
+		color: #333;
+	}
+}
+.userImage {
+	width: 55px;
+	height: 50px;
+	border-radius: 50%;
+	margin-right: 1rem;
+	object-fit: contain;
+	border: 2px solid #ccc;
+}
+.gridFunction {
+	position: relative;
+	display: flex;
+	width: 200%;
+	height: auto;
+	gap: 20px;
+}
+.card {
+	display: flex;
+	flex-direction: column;
+	width: auto;
+	height: 100%;
+	background-color: #9494942d;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+	border-radius: 8px;
+	margin: 5px;
+	text-align: center;
+	position: sticky;
+	cursor: pointer;
+	&:hover {
+		background-color: #FDA703;
+		box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+		transition: background-color 0.3s ease, box-shadow 0.3s ease;
+		color: #000000;
+	}
+	img {
+		width: 100%;
+		height: 100%;
+		background-size: cover;
+		margin-bottom: 0.5rem;
+		&:hover {
+			transform: scale(1.05);
+			transition: transform 0.3s ease;
+		}
+	}
+	h3 {
+		height: 50px;
+		font-size: 1rem;
+		margin: 0.5rem 0;
+	}
+	p {
+		height: 30px;
+		padding-top: 10px;
+		font-weight: bold;
+		color: #000000;
+	}
+}

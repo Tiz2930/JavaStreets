@@ -1,0 +1,156 @@
+.headerPerfil {
+	background: linear-gradient(to right, #ffb400, #ff8800);
+	padding: 20px;
+	text-align: center;
+	color: #000;
+	position: relative;
+}
+
+.perfil-layout {
+	display: flex;
+	gap: 40px;
+	padding: 40px 20px;
+	justify-content: center;
+	align-items: stretch;
+	margin-top: 15px;
+	width: 1000px;
+}
+
+.sidebar,
+.cardPerfil {
+	background-color: #ffffff;
+	color: #222222;
+	border-radius: 12px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar {
+	padding: 20px;
+	width: 200px;
+
+	ul {
+		list-style: none;
+		padding: 0;
+		margin: 0 0 20px 0;
+	}
+
+	li {
+		margin-bottom: 15px;
+	}
+
+	a {
+		text-decoration: none;
+		color: #222222;
+		font-weight: bold;
+		display: flex;
+		align-items: center;
+		gap: 12px;
+		transition: font-size 0.3s;
+
+		&:hover {
+			font-size: 1.1em;
+		}
+	}
+}
+
+.sidebar li img,
+.sidebar a img {
+	width: 36px;
+	height: 36px;
+}
+
+.eliminar-cuenta {
+	color: #cc0000 !important;
+	font-size: 1em;
+	font-weight: bold;
+	text-decoration: none;
+	display: flex;
+	justify-content: center;
+	gap: 12px;
+	transition: font-size 0.3s, color 0.3s;
+	margin-top: 10px;
+
+	&:hover {
+		color: red !important;
+		font-size: 1.1em;
+		text-decoration: none;
+	}
+}
+
+.cardPerfil {
+	padding: 30px;
+	max-width: 500px;
+	width: 100%;
+}
+
+.foto-perfil {
+	display: flex;
+	align-items: center;
+	gap: 15px;
+	margin-bottom: 25px;
+
+	img {
+		width: 80px;
+		height: 80px;
+		border-radius: 50%;
+		object-fit: cover;
+		border: 2px solid #ffb400;
+	}
+
+	button {
+		background-color: #ff9b05;
+		border: none;
+		padding: 8px 12px;
+		color: #000000;
+		font-weight: bold;
+		border-radius: 5px;
+		cursor: pointer;
+		transition: background 0.3s;
+
+		&:hover {
+			background-color: #003d80;
+		}
+	}
+}
+
+.campo {
+	margin-bottom: 20px;
+	display: flex;
+	flex-direction: column;
+
+	label {
+		margin-bottom: 6px;
+		font-weight: bold;
+		text-align: center;
+		width: 100%;
+	}
+}
+
+.campo input,
+.campo textarea,
+.campo select {
+	padding: 10px;
+	border-radius: 6px;
+	border: 1px solid #ccc;
+	background-color: #f9f9f9;
+	color: #222;
+	box-sizing: border-box;
+	text-align: center;
+}
+
+.guardar-btn {
+	width: 100%;
+	padding: 12px;
+	background-color: #ff9b05;
+	color: #000000;
+	border: none;
+	border-radius: 6px;
+	font-weight: bold;
+	cursor: pointer;
+	margin-top: 10px;
+	transition: background 0.3s;
+
+	&:hover {
+		background-color: #003d80;
+	}
+}
