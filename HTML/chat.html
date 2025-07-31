@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/CSS/chat.css" />
+  <link rel="stylesheet" href="/CSS/style.csss">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <title>Mensajes</title>
+</head>
+
+<body>
+  <!-- HEADER FIJO -->
+  <header>
+    <div class="logo-busqueda">
+        <a class="logo-busqueda-link" href="/HTML/home.html">
+            <h1><span class="join">Join</span> <span class="us">Us</span></h1>
+        </a>
+    </div>
+
+    <div class="nav-central">
+        <a class="tienda" href="/HTML/ecommerce.html">
+            <img src="/img/tienda.png" alt="Tienda" />
+        </a>
+        <a class="ticket" href="/HTML/ticket.html">
+            <img src="/img/Ticket.png" alt="Ticket" />
+        </a>
+        <a class="comunidad" href="/HTML/comunidad.html">
+            <img src="/img/comunidad lleno.png" alt="Comunidad" />
+        </a>
+    </div>
+
+    <div class="nav-derecha">
+        <a class="home" href="/HTML/home.html">
+            <img src="/img/home.png" alt="Home" />
+        </a>
+        <a class="add" href="/HTML/publicacion.html">
+            <img src="/img/publicacion.png" alt="Add" />
+        </a>
+        <a class="msj" href="/HTML/chat.html">
+            <img src="/img/msj.png" alt="Mensajes" />
+        </a>
+        <!-- Notificación -->
+        <a class="notificacion" href="#" onclick="event.preventDefault(); toggleNotificaciones();">
+            <img src="/img/notificacion.png" alt="Notificacion" />
+        </a>
+        <!-- Usuario -->
+        <a class="user" href="#" onclick="event.preventDefault(); usuarioMenu();">
+            <img src="/img/user.png" alt="Usuario" />
+        </a>
+    </div>
+
+    <!-- Menú Usuario -->
+    <div class="sub-menu-wrap" id="subMenu">
+        <div class="sub-menu">
+            <div class="user-info">
+                <img src="/img/user.png" />
+                <div class="user-text">
+                    <h1>Nombre</h1>
+                    <p class="user-email">example@gmail.com</p>
+                </div>
+            </div>
+            <hr />
+            <a href="/HTML/perfil.html" class="sub-menu-link">
+                <img src="/img/Setting.png" />
+                <p>Configuración</p>
+            </a>
+            </a>
+            <a href="/HTML/report-problema.html" class="sub-menu-link">
+                <img src="/img/problema.png" />
+                <p>Reportar problema</p>
+            </a>
+            <hr />
+            <a href="/HTML/eventos.html" class="sub-menu-link">
+                <img src="/img/eventos.png" />
+                <p>Mis eventos</p>
+            </a>
+            <a href="#" class="sub-menu-link">
+                <img src="/img/Chart.png" />
+                <p>Tu actividad</p>
+            </a>
+            <hr />
+            <a class="cuenta" href="/HTML/cambiar-cuenta.html">
+                <p>Cambiar cuenta</p>
+            </a>
+            <a class="loguot" href="/HTML/login.html">
+                <p>Cerrar sesion</p>
+            </a>
+        </div>
+    </div>
+    <!-- Menú Notificacion -->
+    <div class="noti-menu-wrap" id="notiMenu">
+        <div class="noti">
+            <img src="/img/me gusta.png" />
+            <p>A Example le gustó tu notificación</p>
+        </div>
+        <div class="noti">
+            <img src="/img/seguidor.png" />
+            <p>Example comenzó a seguirte</p>
+        </div>
+        <div class="noti">
+            <img src="/img/comentarios.png" />
+            <p>Recibiste un comentario</p>
+        </div>
+    </div>
+</header>
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <main class="chat-wrapper">
+    <div class="chat-container">
+      <!-- Tu contenido original -->
+      <div class="sidebar">
+        <h2>Mensajes</h2>
+        <ul>
+          <li class="active">Carlos López</li>
+          <li>Sofía Torres</li>
+          <li>Martín García</li>
+          <li>Lucía Fernández</li>
+        </ul>
+      </div>
+
+      <div class="chat">
+        <div class="chat-header">
+          <div class="header-left">
+            <img src="/img/user.png" alt="Carlos López" class="profile-pic" />
+            <div id="chat-title">Carlos López</div>
+          </div>
+
+          <div class="menu-container">
+            <button id="menu-btn">⋮</button>
+            <ul id="menu-options" class="hidden">
+              <li id="clear-history">🗑 Limpiar historial</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="chat-messages"></div>
+
+        <div class="chat-input">
+          <input type="text" placeholder="Escribe un mensaje..." />
+          <button>Enviar</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER FIJO -->
+  <footer class="footer">
+    <div class="footer-content">
+        <p class="footer-copy">&copy; 2025 Join Us - Todos los derechos reservados</p>
+        <p class="footer-contact">Contacto: info@gmail.com</p>
+        <div class="social-icons">
+            <a href="https://instagram.com" class="instagram" target="_blank" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://facebook.com" class="facebook" target="_blank" aria-label="Facebook">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://x.com/home" class="twitter" target="_blank" aria-label="Twitter">
+                <i class="fab fa-x-twitter"></i>
+            </a>
+            <a href="https://youtube.com" class="youtube" target="_blank" aria-label="YouTube">
+                <i class="fab fa-youtube"></i>
+            </a>
+        </div>
+    </div>
+</footer>
+
+
+  <script src="/JS/chat.js"></script>
+</body>
+
+</html>
