@@ -141,3 +141,23 @@ function cerrarSesion() {
   sessionStorage.clear();
   window.location.href = "/html/home-out.html";
 }
+
+//Boton home de home-out
+
+function homeOut(event) {
+  event.preventDefault();
+
+  Swal.fire({
+    title: "¿No estás logueado?",
+    text: "Iniciá sesión para continuar.",
+    icon: "warning",
+    showCancelButton: true,
+    confirmButtonText: "Iniciar sesión",
+    cancelButtonText: "Cancelar",
+    reverseButtons: true
+  }).then((result) => {
+    if (result.isConfirmed) {
+      window.location.href = "login.html";
+    }
+  });
+}

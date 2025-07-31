@@ -5,14 +5,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/sass/style.css">
+    <link rel="icon" type="image/png" href="/img/favicon-96x96.png" sizes="96x96">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
     <link rel="stylesheet" href="/CSS/publicacion.css">
-    <title>Publicacion</title>
+    <title>Publicacion - Join Us</title>
 </head>
 
 <body>
     <header>
-        <!-- (Tu header aquí, sin cambios) -->
         <div class="logo-busqueda">
             <a class="logo-busqueda-link" href="/HTML/home.html">
                 <h1><span class="join">Join</span> <span class="us">Us</span></h1>
@@ -130,7 +130,7 @@
                     <label for="evento-imagen">Imagen del evento</label>
                     <input type="file" name="evento-imagen" id="evento-imagen" multiple accept="image/*" required>
 
-                    <!-- Este div quedará vacío al inicio; JS insertará las imágenes -->
+                    <!-- Este div queda vacío al inicio; JS insertará las imágenes -->
                     <div id="img-preview-container" class="img-preview-container"></div>
 
                     <label for="evento-ubicacion">Ubicación del evento</label>
@@ -162,7 +162,8 @@
                         placeholder="Precio del producto" required>
 
                     <label for="merch-desc">Descripcion</label>
-                    <textarea name="merch-desc" id="merch-desc" rows="4" required placeholder="Descripcion"></textarea>
+                    <textarea name="merch-desc" id="merch-desc" rows="4" required
+                        placeholder="Descripcion..."></textarea>
 
                     <button type="submit" onclick="merchPublicado()">Publicar merchandising</button>
 

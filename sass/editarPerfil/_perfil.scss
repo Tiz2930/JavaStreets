@@ -5,6 +5,7 @@
 	color: #000;
 	position: relative;
 }
+
 .perfil-layout {
 	display: flex;
 	gap: 40px;
@@ -12,7 +13,9 @@
 	justify-content: center;
 	align-items: stretch;
 	margin-top: 15px;
+	width: 1000px;
 }
+
 .sidebar,
 .cardPerfil {
 	background-color: #ffffff;
@@ -20,17 +23,21 @@
 	border-radius: 12px;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
 .sidebar {
 	padding: 20px;
 	width: 200px;
+
 	ul {
 		list-style: none;
 		padding: 0;
 		margin: 0 0 20px 0;
 	}
+
 	li {
 		margin-bottom: 15px;
 	}
+
 	a {
 		text-decoration: none;
 		color: #222222;
@@ -39,11 +46,13 @@
 		align-items: center;
 		gap: 12px;
 		transition: font-size 0.3s;
+
 		&:hover {
 			font-size: 1.1em;
 		}
 	}
 }
+
 .sidebar li img,
 .sidebar a img {
 	width: 36px;
@@ -51,32 +60,35 @@
 }
 
 .eliminar-cuenta {
-		color: #cc0000 !important;
-		font-size: 1em;
-		font-weight: bold;
+	color: #cc0000 !important;
+	font-size: 1em;
+	font-weight: bold;
+	text-decoration: none;
+	display: flex;
+	justify-content: center;
+	gap: 12px;
+	transition: font-size 0.3s, color 0.3s;
+	margin-top: 10px;
+
+	&:hover {
+		color: red !important;
+		font-size: 1.1em;
 		text-decoration: none;
-		display: flex;
-		align-items: center;
-		gap: 12px;
-		transition: font-size 0.3s, color 0.3s;
-		margin-top: 10px;
-		&:hover {
-			color: red !important;
-			font-size: 1.1em;
-			text-decoration: none;
-		}
 	}
+}
 
 .cardPerfil {
 	padding: 30px;
 	max-width: 500px;
 	width: 100%;
 }
+
 .foto-perfil {
 	display: flex;
 	align-items: center;
 	gap: 15px;
 	margin-bottom: 25px;
+
 	img {
 		width: 80px;
 		height: 80px;
@@ -84,6 +96,7 @@
 		object-fit: cover;
 		border: 2px solid #ffb400;
 	}
+
 	button {
 		background-color: #ff9b05;
 		border: none;
@@ -93,20 +106,26 @@
 		border-radius: 5px;
 		cursor: pointer;
 		transition: background 0.3s;
+
 		&:hover {
 			background-color: #003d80;
 		}
 	}
 }
+
 .campo {
 	margin-bottom: 20px;
 	display: flex;
 	flex-direction: column;
+
 	label {
 		margin-bottom: 6px;
 		font-weight: bold;
+		text-align: center;
+		width: 100%;
 	}
 }
+
 .campo input,
 .campo textarea,
 .campo select {
@@ -115,7 +134,10 @@
 	border: 1px solid #ccc;
 	background-color: #f9f9f9;
 	color: #222;
+	box-sizing: border-box;
+	text-align: center;
 }
+
 .guardar-btn {
 	width: 100%;
 	padding: 12px;
@@ -127,6 +149,7 @@
 	cursor: pointer;
 	margin-top: 10px;
 	transition: background 0.3s;
+
 	&:hover {
 		background-color: #003d80;
 	}

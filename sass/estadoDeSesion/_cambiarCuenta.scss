@@ -1,9 +1,9 @@
 .bodyCambioCuenta {
 	margin: 0;
 	background-color: #000;
-	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 	color: #fff;
 }
+
 .cuenta-container {
 	max-width: 480px;
 	margin: 60px auto;
@@ -11,18 +11,21 @@
 	background-color: #1b1b1b;
 	border-radius: 16px;
 	text-align: center;
-	box-shadow: 0 0 20px rgba(0,0,0,0.6);
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+
 	h2 {
 		color: #ffffff;
 		font-size: 24px;
 		margin-bottom: 8px;
 	}
+
 	p {
 		color: #aaa;
 		font-size: 15px;
 		margin-bottom: 25px;
 	}
 }
+
 .cuenta-opcion {
 	background-color: #2a2a2a;
 	border-radius: 10px;
@@ -32,14 +35,17 @@
 	align-items: center;
 	justify-content: space-between;
 	transition: background 0.3s ease;
+
 	&:hover {
 		background-color: #333;
 	}
+
 	span {
 		font-size: 16px;
 		color: #fff;
 	}
 }
+
 .buttonCc {
 	background-color: #fa9510;
 	color: #fff;
@@ -49,6 +55,7 @@
 	font-weight: 500;
 	cursor: pointer;
 	transition: background-color 0.3s ease;
+
 	&:hover {
 		background-color: #f8ba48;
 	}
