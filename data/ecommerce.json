@@ -1,103 +1,103 @@
 [
     {
-        "user": "Juan Pérez",
-        "userImage": "",
+        "user": "Lollapalooza Argentina [✔]",
+        "userImage": "/img/lolla.jpg",
         "products": [
             {
-                "name": "Camisa de lino",
-                "image": "https://via.assets.so/game.jpg?w=205&h=205",
-                "price": 8500
+                "name": "Remera Lolla Algodon",
+                "image": "/img/merch Lola.jfif",
+                "price": 100
             },
             {
-                "name": "Camisa de lino",
-                "image": "https://via.assets.so/game.jpg?w=205&h=205",
-                "price": 8500
+                "name": "Vaso Lolla 1L",
+                "image": "/img/merch Lola 2.jfif",
+                "price": 50
             },
             {
-                "name": "Camisa de lino",
-                "image": "https://via.assets.so/game.jpg?w=205&h=205",
-                "price": 8500
+                "name": "Gorras personalizadas",
+                "image": "/img/merch Lola 3.jfif",
+                "price": 120
             },
             {
-                "name": "Camisa de lino",
-                "image": "https://via.assets.so/game.jpg?w=205&h=205",
-                "price": 8500
-            },
-            {
-                "name": "Camisa de lino",
-                "image": "https://via.assets.so/game.jpg?w=205&h=205",
-                "price": 8500
-            },
-            {
-                "name": "Camisa de lino",
-                "image": "https://via.assets.so/game.jpg?w=205&h=205",
-                "price": 8500
-            },
-            {
-                "name": "Camisa de lino",
-                "image": "https://via.assets.so/game.jpg?w=205&h=205",
-                "price": 8500
-            },
-            {
-                "name": "Camisa de lino",
-                "image": "https://via.assets.so/game.jpg?w=205&h=205",
-                "price": 8500
-            },
-            {
-                "name": "Camisa de lino",
-                "image": "https://via.assets.so/game.jpg?w=205&h=205",
-                "price": 8500
-            },
-            {
-                "name": "Camisa de lino",
-                "image": "https://via.assets.so/game.jpg?w=205&h=205",
-                "price": 8500
-            },
-            {
-                "name": "Pantalón de jean",
-                "image": "",
-                "price": 12500
-            },
-            {
-                "name": "Pantalón de jean",
-                "image": "",
-                "price": 12500
-            },
-            {
-                "name": "Camisa overside",
-                "image": "",
-                "price": 12500
+                "name": "Combo Lollapalooza 2025",
+                "image": "/img/merch Lola 4.jfif",
+                "price": 1000
             }
         ]
     },
     {
-        "user": "Ana Gómez",
-        "userImage": "",
+        "user": "Comic Con Argentina [✔]",
+        "userImage": "/img/comicon arg.png",
         "products": [
             {
-                "name": "Zapatillas deportivas",
-                "image": "",
+                "name": "Bandana Naruto",
+                "image": "/img/comicon merch.jpg",
+                "price": 150
+            },
+            {
+                "name": "Comic Original Flash",
+                "image": "/img/comicon merch 2.jpg",
+                "price": 2000
+            },
+            {
+                "name": "Colgantes Anime",
+                "image": "/img/comicon merch 3.jfif",
                 "price": 19900
             },
             {
-                "name": "Remera básica",
-                "image": "",
-                "price": 4500
+                "name": "Casco Stonetrooper Star Wars",
+                "image": "/img/comicon merch 4.jpg",
+                "price": 19900
+            },
+            {
+                "name": "Esferas del Dragon Dragon Ball Z",
+                "image": "/img/comicon merch 5.png",
+                "price": 19900
+            },
+            {
+                "name": "Varitas Mágicas Harry Potter",
+                "image": "/img/comicon merch 6.jpg",
+                "price": 19900
+            },
+            {
+                "name": "Casco Iron Man Marvel",
+                "image": "/img/comicon merch 7.jfif",
+                "price": 19900
             }
         ]
     },
     {
-        "user": "Ana Gómez",
-        "userImage": "",
+        "user": "River Plate [✔]",
+        "userImage": "/img/river plate.png",
         "products": [
             {
-                "name": "Zapatillas deportivas",
-                "image": "",
+                "name": "Camista River Plate 2025",
+                "image": "/img/river merch.png",
                 "price": 19900
             },
             {
-                "name": "Remera básica",
-                "image": "",
+                "name": "Termo Luminox River Plate",
+                "image": "/img/river merch 1.png",
+                "price": 19900
+            },
+            {
+                "name": "Bufanda River Plate 2025",
+                "image": "/img/river merch 2.png",
+                "price": 19900
+            },
+            {
+                "name": "Campera River Plate Rompeviento",
+                "image": "/img/river merch 3.png",
+                "price": 19900
+            },
+            {
+                "name": "Gorro River Plate",
+                "image": "/img/river merch 4.png",
+                "price": 19900
+            },
+            {
+                "name": "Mochila River Plate",
+                "image": "/img/river merch 5.png",
                 "price": 4500
             }
         ]
