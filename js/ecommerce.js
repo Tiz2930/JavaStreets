@@ -41,7 +41,7 @@ fetch("../data/ecommerce.json")
 
 
                 const card = document.createElement("div");
-                card.className = "card";
+                card.className = "cardEcommerce";
 
                 card.innerHTML = `
 
