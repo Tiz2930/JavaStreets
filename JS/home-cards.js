@@ -73,7 +73,7 @@ fetch("../data/ecommerce.json")
 
       // Imagen del producto
       const img = document.createElement("img");
-      img.src = producto.image;
+      img.src = producto.pimage;
       img.alt = producto.name;
 
       // Nombre

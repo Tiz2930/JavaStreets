@@ -4,24 +4,44 @@
         "userImage": "/img/lolla.jpg",
         "products": [
             {
+                "id": 1,
                 "name": "Remera Lolla Algodon",
-                "image": "/img/merch Lola.jfif",
-                "price": 100
+                "pimage": "/img/merch Lola.jfif",
+                "image": [
+                    "/img/merch Lola.jfif",
+                    "/img/merch Lola back.jpg",
+                    "/img/merch Lola detail.jfif"
+                ],
+                "price": 6
             },
             {
+                "id": 2,
                 "name": "Vaso Lolla 1L",
-                "image": "/img/merch Lola 2.jfif",
-                "price": 50
+                "pimage": "/img/merch Lola 2.jfif",
+                "image": [
+                    "/img/merch Lola 2.jfif",
+                    "/img/merch Lola 2 side.jfif"
+                ],
+                "price": 5
             },
             {
+                "id": 3,
                 "name": "Gorras personalizadas",
-                "image": "/img/merch Lola 3.jfif",
+                "pimage": "/img/merch Lola 3.jfif",
+                "image": [
+                    "/img/merch Lola 3.jfif",
+                    "/img/merch Lola 3 logo.jfif"
+                ],
                 "price": 120
             },
             {
+                "id": 4,
                 "name": "Combo Lollapalooza 2025",
-                "image": "/img/merch Lola 4.jfif",
-                "price": 1000
+                "pimage": "/img/merch Lola 4.jfif",
+                "image": [
+                    "/img/merch Lola 4.jfif"
+                ],
+                "price": 550
             }
         ]
     },
@@ -30,39 +50,76 @@
         "userImage": "/img/comicon arg.png",
         "products": [
             {
+                "id": 5,
                 "name": "Bandana Naruto",
-                "image": "/img/comicon merch.jpg",
+                "pimage": "/img/comicon merch.jpg",
+                "image": [
+                    "/img/comicon merch.jpg",
+                    "/img/comicon merch detail.jpg"
+                ],
                 "price": 150
             },
             {
+                "id": 6,
                 "name": "Comic Original Flash",
-                "image": "/img/comicon merch 2.jpg",
+                "pimage": "/img/comicon merch 2.jpg",
+                "image": [
+                    "/img/comicon merch 2.jpg",
+                    "/img/comicon merch 2 cover.jpg",
+                    "/img/comicon merch 2 page.jpg"
+                ],
                 "price": 2000
             },
             {
+                "id": 7,
                 "name": "Colgantes Anime",
-                "image": "/img/comicon merch 3.jfif",
-                "price": 19900
+                "pimage": "/img/comicon merch 3.jfif",
+                "image": [
+                    "/img/comicon merch 3.jfif",
+                    "/img/comicon merch 3 alt1.png",
+                    "/img/comicon merch 3 alt2.jpg"
+                ],
+                "price": 10
             },
             {
+                "id": 8,
                 "name": "Casco Stonetrooper Star Wars",
-                "image": "/img/comicon merch 4.jpg",
-                "price": 19900
+                "pimage": "/img/comicon merch 4.jpg",
+                "image": [
+                    "/img/comicon merch 4.jpg",
+                    "/img/comicon merch 4 side.jpg",
+                    "/img/comicon merch 4 inside.jpg"
+                ],
+                "price": 500
             },
             {
+                "id": 9,
                 "name": "Esferas del Dragon Dragon Ball Z",
-                "image": "/img/comicon merch 5.png",
-                "price": 19900
+                "pimage": "/img/comicon merch 5.png",
+                "image": [
+                    "/img/comicon merch 5.png",
+                    "/img/comicon merch 5 box.jfif",
+                    "/img/comicon merch 5 detail.png"
+                ],
+                "price": 150
             },
             {
+                "id": 10,
                 "name": "Varitas Mágicas Harry Potter",
-                "image": "/img/comicon merch 6.jpg",
-                "price": 19900
+                "pimage": "/img/comicon merch 6.jpg",
+                "image": [
+                    "/img/comicon merch 6.jpg"
+                ],
+                "price": 99
             },
             {
+                "id": 11,
                 "name": "Casco Iron Man Marvel",
-                "image": "/img/comicon merch 7.jfif",
-                "price": 19900
+                "pimage": "/img/comicon merch 7.jfif",
+                "image": [
+                    "/img/comicon merch 7.jfif"
+                ],
+                "price": 250
             }
         ]
     },
@@ -71,34 +128,68 @@
         "userImage": "/img/river plate.png",
         "products": [
             {
+                "id": 12,
                 "name": "Camista River Plate 2025",
-                "image": "/img/river merch.png",
-                "price": 19900
+                "pimage": "/img/river merch.png",
+                "image": [
+                    "/img/river merch.png",
+                    "/img/river merch back.png",
+                    "/img/river merch shield.png"
+                ],
+                "price": 200
             },
             {
+                "id": 13,
                 "name": "Termo Luminox River Plate",
-                "image": "/img/river merch 1.png",
-                "price": 19900
+                "pimage": "/img/river merch 1.png",
+                "image": [
+                    "/img/river merch 1.png",
+                    "/img/river merch 1 side.png",
+                    "/img/river merch 1 open.png"
+                ],
+                "price": 60
             },
             {
+                "id": 14,
                 "name": "Bufanda River Plate 2025",
-                "image": "/img/river merch 2.png",
-                "price": 19900
+                "pimage": "/img/river merch 2.png",
+                "image": [
+                    "/img/river merch 2.png",
+                    "/img/river merch 2 long.png"
+                ],
+                "price": 50
             },
             {
+                "id": 15,
                 "name": "Campera River Plate Rompeviento",
-                "image": "/img/river merch 3.png",
-                "price": 19900
+                "pimage": "/img/river merch 3.png",
+                "image": [
+                    "/img/river merch 3.png",
+                    "/img/river merch 3 back.png",
+                    "/img/river merch 3 hood.png"
+                ],
+                "price": 300
             },
             {
+                "id": 16,
                 "name": "Gorro River Plate",
-                "image": "/img/river merch 4.png",
-                "price": 19900
+                "pimage": "/img/river merch 4.png",
+                "image": [
+                    "/img/river merch 4.png",
+                    "/img/river merch 4 logo.png"
+                ],
+                "price": 120
             },
             {
+                "id": 17,
                 "name": "Mochila River Plate",
-                "image": "/img/river merch 5.png",
-                "price": 4500
+                "pimage": "/img/river merch 5.png",
+                "image": [
+                    "/img/river merch 5.png",
+                    "/img/river merch 5 front.png",
+                    "/img/river merch 5 back.png"
+                ],
+                "price": 330
             }
         ]
     }
