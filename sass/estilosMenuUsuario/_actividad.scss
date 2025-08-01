@@ -1,0 +1,47 @@
+.bodyActividad {
+	margin: 0;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	background: linear-gradient(135deg, #ff9900, #0f0f0f);
+	color: #fff;
+}
+.actividad-container {
+	max-width: 600px;
+	margin: 60px auto;
+	padding: 30px;
+	background-color: #111;
+	border-radius: 12px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	h2 {
+		color: #ffffff;
+		margin-bottom: 10px;
+	}
+	p {
+		font-size: 14px;
+		color: #ccc;
+		margin-bottom: 20px;
+	}
+}
+.actividad-item {
+	background-color: #1a1a1a;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 15px 20px;
+	border-radius: 10px;
+	margin-bottom: 15px;
+	border-left: 4px solid #fafafa;
+	i {
+		color: #ffffff;
+		margin-right: 10px;
+	}
+	span {
+		flex-grow: 1;
+		margin-left: 10px;
+		color: #fff;
+		font-size: 15px;
+	}
+	strong {
+		font-size: 15px;
+		color: #fff;
+	}
+}

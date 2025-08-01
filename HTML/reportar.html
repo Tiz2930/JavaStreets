@@ -1,23 +1,26 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
-    <title>Reportar problema</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/CSS/reportar.css">
+    <link rel="icon" type="image/png" href="/img/favicon-96x96.png" sizes="96x96">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="/sass/style.css">
+    <title>Reportar problema - Join Us</title>
 </head>
-<body>
+<body class="bodyReport">
     <section class="reportar-container">
         <h2>Reportar un problema</h2>
         <p>Contanos si algo no está funcionando correctamente o si encontraste un error.</p>
-        
+
         <form>
             <label for="problema">Descripción del problema</label>
             <textarea id="problema" name="problema" placeholder="Escribí el problema acá..." required></textarea>
             
-            <button type="submit">Enviar reporte</button>
+            <button class="enviarReporte" type="submit">Enviar reporte</button>
         </form>
     </section>
 </body>
+
 </html>

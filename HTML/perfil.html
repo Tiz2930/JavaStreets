@@ -4,12 +4,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Editar Perfil - JoinUs</title>
-  <link rel="stylesheet" href="../CSS/perfil.css" />
+  <link rel="icon" type="image/png" href="/img/favicon-96x96.png" sizes="96x96">
+  <link rel="stylesheet" href="/sass/style.css">
+  <title>Editar Perfil - Join Us</title>
 </head>
 
 <body>
-  <header>
+  <header class="headerPerfil">
     <h1>Editar Perfil</h1>
   </header>
 
@@ -18,25 +19,25 @@
       <ul>
         <li>
           <a href="/HTML/privacidad.html">
-            <img src="../Imagenes/privacidad.png" alt="Privacidad" />
+            <img src="/img/privacidad.png" alt="Privacidad" />
             Privacidad
           </a>
         </li>
         <li>
           <a href="/HTML/bloqueos.html">
-            <img src="../Imagenes/bloqueos.png" alt="Bloqueos" />
+            <img src="/img/bloqueos.png" alt="Bloqueos" />
             Bloqueos
           </a>
         </li>
         <li>
-          <a href="/HTML/ayuda.html">
-            <img src="../Imagenes/ayuda.png" alt="Ayuda" />
+          <a href="/html/ayuda.html">
+            <img src="/img/ayuda.png" alt="Ayuda" />
             Ayuda
           </a>
         </li>
         <li>
           <a href="/HTML/suscripciones.html">
-            <img src="../Imagenes/suscripciones.png" alt="Suscripciones" />
+            <img src="/img/suscripciones.png" alt="Suscripciones" />
             Suscripciones
           </a>
         </li>
@@ -46,9 +47,9 @@
       </a>
     </aside>
 
-    <section class="card">
+    <section class="cardPerfil">
       <div class="foto-perfil">
-        <img src="../Imagenes/avatar.png" alt="Foto de perfil" />
+        <img src="/img/avatar.png" alt="Foto de perfil" />
         <button>Cambiar foto</button>
       </div>
 
@@ -72,13 +73,11 @@
         </select>
       </div>
 
-      <button class="guardar-btn">Guardar cambios</button>
+      <button onclick="perfilGuardado()" class="guardar-btn">Guardar cambios</button>
     </section>
   </main>
-</body>
-
-</html>
-
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="/JS/editar-perfil.js"></script>
 </body>
 
 </html>

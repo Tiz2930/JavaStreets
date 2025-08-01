@@ -1,0 +1,98 @@
+[
+    {
+        "user": "Music Fest Org",
+        "name": "Festival de Música al Aire Libre",
+        "images": [
+            "../img/Festival de Música al Aire Libre.jfif",
+            "../img/Festival de Música al Aire Libre2.jfif"
+        ],
+        "description": "Bandas en vivo, food trucks y actividades culturales.",
+        "stock": 500,
+        "link": "ticket.html"
+    },
+    {
+        "user": "Escuela de Gastronomía",
+        "name": "Feria Gastronómica Regional",
+        "images": [
+            "../img/Feria Gastronómica Regional.jfif",
+            "../img/Feria Gastronómica Regional2.jfif"
+        ],
+        "description": "Sabores autóctonos y recetas tradicionales.",
+        "stock": 300
+    },
+    {
+        "user": "Municipio Local",
+        "name": "Charla Motivacional para Jóvenes",
+        "images": [
+            "../img/Charla Motivacional para Jóvenes.jfif",
+            "../img/Charla Motivacional para Jóvenes2.jfif"
+        ],
+        "description": "Historias de superación de oradores reconocidos.",
+        "stock": 200
+    },
+    {
+        "user": "Night Club XYZ",
+        "name": "Noche de Stand Up",
+        "images": [
+            "../img/Noche de Stand Up.jfif",
+            "../img/Noche de Stand Up2.jfif"
+        ],
+        "description": "Comedia con talentos locales del humor.",
+        "stock": 150
+    },
+    {
+        "user": "Miranda Caicedo",
+        "name": "Encuentro de Emprendedores",
+        "images": [
+            "../img/Encuentro de Emprendedores.jfif",
+            "../img/Encuentro de Emprendedores2.jfif"
+        ],
+        "description": "Charlas, networking y proyectos innovadores.",
+        "stock": 100
+    },
+    {
+        "user": "Cine Paris Olavarría",
+        "name": "Cine Paris",
+        "images": [
+            "../img/cine paris.jpg"
+        ],
+        "description": "Proyecciones de películas nacionales e internacionales.",
+        "stock": 120
+    },
+    {
+        "user": "Club de Lectura Juvenil",
+        "name": "Maratón de Lectura y Debate",
+        "images": [
+            "../img/club de lectura.jpg"
+        ],
+        "description": "Lectura grupal y análisis de libros contemporáneos.",
+        "stock": 80
+    },
+    {
+        "user": "Asociación de Artesanos",
+        "name": "Feria de Artes y Oficios",
+        "images": [
+            "../img/artesanos.jpg"
+        ],
+        "description": "Productos hechos a mano y talleres en vivo.",
+        "stock": 250
+    },
+    {
+        "user": "Centro Cultural Municipal",
+        "name": "Festival de Teatro Independiente",
+        "images": [
+            "../img/teatro.jpg"
+        ],
+        "description": "Obras teatrales con elencos locales.",
+        "stock": 180
+    },
+    {
+        "user": "Comunidad Gamer",
+        "name": "Torneo de Videojuegos",
+        "images": [
+            "../img/torneo videojuegos.png"
+        ],
+        "description": "Competencias de eSports y premios para los ganadores.",
+        "stock": 90
+    }
+]

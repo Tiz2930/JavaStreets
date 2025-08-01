@@ -1,23 +1,29 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Iniciar sesión - Join Us</title>
-  <link rel="stylesheet" href="/CSS/login.css" />
+  <link rel="icon" type="image/png" href="/img/favicon-96x96.png" sizes="96x96">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/sass/style.css">
+  <title>Iniciar sesión - Join Us</title>
 </head>
-<body>
+
+<body class="bodyLogin">
   <div id="mensajeSesion" class="mensaje-sesion"></div>
   <div class="login-container">
     <h1 class="logo"><span class="join">Join</span><span class="us">Us</span></h1>
     <h2>Iniciar sesión</h2>
     <input type="text" id="usuario" placeholder="Nombre de usuario" />
     <input type="password" id="password" placeholder="Contraseña" />
-    <button id="btnEntrar">Entrar</button>
+    <button type="button" id="btnEntrar">Entrar</button>
+    <p>¿No tenés una cuenta? <a class="registrate" href="/HTML/registro.html">Registrate</a></p>
   </div>
 
-  <script src="/JS/login.js"></script>
+  <script src="/JS/session.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
+
 </html>

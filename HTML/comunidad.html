@@ -4,49 +4,49 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/CSS/style.css" />
+    <link rel="icon" type="image/png" href="/img/favicon-96x96.png" sizes="96x96">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-    <title>Comunidad</title>
+    <link rel="stylesheet" href="/sass/style.css">
+    <title>Comunidad - Join Us</title>
 </head>
 
 <body>
     <header>
         <div class="logo-busqueda">
-            <a class="logo-busqueda-link" href="/HTML/index.html">
+            <a class="logo-busqueda-link" href="/HTML/home.html">
                 <h1><span class="join">Join</span> <span class="us">Us</span></h1>
             </a>
-            <input type="text" placeholder="Buscar" />
         </div>
 
         <div class="nav-central">
-            <a class="tienda" href="/HTML/tienda.html">
-                <img src="/Imagenes/tienda.png" alt="Tienda" />
+            <a class="tienda" href="/HTML/ecommerce.html">
+                <img src="/img/tienda.png" alt="Tienda" />
             </a>
             <a class="ticket" href="/HTML/ticket.html">
-                <img src="/Imagenes/ticket.png" alt="Ticket" />
+                <img src="/img/Ticket.png" alt="Ticket" />
             </a>
             <a class="comunidad" href="/HTML/comunidad.html">
-                <img src="/Imagenes/comunidad lleno.png" alt="Comunidad" />
+                <img src="/img/comunidad lleno.png" alt="Comunidad" />
             </a>
         </div>
 
         <div class="nav-derecha">
-            <a class="home" href="/HTML/index.html">
-                <img src="/Imagenes/home.png" alt="Home" />
+            <a class="home" href="/HTML/home.html">
+                <img src="/img/home.png" alt="Home" />
             </a>
             <a class="add" href="/HTML/publicacion.html">
-                <img src="/Imagenes/add.png" alt="Add" />
+                <img src="/img/publicacion.png" alt="Add" />
             </a>
-            <a class="msj" href="#">
-                <img src="/Imagenes/msj.png" alt="Mensajes" />
+            <a class="msj" href="/HTML/chat.html">
+                <img src="/img/msj.png" alt="Mensajes" />
             </a>
             <!-- Notificación -->
             <a class="notificacion" href="#" onclick="event.preventDefault(); toggleNotificaciones();">
-                <img src="/Imagenes/notificacion.png" alt="Notificacion" />
+                <img src="/img/notificacion.png" alt="Notificacion" />
             </a>
             <!-- Usuario -->
             <a class="user" href="#" onclick="event.preventDefault(); usuarioMenu();">
-                <img src="/Imagenes/user.png" alt="Usuario" />
+                <img src="/img/user.png" alt="Usuario" />
             </a>
         </div>
 
@@ -54,60 +54,78 @@
         <div class="sub-menu-wrap" id="subMenu">
             <div class="sub-menu">
                 <div class="user-info">
-                    <img src="/Imagenes/user.png" alt="" />
-                    <h1>Nombre</h1>
+                    <img src="/img/user.png" />
+                    <div class="user-text">
+                        <h1>Nombre</h1>
+                        <p class="user-email">example@gmail.com</p>
+                    </div>
                 </div>
                 <hr />
-                <a href="/HTML/configuracion.html" class="sub-menu-link">
-                    <img src="/Imagenes/Setting.png" />
+                <a href="/HTML/perfil.html" class="sub-menu-link">
+                    <img src="/img/Setting.png" />
                     <p>Configuración</p>
                 </a>
-                 <!--<a href="apariencia.html" class="sub-menu-link">
-                    <img src="/Imagenes/Gota.png" />
-                    <p>Apariencia</p>-->
-                <a href="/HTML/reportar.html" class="sub-menu-link">
-                    <img src="/Imagenes/problema.png" />
+                </a>
+                <a href="/HTML/report-problema.html" class="sub-menu-link">
+                    <img src="/img/problema.png" />
                     <p>Reportar problema</p>
                 </a>
                 <hr />
                 <a href="/HTML/eventos.html" class="sub-menu-link">
-                    <img src="/Imagenes/eventos.png" />
+                    <img src="/img/eventos.png" />
                     <p>Mis eventos</p>
                 </a>
-                <a href="/HTML/actividad.html" class="sub-menu-link">
-                    <img src="/Imagenes/Chart.png" />
+                <a href="#" class="sub-menu-link">
+                    <img src="/img/Chart.png" />
                     <p>Tu actividad</p>
                 </a>
                 <hr />
                 <a class="cuenta" href="/HTML/cambiar-cuenta.html">
                     <p>Cambiar cuenta</p>
                 </a>
-                <a class="loguot" href="login.html">
-                    <p style="color: red;">Cerrar sesión</p>
-                  </a>
-                  
-               
+                <a class="loguot" href="/HTML/login.html">
+                    <p>Cerrar sesion</p>
+                </a>
             </div>
         </div>
         <!-- Menú Notificacion -->
         <div class="noti-menu-wrap" id="notiMenu">
             <div class="noti">
-                <img src="/Imagenes/me gusta.png" alt="">
+                <img src="/img/me gusta.png" />
                 <p>A Example le gustó tu notificación</p>
             </div>
             <div class="noti">
-                <img src="/Imagenes/seguidor.png" alt="">
+                <img src="/img/seguidor.png" />
                 <p>Example comenzó a seguirte</p>
             </div>
             <div class="noti">
-                <img src="/Imagenes/comentarios.png" alt="">
+                <img src="/img/comentarios.png" />
                 <p>Recibiste un comentario</p>
             </div>
         </div>
     </header>
 
-    <main>
-        <!-- Contenido principal de Comunidad -->
+    <main class="main-content">
+        <div class="card-grid">
+            <div class="card-grid1">
+                <h1>Juan05</h1>Si sos de Olavarría, seguro escuchaste hablar de Brandi. No es solo un nombre más,
+                es parte de lo que hace que esta ciudad sea tan copada. Entre el mate, las canteras y las juntadas con
+                amigos, Brandi está siempre presente, bancando lo nuestro y tirando buena onda.
+
+                Olavarría tiene ese no sé qué que te atrapa, y Brandi lo sabe bien. Así que si ves algo de ella, ya
+                sabés: es gente que lleva a esta ciudad en el corazón.
+            </div>
+            <div class="card-grid2">
+                <h1>Pablo2020</h1>Sí, Olavarría se sigue poniendo las pilas y ahora se viene la inauguración de Kuk, un
+                nuevo espacio que promete ser EL punto de encuentro. Moderno, con onda y pensado para nosotros, los de
+                acá.
+
+                Este finde se inaugura y pinta planazo: buena música, gente copada y ese aire olavarriense que solo
+                entendemos nosotros. Kuk no es solo un lugar, es una experiencia que arranca con toda.
+            </div>
+            <div class="card-grid3"></div>
+            <div class="card-grid4"></div>
+        </div>
     </main>
 
     <footer class="footer">
@@ -131,7 +149,7 @@
         </div>
     </footer>
 
-    <script src="../JS/js.js"></script>
+    <script src="/JS/menu.js"></script>
     <script src="../JS/comunidad.js"></script>
 </body>
 

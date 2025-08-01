@@ -1,0 +1,109 @@
+.sub-menu-wrap {
+	position: absolute;
+	top: 120%;
+	right: 27px;
+	width: 265px;
+	max-width: 400px;
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.5s;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+	&.open-menu {
+		max-height: 500px;
+	}
+}
+.sub-menu {
+	background: white;
+	padding: 20px;
+	border-radius: 10px;
+	hr {
+		border: 0;
+		height: 1px;
+		width: 100%;
+		background: black;
+		margin: 15px 0 10px;
+	}
+}
+.user-info {
+	display: flex;
+	align-items: center;
+	h1 {
+		font-weight: 500;
+	}
+	img {
+		width: 60px;
+		border-radius: 50%;
+		margin-right: 15px;
+	}
+}
+.user-text {
+	h1 {
+		font-weight: 700;
+		font-size: 18px;
+		margin: 0;
+	}
+}
+.user-email {
+	font-size: 14px;
+	color: #000000;
+	margin: 2px 0 0 0;
+}
+.sub-menu-link {
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+	color: black;
+	margin: 10px 0;
+	img {
+		width: 40px;
+		margin-right: 5px;
+	}
+}
+.sub-menu-link:hover p,
+.cuenta:hover p,
+.loguot:hover p {
+	font-weight: 510;
+}
+.cuenta {
+	display: flex;
+	justify-content: center;
+	text-decoration: none;
+	color: black;
+	padding: 5px;
+}
+.loguot {
+	display: flex;
+	justify-content: center;
+	text-decoration: none;
+	color: red;
+	padding-top: 5px;
+}
+.noti-menu-wrap {
+	position: absolute;
+	top: 120%;
+	right: 85px;
+	width: 300px;
+	max-height: 0;
+	overflow: hidden;
+	background-color: white;
+	border-radius: 10px;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+	transition: max-height 0.5s ease;
+	&.open-menu {
+		max-height: 500px;
+	}
+}
+.noti {
+	display: flex;
+	align-items: center;
+	padding: 10px;
+	border-bottom: 1px solid #eee;
+	img {
+		width: 40px;
+		height: 40px;
+		margin-right: 10px;
+	}
+	&:last-child {
+		border-bottom: none;
+	}
+}

@@ -1,19 +1,23 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Eliminar Cuenta - JoinUs</title>
-  <link rel="stylesheet" href="../CSS/eliminar-cuenta.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" href="/img/favicon-96x96.png" sizes="96x96">
+  <link rel="stylesheet" href="/sass/style.css">
+  <title>Eliminar Cuenta - Join Us</title>
 </head>
+
 <body>
-  <header>
+  <header class="headerDeleteCount">
     <h1>Eliminar cuenta</h1>
   </header>
 
-  <main class="container">
-    <section class="card">
-      <p>Lamentamos que quieras irte. Antes de continuar, te recordamos que eliminar tu cuenta es una acción permanente. Todos tus datos y actividad en JoinUs serán borrados de forma definitiva.</p>
+  <main class="containerDeleteCount">
+    <section class="cardDeleteCount">
+      <p>Lamentamos que quieras irte. Antes de continuar, te recordamos que eliminar tu cuenta es una acción permanente.
+        Todos tus datos y actividad en JoinUs serán borrados de forma definitiva.</p>
 
       <div class="item">
         <h2>⚠️ ¿Qué se borra?</h2>
@@ -26,14 +30,18 @@
 
       <div class="item">
         <h2>🧠 ¿Lo pensaste bien?</h2>
-        <p>Si tenés algún problema, podés escribirnos a <a href="mailto:soporte@joinus.com">soporte@joinus.com</a>. Capaz podemos ayudarte antes de que tomes esta decisión.</p>
+        <p>Si tenés algún problema, podés escribirnos a <a href="mailto:soporte@joinus.com">soporte@joinus.com</a>.
+          Capaz podemos ayudarte antes de que tomes esta decisión.</p>
       </div>
 
       <div class="eliminar-section">
-        <button class="eliminar-btn">Eliminar cuenta definitivamente</button>
+        <button onclick="perfilBorrado()" class="eliminar-btn">Eliminar cuenta definitivamente</button>
         <p class="advertencia">*Esta acción no se puede deshacer.</p>
       </div>
     </section>
   </main>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="/JS/editar-perfil.js"></script>
 </body>
+
 </html>

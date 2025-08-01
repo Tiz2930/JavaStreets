@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="/img/favicon-96x96.png" sizes="96x96">
+    <link rel="stylesheet" href="/sass/style.css">
+    <title>Reportar Problema - Join Us</title>
+</head>
+
+<body>
+    <header class="reportarProblema">
+        <h1>Reportar un problema</h1>
+    </header>
+
+    <main class="container">
+        <section class="problemaCard">
+            <p>En esta sección podés reportar cualquier inconveniente o problema que tengas en la plataforma para que
+                nuestro equipo lo revise y te ayude.</p>
+
+            <div class="item">
+                <h2>🛠 ¿Qué tipo de problemas podés reportar?</h2>
+                <p>Pueden ser errores técnicos, contenido inapropiado, problemas con usuarios o cualquier otro
+                    inconveniente que afecte tu experiencia.</p>
+            </div>
+
+            <div class="item">
+                <h2>📋 Formulario de reporte</h2>
+                <form id="formReporte" action="#" method="POST">
+                    <label for="tipoProblema">Tipo de problema:</label><br />
+                    <select id="tipoProblema" name="tipoProblema" required>
+                        <option value="" disabled selected>Seleccioná una opción</option>
+                        <option value="tecnico">Error técnico</option>
+                        <option value="contenido">Contenido inapropiado</option>
+                        <option value="usuario">Problema con usuario</option>
+                        <option value="otro">Otro</option>
+                    </select><br /><br />
+
+                    <label for="descripcion">Descripción del problema:</label><br />
+                    <textarea id="descripcion" name="descripcion" rows="5"
+                        placeholder="Contanos con detalle lo que sucede..." required></textarea><br /><br />
+
+                    <button type="submit">Enviar reporte</button>
+                </form>
+            </div>
+
+            <div class="item">
+                <h2>ℹ️ ¿Qué sucede después de reportar?</h2>
+                <p>Nuestro equipo revisará el reporte y, si es necesario, se pondrá en contacto contigo para solicitar
+                    más información o para informarte sobre la resolución.</p>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
