@@ -46,10 +46,19 @@ fetch("../data/ecommerce.json")
                 card.innerHTML = `
 
                 <h3>${product.name}</h3>
-                <img src="${product.image || "https://via.assets.so/game.jpg?w=205&h=205"}" alt="${product.name}">
+                <img src="${product.pimage || "https://via.assets.so/game.jpg?w=205&h=205"}" alt="${product.name}">
                 <p> USD $${product.price}</p>
+                <button class="btnMore" data-id="${product.id}">Ver más</button>
 
                 `;
+
+                document.addEventListener("click", function (e) {
+                    if (e.target.classList.contains("btnMore")) {
+                        const id = e.target.dataset.id;
+                        localStorage.setItem("selectedProductId", id);
+                        window.location.href = "/html/productos-ecommerce.html";
+                    }  }
+                );
 
 
                 gridProducts.appendChild(card);
@@ -72,11 +81,11 @@ fetch("../data/ecommerce.json")
                     if (carousel.scrollLeft >= carousel.scrollWidth - carousel.clientWidth - 1) {
                         direction = -1;
                     }
-            
+
                     if (carousel.scrollLeft <= 1 && direction === -1) {
                         direction = 1;
                     }
-            
+
                     carousel.scrollLeft += scrollSpeed * direction;
                 }, 16); // ~60fps
 

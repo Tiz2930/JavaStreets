@@ -5,3 +5,8 @@
 @mixin principal-color {
     color: #FDA703;
 }
+
+@mixin blur {
+    background-color: transparent;
+	backdrop-filter: blur(5px) saturate(1.0);
+}
