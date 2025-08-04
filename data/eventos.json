@@ -94,5 +94,95 @@
         ],
         "description": "Competencias de eSports y premios para los ganadores.",
         "stock": 90
+    },
+    {
+        "user": "Escuela de Danza Contemporánea",
+        "name": "Taller de Expresión Corporal",
+        "images": [
+            "../img/expresioncorporalchicos.jpg"
+        ],
+        "description": "Clases abiertas para todas las edades con música en vivo.",
+        "stock": 60
+    },
+    {
+        "user": "Productores Locales",
+        "name": "Feria de Productos Orgánicos",
+        "images": [
+            "../img/minayon_feria_organica.jpg"
+        ],
+        "description": "Venta directa de frutas, verduras y productos artesanales.",
+        "stock": 200
+    },
+    {
+        "user": "Museo de Ciencias Naturales",
+        "name": "Noche en el Museo",
+        "images": [
+            "../img/noche en el museo.jpg"
+        ],
+        "description": "Recorridos guiados y actividades interactivas nocturnas.",
+        "stock": 100
+    },
+    {
+        "user": "Fundación Ambiental",
+        "name": "Jornada de Limpieza Urbana",
+        "images": [
+            "../img/Limpieza-Reserva-natural-7.jpeg"
+        ],
+        "description": "Acciones ecológicas con voluntarios y charlas educativas.",
+        "stock": 300
+    },
+    {
+        "user": "Club de Ajedrez",
+        "name": "Torneo Abierto de Ajedrez",
+        "images": [
+            "../img/torneo ajedrez.jpg"
+        ],
+        "description": "Competencia para todas las categorías con premios.",
+        "stock": 120
+    },
+    {
+        "user": "Banda Sinfónica Local",
+        "name": "Concierto al Atardecer",
+        "images": [
+            "../img/concierto atardecer.jpg"
+        ],
+        "description": "Música clásica en espacios verdes de la ciudad.",
+        "stock": 150
+    },
+    {
+        "user": "Centro Juvenil de Tecnología",
+        "name": "Expo Tecnología Estudiantil",
+        "images": [
+            "../img/Expo Tecnología Estudiantil.jpg"
+        ],
+        "description": "Proyectos de robótica, programación y videojuegos.",
+        "stock": 180
+    },
+    {
+        "user": "Grupo de Senderismo",
+        "name": "Caminata Nocturna en Sierra",
+        "images": [
+            "../img/Deportes-Correcaminata-Sierras-Bayas.jpg"
+        ],
+        "description": "Trekking guiado con observación astronómica.",
+        "stock": 75
+    },
+    {
+        "user": "Asociación de Yoga Local",
+        "name": "Yoga y Meditación al Aire Libre",
+        "images": [
+            "../img/yoga airelibre.jpg"
+        ],
+        "description": "Sesión gratuita en el parque con instructores certificados.",
+        "stock": 100
+    },
+    {
+        "user": "Galería de Arte Independiente",
+        "name": "Exposición de Arte Joven",
+        "images": [
+            "../img/expo arte joven.jpg"
+        ],
+        "description": "Obras visuales de artistas emergentes locales.",
+        "stock": 90
     }
 ]
