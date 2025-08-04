@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
 * {
   font-family: "Montserrat", sans-serif;
   margin: 0;
@@ -282,30 +283,26 @@ main {
   box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.3);
   transform: scale(1.07) translateY(-4px);
 }
-
-h2 {
+.card-ticket h2 {
   font-size: 20px;
   text-align: center;
   margin: 10px;
   color: #ffcc00;
 }
-
-.card-content {
+.card-ticket .card-content {
   flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding: 1rem;
 }
-
-.carousel {
+.card-ticket .carousel {
   width: 100%;
   height: 200px;
   position: relative;
   overflow: hidden;
 }
-
-.carousel-img {
+.card-ticket .carousel .carousel-img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -314,11 +311,12 @@ h2 {
   border-bottom: 3px solid #ff9900;
   transition: transform 0.2s ease;
 }
-.carousel-img:hover {
+.card-ticket .carousel .carousel-img:hover {
   transform: scale(1.05);
+  -o-object-fit: contain;
+     object-fit: contain;
 }
-
-.carousel-btn {
+.card-ticket .carousel .carousel-btn {
   position: absolute;
   width: 2rem;
   height: 50px;
@@ -332,20 +330,19 @@ h2 {
   padding: 5px 10px;
   z-index: 1;
 }
-.carousel-btn.left {
+.card-ticket .carousel .carousel-btn.left {
   left: 10px;
 }
-.carousel-btn.right {
+.card-ticket .carousel .carousel-btn.right {
   right: 10px;
 }
-.carousel-btn:hover {
+.card-ticket .carousel .carousel-btn:hover {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   background-color: transparent;
   -webkit-backdrop-filter: blur(12px) saturate(1.5);
           backdrop-filter: blur(12px) saturate(1.5);
 }
-
-.descriptionEvent {
+.card-ticket .descriptionEvent {
   font-size: 15px;
   text-align: center;
   color: #ccc;
@@ -357,16 +354,14 @@ h2 {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-
-.stockEvent {
+.card-ticket .stockEvent {
   color: #ffa500;
   font-weight: bold;
   font-size: 16px;
   text-align: center;
   margin-bottom: 0.75rem;
 }
-
-.users {
+.card-ticket .users {
   text-align: center;
   font-size: 14px;
   line-height: 1.4;
@@ -374,21 +369,20 @@ h2 {
   color: #ccc;
   margin-bottom: 0.75rem;
 }
-.users:hover {
+.card-ticket .users:hover {
   color: white;
   transition: 0.3s;
 }
-
-.divImg {
+.card-ticket .divImg {
   display: flex;
   align-items: center;
-  justify-content: start;
+  justify-content: flex-start;
   border-radius: 4px;
   background-color: rgba(65, 63, 63, 0.4);
   padding: 5px 10px;
   color: #ff9900;
 }
-.divImg .userImage {
+.card-ticket .divImg .userImage {
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -397,8 +391,7 @@ h2 {
      object-fit: cover;
   border: 2px solid #ccc;
 }
-
-.infoDiv {
+.card-ticket .infoDiv {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -410,17 +403,17 @@ h2 {
   height: 200px;
   border-radius: 10px;
 }
-.infoDiv:hover {
+.card-ticket .infoDiv:hover {
   color: #ff9900;
   transition: 0.3s;
 }
-.infoDiv .stockEvent {
+.card-ticket .infoDiv .stockEvent {
   color: #ff9900;
   background-color: black;
   padding: 10px;
   border-radius: 10px;
 }
-.infoDiv .stockEvent:hover {
+.card-ticket .infoDiv .stockEvent:hover {
   color: #fafafa;
   transform: scale(1.05);
 }
@@ -441,23 +434,12 @@ h2 {
   padding-bottom: 0.5rem;
   scroll-behavior: smooth;
 }
-
 .horizontal-container::-webkit-scrollbar {
   height: 8px;
 }
-
 .horizontal-container::-webkit-scrollbar-thumb {
   background-color: rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-}
-
-.card {
-  min-width: 280px; /* ancho mínimo para cada card */
-  flex-shrink: 0; /* evitar que se achiquen */
-  background-color: #fff;
-  border-radius: 6px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-  padding: 1rem;
 }
 
 .bodyEcommerce {
@@ -2229,11 +2211,12 @@ textarea:focus:invalid {
   align-items: baseline;
   gap: 20px;
 }
-.linea-banner h2 {
-  font-size: 40px;
+.linea-banner h2,
+.linea-banner p {
+  font-size: 60px;
 }
 .linea-banner p {
-  font-size: 40px;
+  font-weight: 100;
 }
 
 .text-content {
@@ -2245,21 +2228,8 @@ textarea:focus:invalid {
   display: flex;
   gap: 10px;
   font-weight: 800;
-  font-size: 120px;
+  font-size: 150px;
   justify-content: center;
-}
-
-.linea-banner {
-  display: flex;
-  align-items: baseline;
-  gap: 20px;
-}
-.linea-banner h2,
-.linea-banner p {
-  font-size: 50px;
-}
-.linea-banner p {
-  font-weight: 400;
 }
 
 .container-cards {
@@ -2360,6 +2330,7 @@ textarea:focus:invalid {
   color: #ffffff;
   margin-bottom: 30px;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3), 2px 2px 5px rgba(0, 0, 0, 0.2);
+  text-align: center;
 }
 
 .publicidad {
@@ -2403,7 +2374,7 @@ textarea:focus:invalid {
 }
 
 .chat-container {
-  width: 90%;
+  width: 100%;
   height: 80vh;
   background-color: #13131a;
   display: flex;
@@ -2662,6 +2633,7 @@ textarea:focus:invalid {
 .chat-wrapper {
   margin-top: 100px;
   margin-bottom: 60px;
+  width: 90%;
 }
 
 .headerChat {
