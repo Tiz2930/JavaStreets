@@ -12,12 +12,6 @@ window.addEventListener("DOMContentLoaded", function () {
     subMenu.classList.remove("open-menu");
   }
 
-  function cerrarSesion() {
-    localStorage.removeItem("usuario");
-    localStorage.setItem("cerrarSesion", "true");
-    window.location.href = "/HTML/login.html";
-  }
-
   document.addEventListener("click", function (e) {
     const isClickInsideSubMenu = subMenu.contains(e.target);
     const isClickInsideNotiMenu = notiMenu.contains(e.target);
