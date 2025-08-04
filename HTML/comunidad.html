@@ -10,7 +10,7 @@
     <title>Comunidad - Join Us</title>
 </head>
 
-<body>
+<body class="body-cont">
     <header>
         <div class="logo-busqueda">
             <a class="logo-busqueda-link" href="/HTML/home.html">
@@ -105,26 +105,48 @@
         </div>
     </header>
 
-    <main class="main-content">
-        <div class="card-grid">
-            <div class="card-grid1">
-                <h1>Juan05</h1>Si sos de Olavarría, seguro escuchaste hablar de Brandi. No es solo un nombre más,
-                es parte de lo que hace que esta ciudad sea tan copada. Entre el mate, las canteras y las juntadas con
-                amigos, Brandi está siempre presente, bancando lo nuestro y tirando buena onda.
+    <main class="main-cont">
+        <!-- Lista izquierda -->
+        <div class="sidebar-comunidad">
+            <ul>
+                <li class="seguidos">
+                    <a href="seguidos.html">
+                        <img src="/img/seguidos.png" alt="Seguidos">
+                        <p>Seguidos</p>
+                    </a>
+                </li>
+                <li class="saved">
+                    <a href="">
+                        <img src="/img/guardados.png" alt="Guardados">
+                        <p>Guardados</p>
+                    </a>
+                </li>
+                <li class="perfil">
+                    <a href="">
+                        <img src="/img/user.png" alt="Perfil">
+                        <p>Perfil</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
 
-                Olavarría tiene ese no sé qué que te atrapa, y Brandi lo sabe bien. Así que si ves algo de ella, ya
-                sabés: es gente que lleva a esta ciudad en el corazón.
-            </div>
-            <div class="card-grid2">
-                <h1>Pablo2020</h1>Sí, Olavarría se sigue poniendo las pilas y ahora se viene la inauguración de Kuk, un
-                nuevo espacio que promete ser EL punto de encuentro. Moderno, con onda y pensado para nosotros, los de
-                acá.
+        <!-- Contenedor derecho (form + contenido) -->
+        <div class="comunidad-content">
+            <!-- Form publicacion -->
+            <form id="comunidad">
+                <div class="input-container">
+                    <img src="/img/user.png" alt="ícono" class="input-icon" />
+                    <textarea name="nombre-evento" id="nombre-evento" placeholder="Nombre del evento"
+                        required></textarea>
+                    <textarea name="mensaje" id="mensaje" placeholder="¿Qué estás pensando?" required></textarea>
+                    <input type="number" name="estrellas" id="estrellas" placeholder="Cantidad de estrellas" min="0"
+                        max="10" required>
+                </div>
+                <button type="submit" id="btnPublicar">Postear</button>
+            </form>
 
-                Este finde se inaugura y pinta planazo: buena música, gente copada y ese aire olavarriense que solo
-                entendemos nosotros. Kuk no es solo un lugar, es una experiencia que arranca con toda.
-            </div>
-            <div class="card-grid3"></div>
-            <div class="card-grid4"></div>
+            <!-- Opiniones -->
+            <div class="contenido" id="contenido"></div>
         </div>
     </main>
 
@@ -151,6 +173,7 @@
 
     <script src="/JS/menu.js"></script>
     <script src="../JS/comunidad.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 
 </html>

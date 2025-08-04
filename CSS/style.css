@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap');
+
+* {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  scrollbar-width: thin;
+  scrollbar-color: #FDA703 #000000;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  background-image: url(/img/fip.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+/*Header*/
+
+header {
+  width: 100%;
+  position: fixed;
+  z-index: 3;
+  min-height: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10 20px;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(6px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  left: 0;
+  top: 0;
+}
+
+/*Logo*/
+
+.logo-busqueda {
+  position: absolute;
+  left: 20px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  border-style: none;
+}
+
+.logo-busqueda-link {
+  text-decoration: none;
+}
+
+.join {
+  color: #ffffff;
+}
+
+.us {
+  background: linear-gradient(90deg, #ffcc00, #ff9900);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Iconos */
+
+.nav-central a img {
+  height: 50px;
+  width: 50px;
+}
+
+.nav-central {
+  position: absolute;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-derecha {
+  position: absolute;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.user img {
+  height: 50px;
+  width: 50px;
+}
+
+.nav-central a img,
+.nav-derecha a img {
+  transition: transform 0.3s ease;
+}
+
+.nav-central a:hover img,
+.nav-derecha a:hover img {
+  transform: scale(1.2);
+}
+
+/* Menu usuario */
+.sub-menu-wrap {
+  position: absolute;
+  top: 120%;
+  right: 27px;
+  width: 265px;
+  max-width: 400px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.sub-menu-wrap.open-menu {
+  max-height: 500px;
+}
+
+.sub-menu {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+}
+
+.user-info img {
+  cursor: pointer;
+}
+
+.user-info h1 {
+  font-weight: 500;
+}
+
+.user-text h1 {
+  font-weight: 700;
+  font-size: 18px;
+  margin: 0;
+}
+
+.user-email {
+  font-size: 14px;
+  color: #000000;
+  margin: 2px 0 0 0;
+}
+
+.user-info img {
+  width: 60px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.sub-menu hr {
+  border: 0;
+  height: 1px;
+  width: 100%;
+  background: black;
+  margin: 15px 0 10px;
+}
+
+.sub-menu-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+  margin: 10px 0;
+}
+
+.sub-menu-link img {
+  width: 40px;
+  margin-right: 5px;
+}
+
+.sub-menu-link:hover p,
+.cuenta:hover p,
+.loguot:hover p {
+  font-weight: 510;
+}
+
+.cuenta {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  color: black;
+  padding: 5px;
+}
+
+.loguot {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  color: red;
+  padding-top: 5px;
+}
+
+/* Menu notificacion*/
+.noti-menu-wrap {
+  position: absolute;
+  top: 120%;
+  right: 85px;
+  width: 300px;
+  max-height: 0;
+  overflow: hidden;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: max-height 0.5s ease;
+}
+
+.noti-menu-wrap.open-menu {
+  max-height: 500px;
+}
+
+.noti {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.noti img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.noti:last-child {
+  border-bottom: none;
+}
+
+/* Main y carrusel */
+main {
+  flex: 1;
+  margin-top: 90px;
+}
+
+/*Footer */
+
+.footer {
+  width: 100%;
+  background-color: #000;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-icons a {
+  color: #fff;
+  font-size: 24px;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: orange;
+}

@@ -41,11 +41,21 @@ $transition-default: 0.3s ease;
 .banner {
 	display: flex;
 	align-items: center;
-	padding: 20px;
-	color: $color-texto;
-	gap: 200px;
+	padding: 10px;
+	color: white;
+	gap: 100px;
 }
-
+.linea-banner {
+	display: flex;
+	align-items: baseline;
+	gap: 20px;
+	h2 {
+		font-size: 40px;
+	}
+	p {
+		font-size: 40px;
+	}
+}
 .text-content {
 	margin-left: 100px;
 	letter-spacing: 7px;

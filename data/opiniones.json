@@ -1,0 +1,262 @@
+[
+    {
+        "evento": "Festival de Música al Aire Libre",
+        "opiniones": [
+            {
+                "usuario": "juan_musiclover",
+                "imagen_usuario": "../img/user.png",
+                "opinion": "Excelente ambiente y las bandas estuvieron increíbles.",
+                "calificacion": 5,
+                "fecha": "2025-07-30"
+            },
+            {
+                "usuario": "pablo23",
+                "imagen_usuario": "../img/user.png",
+                "opinion": "Buena música, pero los food trucks tenían mucha fila.",
+                "calificacion": 3,
+                "fecha": "2025-07-29"
+            },
+            {
+                "usuario": "lore_night",
+                "imagen_usuario": "../img/user.png",
+                "opinion": "Demasiada gente, desorganizado. Me fui antes.",
+                "calificacion": 2,
+                "fecha": "2025-07-29"
+            }
+        ]
+    },
+    {
+        "evento": "Feria Gastronómica Regional",
+        "opiniones": [
+            {
+                "usuario": "saboresdelnorte",
+                "imagen_usuario": "../img/user.png",
+                "opinion": "Comida riquísima y variada. Muy recomendable.",
+                "calificacion": 5,
+                "fecha": "2025-07-28"
+            },
+            {
+                "usuario": "cami_gourmet",
+                "imagen_usuario": "../img/user.png",
+                "opinion": "Me gustó, pero los precios eran bastante altos.",
+                "calificacion": 3,
+                "fecha": "2025-07-27"
+            },
+            {
+                "usuario": "mario84",
+                "imagen_usuario": "../img/user.png",
+                "opinion": "Esperaba más variedad. Muchos puestos repetidos.",
+                "calificacion": 2,
+                "fecha": "2025-07-27"
+            }
+        ]
+    },
+    {
+        "evento": "Charla Motivacional para Jóvenes",
+        "opiniones": [
+            {
+                "usuario": "sofi_motivada",
+                "imagen_usuario": "../img/user.png",
+                "opinion": "Muy inspiradora. Me dio fuerzas para seguir.",
+                "calificacion": 5,
+                "fecha": "2025-07-25"
+            },
+            {
+                "usuario": "nico_goal",
+                "imagen_usuario": "../img/user.png",
+                "opinion": "Interesante pero un poco larga.",
+                "calificacion": 3,
+                "fecha": "2025-07-25"
+            },
+            {
+                "usuario": "flor_romero",
+                "imagen_usuario": "../img/user.png",
+                "opinion": "No me motivó tanto como esperaba.",
+                "calificacion": 2,
+                "fecha": "2025-07-25"
+            }
+        ]
+    },
+    {
+        "evento": "Noche de Stand Up",
+        "opiniones": [
+            {
+                "usuario": "risa_total",
+                "imagen_usuario": "../img/user.png",
+                "opinion": "Me maté de risa toda la noche.",
+                "calificacion": 5,
+                "fecha": "2025-07-26"
+            },
+            {
+                "usuario": "valen_stand",
+                "imagen_usuario": "../img/user.png",
+                "opinion": "Hubo chistes buenos y otros muy flojos.",
+                "calificacion": 3,
+                "fecha": "2025-07-26"
+            },
+            {
+                "usuario": "santi_bored",
+                "imagen_usuario": "../img/user.png",
+                "opinion": "No me hizo reír, muy básico.",
+                "calificacion": 1,
+                "fecha": "2025-07-26"
+            }
+        ]
+    },
+    {
+        "evento": "Encuentro de Emprendedores",
+        "opiniones": [
+            {
+                "usuario": "emprende_con_todo",
+                "imagen_usuario": "../img/user.png",
+                "opinion": "Genial para hacer contactos y aprender.",
+                "calificacion": 5,
+                "fecha": "2025-07-24"
+            },
+            {
+                "usuario": "natalia_idea",
+                "imagen_usuario": "../img/user.png",
+                "opinion": "Algunas charlas muy buenas, otras aburridas.",
+                "calificacion": 3,
+                "fecha": "2025-07-24"
+            },
+            {
+                "usuario": "lucas_py",
+                "imagen_usuario": "../img/user.png",
+                "opinion": "Mucha teoría, poca práctica real.",
+                "calificacion": 2,
+                "fecha": "2025-07-24"
+            }
+        ]
+    },
+    {
+        "evento": "Cine Paris",
+        "opiniones": [
+            {
+                "usuario": "cinelover_95",
+                "imagen_usuario": "../img/user.png",
+                "opinion": "Excelente calidad de sonido e imagen.",
+                "calificacion": 5,
+                "fecha": "2025-07-23"
+            },
+            {
+                "usuario": "mari_pelis",
+                "imagen_usuario": "../img/user.png",
+                "opinion": "Buena película, pero hacía frío adentro.",
+                "calificacion": 3,
+                "fecha": "2025-07-23"
+            },
+            {
+                "usuario": "agus_cine",
+                "imagen_usuario": "../img/user.png",
+                "opinion": "Mucho ruido, no pude disfrutar la película.",
+                "calificacion": 2,
+                "fecha": "2025-07-23"
+            }
+        ]
+    },
+    {
+        "evento": "Maratón de Lectura y Debate",
+        "opiniones": [
+            {
+                "usuario": "lectora_joven",
+                "imagen_usuario": "../img/user.png",
+                "opinion": "Hermoso espacio de intercambio y reflexión.",
+                "calificacion": 5,
+                "fecha": "2025-07-22"
+            },
+            {
+                "usuario": "nico_libros",
+                "imagen_usuario": "../img/user.png",
+                "opinion": "Buena experiencia, aunque faltó tiempo para debatir.",
+                "calificacion": 3,
+                "fecha": "2025-07-22"
+            },
+            {
+                "usuario": "caro_nolee",
+                "imagen_usuario": "../img/user.png",
+                "opinion": "Me pareció aburrido, no lo recomiendo.",
+                "calificacion": 1,
+                "fecha": "2025-07-22"
+            }
+        ]
+    },
+    {
+        "evento": "Feria de Artes y Oficios",
+        "opiniones": [
+            {
+                "usuario": "artesanal_total",
+                "imagen_usuario": "../img/user.png",
+                "opinion": "Productos increíbles, todo hecho a mano.",
+                "calificacion": 5,
+                "fecha": "2025-07-21"
+            },
+            {
+                "usuario": "mauro_diy",
+                "imagen_usuario": "../img/user.png",
+                "opinion": "Estuvo bien, aunque había pocos talleres.",
+                "calificacion": 3,
+                "fecha": "2025-07-21"
+            },
+            {
+                "usuario": "sol_artesanias",
+                "imagen_usuario": "../img/user.png",
+                "opinion": "Muy repetitivo, casi todos vendían lo mismo.",
+                "calificacion": 2,
+                "fecha": "2025-07-21"
+            }
+        ]
+    },
+    {
+        "evento": "Festival de Teatro Independiente",
+        "opiniones": [
+            {
+                "usuario": "drama_lover",
+                "imagen_usuario": "../img/user.png",
+                "opinion": "Muy buenas actuaciones y escenografía.",
+                "calificacion": 5,
+                "fecha": "2025-07-20"
+            },
+            {
+                "usuario": "ana_teatro",
+                "imagen_usuario": "../img/user.png",
+                "opinion": "Algunas obras eran densas, otras muy buenas.",
+                "calificacion": 3,
+                "fecha": "2025-07-20"
+            },
+            {
+                "usuario": "leo_critico",
+                "imagen_usuario": "../img/user.png",
+                "opinion": "No entendí nada de la obra que vi.",
+                "calificacion": 1,
+                "fecha": "2025-07-20"
+            }
+        ]
+    },
+    {
+        "evento": "Torneo de Videojuegos",
+        "opiniones": [
+            {
+                "usuario": "gamerpro123",
+                "imagen_usuario": "../img/user.png",
+                "opinion": "Buen nivel, partidas emocionantes.",
+                "calificacion": 5,
+                "fecha": "2025-07-19"
+            },
+            {
+                "usuario": "vicky_gg",
+                "imagen_usuario": "../img/user.png",
+                "opinion": "Faltó organización en los horarios.",
+                "calificacion": 3,
+                "fecha": "2025-07-19"
+            },
+            {
+                "usuario": "mati_fps",
+                "imagen_usuario": "../img/user.png",
+                "opinion": "Mucho lag y no respetaron los turnos.",
+                "calificacion": 2,
+                "fecha": "2025-07-19"
+            }
+        ]
+    }
+]
