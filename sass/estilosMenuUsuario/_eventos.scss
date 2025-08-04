@@ -2,17 +2,17 @@
 	max-width: 700px;
 	margin: 60px auto;
 	padding: 30px;
-	background-color: #111;
+	background-color: #ffffff;
 	border-radius: 12px;
 	box-shadow: 0 0 10px rgba(0,0,0,0.5);
-	margin-top: 100px;
+	margin-top: 60px;
 	h2 {
-		color: #ffffff;
+		color: #000000;
 		margin-bottom: 10px;
 	}
 	p {
 		font-size: 14px;
-		color: #ccc;
+		color: #000000;
 	}
 }
 .evento {
@@ -20,7 +20,7 @@
 	padding: 20px;
 	border-radius: 10px;
 	margin-top: 20px;
-	border-left: 4px solid #007bff;
+	border-left: 4px solid #f78820;
 	h3 {
 		margin-top: 0;
 		color: #fff;
@@ -28,5 +28,6 @@
 	p {
 		margin: 5px 0;
 		font-size: 14px;
+		color: #fffefe;
 	}
 }

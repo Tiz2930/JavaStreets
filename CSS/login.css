@@ -2,14 +2,21 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Inter', sans-serif;
+<<<<<<< HEAD
   background-image: url(/img/fip.jpg);
+=======
+  background: linear-gradient(135deg, #ff9900, #0f0f0f);
+>>>>>>> 6019d95c8707fd0f826c595026004be055822b0a
   color: #fff;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+<<<<<<< HEAD
   background-size: cover;
   background-attachment: fixed;
+=======
+>>>>>>> 6019d95c8707fd0f826c595026004be055822b0a
 }
 
 .login-container {
@@ -88,6 +95,7 @@ body {
   border-radius: 10px;
   font-weight: 600;
   display: none;
+<<<<<<< HEAD
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
@@ -98,3 +106,7 @@ a {
   -webkit-text-fill-color: transparent;
   display: inline-block;
 }
+=======
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+>>>>>>> 6019d95c8707fd0f826c595026004be055822b0a

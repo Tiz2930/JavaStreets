@@ -1,3 +1,13 @@
+<<<<<<< HEAD
+=======
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #ff9900, #0f0f0f);
+    color: #fff;
+}
+
+>>>>>>> 6019d95c8707fd0f826c595026004be055822b0a
 /* Contenedor */
 .eventos-container {
     max-width: 700px;
@@ -6,7 +16,10 @@
     background-color: #111;
     border-radius: 12px;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
+<<<<<<< HEAD
     margin-top: 100px;
+=======
+>>>>>>> 6019d95c8707fd0f826c595026004be055822b0a
 }
 
 /* Título principal */

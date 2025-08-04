@@ -1,16 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap');
 
+<<<<<<< HEAD
 * {
   font-family: 'Montserrat', sans-serif;
   margin: 0;
   padding: 0;
   scrollbar-width: thin;
   scrollbar-color: #FDA703 #000000;
+=======
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+>>>>>>> 6019d95c8707fd0f826c595026004be055822b0a
 }
 
 body {
   display: flex;
   flex-direction: column;
+<<<<<<< HEAD
   align-items: center;
   width: 100%;
   height: 100%;
@@ -44,13 +58,36 @@ header {
 
 /*Logo*/
 
+=======
+  min-height: 100vh;
+  background-image: url(/Imagenes/fip.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 0;
+}
+
+header {
+  position: relative;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+>>>>>>> 6019d95c8707fd0f826c595026004be055822b0a
 .logo-busqueda {
   position: absolute;
   left: 20px;
   display: flex;
   align-items: center;
   gap: 30px;
+<<<<<<< HEAD
   border-style: none;
+=======
+>>>>>>> 6019d95c8707fd0f826c595026004be055822b0a
 }
 
 .logo-busqueda-link {
@@ -58,6 +95,7 @@ header {
 }
 
 .join {
+<<<<<<< HEAD
   color: #ffffff;
 }
 
@@ -65,6 +103,22 @@ header {
   background: linear-gradient(90deg, #ffcc00, #ff9900);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+=======
+  font-weight: bold;
+  color: black;
+}
+
+.us {
+  font-weight: bold;
+  color: yellow;
+}
+
+header input {
+  padding: 5px 10px;
+  border-radius: 5px;
+  height: 30px;
+  width: 250px;
+>>>>>>> 6019d95c8707fd0f826c595026004be055822b0a
 }
 
 /* Iconos */
@@ -131,10 +185,13 @@ header {
   align-items: center;
 }
 
+<<<<<<< HEAD
 .user-info img {
   cursor: pointer;
 }
 
+=======
+>>>>>>> 6019d95c8707fd0f826c595026004be055822b0a
 .user-info h1 {
   font-weight: 500;
 }
@@ -235,16 +292,25 @@ header {
   border-bottom: none;
 }
 
+<<<<<<< HEAD
 /* Main y carrusel */
 main {
   flex: 1;
   margin-top: 90px;
+=======
+/* Main: para que crezca y empuje footer */
+main {
+  flex: 1;
+>>>>>>> 6019d95c8707fd0f826c595026004be055822b0a
 }
 
 /*Footer */
 
 .footer {
+<<<<<<< HEAD
   width: 100%;
+=======
+>>>>>>> 6019d95c8707fd0f826c595026004be055822b0a
   background-color: #000;
   color: #fff;
   padding: 20px 0;
@@ -273,4 +339,12 @@ main {
 
 .social-icons a:hover {
   color: orange;
+<<<<<<< HEAD
 }
+=======
+}
+
+
+
+
+>>>>>>> 6019d95c8707fd0f826c595026004be055822b0a
