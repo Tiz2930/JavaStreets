@@ -10,24 +10,120 @@
 </head>
 
 <body>
-    <header class="reportarProblema">
-        <h1>Reportar un problema</h1>
+    <header>
+        <div class="logo-busqueda">
+            <a class="logo-busqueda-link" href="/HTML/home.html">
+                <h1><span class="join">Join</span> <span class="us">Us</span></h1>
+            </a>
+        </div>
+    
+        <div class="nav-central">
+            <a class="tienda" href="/HTML/ecommerce.html">
+                <img src="/img/tienda.png" alt="Tienda" />
+            </a>
+            <a class="ticket" href="/HTML/ticket.html">
+                <img src="/img/Ticket.png" alt="Ticket" />
+            </a>
+            <a class="comunidad" href="/HTML/comunidad.html">
+                <img src="/img/comunidad.png" alt="Comunidad" />
+            </a>
+        </div>
+    
+        <div class="nav-derecha">
+            <a class="home" href="/HTML/home.html">
+                <img src="/img/home lleno.png" alt="Home" />
+            </a>
+            <a class="add" href="/HTML/publicacion.html">
+                <img src="/img/publicacion.png" alt="Add" />
+            </a>
+            <a class="msj" href="/HTML/chat.html">
+                <img src="/img/msj.png" alt="Mensajes" />
+            </a>
+            <!-- Notificación -->
+            <a class="notificacion" href="#" onclick="event.preventDefault(); toggleNotificaciones();">
+                <img src="/img/notificacion.png" alt="Notificacion" />
+            </a>
+            <!-- Usuario -->
+            <a class="user" href="#" onclick="event.preventDefault(); usuarioMenu();">
+                <img src="/img/user.png" alt="Usuario" />
+            </a>
+        </div>
+    
+        <!-- Menú Usuario -->
+        <div class="sub-menu-wrap" id="subMenu">
+            <div class="sub-menu">
+                <div class="user-info">
+                    <img src="/img/user.png" />
+                    <div class="user-text">
+                        <h1>Nombre</h1>
+                        <p class="user-email">example@gmail.com</p>
+                    </div>
+                </div>
+                <hr />
+                <a href="/HTML/perfil.html" class="sub-menu-link">
+                    <img src="/img/Setting.png" />
+                    <p>Configuración</p>
+                </a>
+                </a>
+                <a href="/HTML/report-problema.html" class="sub-menu-link">
+                    <img src="/img/problema.png" />
+                    <p>Reportar problema</p>
+                </a>
+                <hr />
+                <a href="/HTML/eventos.html" class="sub-menu-link">
+                    <img src="/img/eventos.png" />
+                    <p>Mis eventos</p>
+                </a>
+                <a href="/HTML/actividad.html" class="sub-menu-link">
+                    <img src="/img/Chart.png" />
+                    <p>Tu actividad</p>
+                </a>
+                <hr />
+                <a class="cuenta" href="/HTML/cambiar-cuenta.html">
+                    <p>Cambiar cuenta</p>
+                </a>
+                <a class="loguot">
+                    <p>Cerrar sesion</p>
+                </a>
+            </div>
+        </div>
+        <!-- Menú Notificacion -->
+        <div class="noti-menu-wrap" id="notiMenu">
+            <div class="noti">
+                <img src="/img/me gusta.png" />
+                <p>A Example le gustó tu notificación</p>
+            </div>
+            <div class="noti">
+                <img src="/img/seguidor.png" />
+                <p>Example comenzó a seguirte</p>
+            </div>
+            <div class="noti">
+                <img src="/img/comentarios.png" />
+                <p>Recibiste un comentario</p>
+            </div>
+        </div>
     </header>
 
+    
     <main class="container">
         <section class="problemaCard">
-            <p>En esta sección podés reportar cualquier inconveniente o problema que tengas en la plataforma para que
-                nuestro equipo lo revise y te ayude.</p>
-
+            <p>
+                En esta sección podés reportar cualquier inconveniente o problema que tengas en la plataforma para que
+                nuestro equipo lo revise y te ayude.
+            </p>
+    
             <div class="item">
                 <h2>🛠 ¿Qué tipo de problemas podés reportar?</h2>
-                <p>Pueden ser errores técnicos, contenido inapropiado, problemas con usuarios o cualquier otro
-                    inconveniente que afecte tu experiencia.</p>
+                <p>
+                    Pueden ser errores técnicos, contenido inapropiado, problemas con usuarios o cualquier otro
+                    inconveniente que afecte tu experiencia.
+                </p>
             </div>
-
+    
             <div class="item">
                 <h2>📋 Formulario de reporte</h2>
-                <form id="formReporte" action="#" method="POST">
+    
+                <form id="formReporte" method="POST">
                     <label for="tipoProblema">Tipo de problema:</label><br />
                     <select id="tipoProblema" name="tipoProblema" required>
                         <option value="" disabled selected>Seleccioná una opción</option>
@@ -36,22 +132,59 @@
                         <option value="usuario">Problema con usuario</option>
                         <option value="otro">Otro</option>
                     </select><br /><br />
-
+    
                     <label for="descripcion">Descripción del problema:</label><br />
                     <textarea id="descripcion" name="descripcion" rows="5"
                         placeholder="Contanos con detalle lo que sucede..." required></textarea><br /><br />
-
+    
                     <button type="submit">Enviar reporte</button>
                 </form>
+    
+                <div id="mensajeExito">✅ Reporte enviado con éxito.</div>
             </div>
-
+    
             <div class="item">
                 <h2>ℹ️ ¿Qué sucede después de reportar?</h2>
-                <p>Nuestro equipo revisará el reporte y, si es necesario, se pondrá en contacto contigo para solicitar
-                    más información o para informarte sobre la resolución.</p>
+                <p>
+                    Nuestro equipo revisará el reporte y, si es necesario, se pondrá en contacto contigo para solicitar
+                    más información o para informarte sobre la resolución.
+                </p>
             </div>
         </section>
     </main>
+    
+    <script src="/js/reportar.js"></script>
+    
+    
+    
+    
+    
+    
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p class="footer-copy">&copy; 2025 Join Us - Todos los derechos reservados</p>
+            <p class="footer-contact">
+                Contacto: info@gmail.com
+            </p>
+            <div class="social-icons">
+                <a href="https://instagram.com" class="instagram" target="_blank" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://facebook.com" class="facebook" target="_blank" aria-label="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://x.com/home" class="twitter" target="_blank" aria-label="Twitter">
+                    <i class="fab fa-x-twitter"></i>
+                </a>
+                <a href="https://youtube.com" class="youtube" target="_blank" aria-label="YouTube">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="/JS/menu.js"></script>
+    <script src="/js/reportar.js"></script>
 </body>
 
 </html>

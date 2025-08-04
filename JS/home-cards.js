@@ -49,7 +49,7 @@ fetch("../data/ecommerce.json")
     const maxProductos = 4;
     const todosLosProductos = [];
 
-    // PASO 1: juntar todos los productos de todos los vendedores
+    //Juntar todos los productos de todos los vendedores
     for (const vendedor of data) {
       for (const producto of vendedor.products) {
         todosLosProductos.push({
@@ -59,12 +59,12 @@ fetch("../data/ecommerce.json")
       }
     }
 
-    // PASO 2: mezclar los productos aleatoriamente
+    //Mezclar los productos aleatoriamente
     const productosAleatorios = todosLosProductos
-      .sort(() => Math.random() - 0.5) // mezcla el array
-      .slice(0, maxProductos);        // toma los primeros 4
+      .sort(() => Math.random() - 0.5)
+      .slice(0, maxProductos);
 
-    // PASO 3: crear las cards
+    //Crear las cards
     for (const producto of productosAleatorios) {
       // Link envuelve la card completa
       const card = document.createElement("a");
