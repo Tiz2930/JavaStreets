@@ -414,10 +414,92 @@ main {
   height: 100%;
   display: flex;
   flex-direction: column;
-  gap: 200px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   border-top: 1px solid rgb(109, 109, 109);
   padding: 1rem;
+  gap: 10rem;
+}
+.mainEcommerce .moreOptions .searchBarDiv {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 100%;
+  gap: 1rem;
+}
+.mainEcommerce .moreOptions .searchBarDiv .backSearch {
+  width: auto;
+  font-size: 1.5rem;
+  padding: 0 0.5rem;
+  background-color: transparent;
+  -webkit-backdrop-filter: blur(5px) saturate(1);
+          backdrop-filter: blur(5px) saturate(1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border: none;
+  border-radius: 20rem;
+}
+.mainEcommerce .moreOptions .searchBarDiv .backSearch:hover {
+  background-color: #FDA703;
+  cursor: pointer;
+  transform: scale(0.95);
+  color: white;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.mainEcommerce .moreOptions .searchBarDiv .searchBar {
+  width: 100%;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 20px;
+  padding: 0 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.mainEcommerce .moreOptions .searchBarDiv input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background-color: transparent;
+  color: white;
+  font-size: 1rem;
+  outline: none;
+}
+.mainEcommerce .moreOptions .searchBarDiv input::-moz-placeholder {
+  color: #ccc;
+}
+.mainEcommerce .moreOptions .searchBarDiv input::placeholder {
+  color: #ccc;
+}
+.mainEcommerce .moreOptions .filter {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  background-color: transparent;
+  color: #ccc;
+  padding: 1rem;
+  border-radius: 10px;
+}
+.mainEcommerce .moreOptions .filter option {
+  background-color: rgba(0, 0, 0, 0.8156862745);
+  color: white;
+  padding: 0.5rem;
+  border-radius: 10px;
+  font-weight: bold;
+  color: #FDA703;
+}
+.mainEcommerce .moreOptions .crearPublicacionEcommerce {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  background-color: transparent;
+  color: #ccc;
+  padding: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  border-style: outset;
+}
+.mainEcommerce .moreOptions .crearPublicacionEcommerce:hover {
+  color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transform: scale(0.95);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border-style: inset;
 }
 .mainEcommerce .principalDiv {
   overflow-y: scroll;

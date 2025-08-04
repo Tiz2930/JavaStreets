@@ -107,11 +107,24 @@
 
     <main class="mainEcommerce">
         <div class="moreOptions">
-            <h2>Merchandising</h2>
-            <button>ola</button>
-            <button>chao</button>
+
+            <div class="searchBarDiv">
+            <button id="resetBtn" class="backSearch">⬅</button>
+            <!-- Barra de búsqueda -->
+            <input class="searchBar" type="text" id="searchInput" placeholder="Buscar productos o usuario" />
+            </div>
+
+            <!-- Filtro de precios -->
+            <select class="filter" id="priceFilter">
+                <option value="">Ordenar por precio</option>
+                <option value="asc">Menor a mayor</option>
+                <option value="desc">Mayor a menor</option>
+            </select>
+
+            <button class="crearPublicacionEcommerce">+ Crear Publicacion</button>
             <!-- js -->
         </div>
+
         <div id="boxEcommerce" class="principalDiv">
             <!-- js -->
         </div>
