@@ -52,14 +52,16 @@ $transition-default: 0.3s ease;
 	align-items: baseline;
 	gap: 20px;
 
-	h2 {
-		font-size: 40px;
+	h2,
+	p {
+		font-size: 60px;
 	}
 
 	p {
-		font-size: 40px;
+		font-weight: 100;
 	}
 }
+
 
 .text-content {
 	margin-left: 100px;
@@ -71,25 +73,11 @@ $transition-default: 0.3s ease;
 		display: flex;
 		gap: 10px;
 		font-weight: 800;
-		font-size: 120px;
+		font-size: 150px;
 		justify-content: center;
 	}
 }
 
-.linea-banner {
-	display: flex;
-	align-items: baseline;
-	gap: 20px;
-
-	h2,
-	p {
-		font-size: 50px;
-	}
-
-	p {
-		font-weight: 400;
-	}
-}
 
 // CONTENEDOR DE CARDS
 
@@ -198,41 +186,42 @@ $transition-default: 0.3s ease;
 	margin-bottom: 30px;
 	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3),
 		2px 2px 5px rgba(0, 0, 0, 0.2);
+	text-align: center;
 }
 
 //Publicidad
 
 .publicidad {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1.5rem;
-  padding: 2rem;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	gap: 1.5rem;
+	padding: 2rem;
 }
 
 .card-publicidad {
-  display: block;
-  width: 100%;
-  max-width: 240px;
-  border-radius: 1rem;
-  overflow: hidden;
-  background-color: #111;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+	display: block;
+	width: 100%;
+	max-width: 240px;
+	border-radius: 1rem;
+	overflow: hidden;
+	background-color: #111;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
 
-  img {
-    width: 100%;
-    height: auto;
-    display: block;
-    object-fit: cover;
-    transition: transform 0.3s ease;
-  }
+	img {
+		width: 100%;
+		height: auto;
+		display: block;
+		object-fit: cover;
+		transition: transform 0.3s ease;
+	}
 
-  &:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+	&:hover {
+		transform: translateY(-5px);
+		box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
 
-    img {
-      transform: scale(1.05);
-    }
-  }
+		img {
+			transform: scale(1.05);
+		}
+	}
 }

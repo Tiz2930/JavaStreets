@@ -52,6 +52,12 @@ fetch("../data/ecommerce.json")
 
                 `;
 
+                card.addEventListener("click", () => {
+                    localStorage.setItem("selectedProductId", product.id);
+                    window.location.href = "../html/productos-ecommerce.html";
+                })
+
+                
                 document.addEventListener("click", function (e) {
                     if (e.target.classList.contains("btnMore")) {
                         const id = e.target.dataset.id;
@@ -59,6 +65,7 @@ fetch("../data/ecommerce.json")
                         window.location.href = "/html/productos-ecommerce.html";
                     }
                 }
+
                 );
 
 
@@ -149,7 +156,7 @@ fetch("../data/ecommerce.json")
                     <span class="seller">Vendedor: ${product.user}</span>
                 `;
 
-                // Agregar redirección al hacer clic
+                // Agregar redirección 
                 card.addEventListener("click", () => {
                     localStorage.setItem("selectedProductId", product.id);
                     window.location.href = "../html/productos-ecommerce.html";

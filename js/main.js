@@ -7,7 +7,7 @@ fetch("../data/eventos.json")
     data.forEach((evento, index) => {
       // Creamos contenedor de la card
       const card = document.createElement("div");
-      card.className = "card";
+      card.className = "card-ticket";
 
       // Creamos el carrusel
       const carousel = document.createElement("div");
@@ -39,18 +39,21 @@ fetch("../data/eventos.json")
       };
 
 
-      const title = document.createElement("h2");
-      title.textContent = evento.name;
-      title.className = "titleEvent";
 
 
-      card.appendChild(title);
       carousel.appendChild(btnPrev);
       carousel.appendChild(img);
       carousel.appendChild(btnNext);
       card.appendChild(carousel);
 
       // Resto del contenido
+
+      const divContent = document.createElement("div");
+      divContent.className = "divContent";
+      
+      const title = document.createElement("h2");
+      title.textContent = evento.name;
+      title.className = "titleEvent";
 
       const divImg = document.createElement("div");
       divImg.className = "divImg";
@@ -76,12 +79,15 @@ fetch("../data/eventos.json")
       stock.textContent = "Entradas a la venta: " + evento.stock;
       stock.className = "stockEvent";
 
+      
       divImg.appendChild(userImage);
       divImg.appendChild(users);
-      card.appendChild(divImg);
       infoDiv.appendChild(desc);
       infoDiv.appendChild(stock);
-      card.appendChild(infoDiv);
+      divContent.appendChild(title);
+      divContent.appendChild(divImg);
+      divContent.appendChild(infoDiv);
+      card.appendChild(divContent);
       events.appendChild(card);
     });
   });
