@@ -171,4 +171,8 @@
     height: 100%; 
     @include mixins.box-shadow;
     border-radius: 10px;
+    cursor: crosshair;
+    &:hover {
+        @include mixins.principal-color
+    }
 };

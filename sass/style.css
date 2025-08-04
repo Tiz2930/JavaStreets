@@ -3047,6 +3047,10 @@ textarea:focus:invalid {
   height: 100%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   border-radius: 10px;
+  cursor: crosshair;
+}
+.moreInfo:hover {
+  color: #FDA703;
 }
 
 .headerSeguidos {
