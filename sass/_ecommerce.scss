@@ -1,4 +1,4 @@
-@use 'mixins';
+@import 'mixins';
 
 .bodyEcommerce {
 	height: 100%;
@@ -38,11 +38,10 @@
 		display: flex;
 		flex-direction: column;
 		gap: 200px;
-		@include mixins.box-shadow;
+		@include box-shadow;
 		border-top: 1px solid rgb(109, 109, 109);
 		padding: 1rem;
 	}
-
 
 	.principalDiv {
 		overflow-y: scroll;
@@ -58,11 +57,9 @@
 	}
 }
 
-
-
 .userCard {
 	border-radius: 10px;
-	@include mixins.box-shadow;
+	@include box-shadow;
 	padding: 1.5rem;
 	width: 95%;
 	height: 100%;
@@ -89,7 +86,7 @@
 			background-color: transparent;
 			backdrop-filter: blur(45px) saturate(1.0);
 			border-radius: 10px;
-			@include mixins.box-shadow;
+			@include box-shadow;
 			color: black;
 			transition: 0.65s ease;
 			transform: scale(1.05);
@@ -130,7 +127,7 @@
 	min-width: 10rem;  
 	max-width: 10rem;
 	flex: 0 0 auto;
-	@include mixins.box-shadow;
+	@include box-shadow;
 	border-radius: 8px;
 	text-align: center;
 	cursor: pointer;
@@ -139,7 +136,7 @@
 
 	&:hover {
 		background-color: #ffc65b66;
-		@include mixins.box-shadow;
+		@include box-shadow;
 		transition: background-color 0.3s ease, box-shadow 0.3s ease;
 	}
 

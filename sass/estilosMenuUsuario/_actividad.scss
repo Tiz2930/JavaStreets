@@ -6,18 +6,18 @@
 }
 .actividad-container {
 	max-width: 600px;
-	margin: 60px auto;
-	padding: 30px;
-	background-color: #111;
+	margin: 100px auto;
+	padding: 40px;
+	background-color: #ffffff;
 	border-radius: 12px;
 	box-shadow: 0 0 10px rgba(0,0,0,0.5);
 	h2 {
-		color: #ffffff;
+		color: #000000;
 		margin-bottom: 10px;
 	}
 	p {
 		font-size: 14px;
-		color: #ccc;
+		color: #000000;
 		margin-bottom: 20px;
 	}
 }
@@ -29,19 +29,19 @@
 	padding: 15px 20px;
 	border-radius: 10px;
 	margin-bottom: 15px;
-	border-left: 4px solid #fafafa;
+	border-left: 4px solid #f36929;
 	i {
-		color: #ffffff;
+		color: #f36929;
 		margin-right: 10px;
 	}
 	span {
 		flex-grow: 1;
 		margin-left: 10px;
-		color: #fff;
+		color: #ffffff;
 		font-size: 15px;
 	}
 	strong {
 		font-size: 15px;
-		color: #fff;
+		color: #ffffff;
 	}
 }
