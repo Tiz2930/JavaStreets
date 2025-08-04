@@ -23,20 +23,6 @@ body {
   overflow-x: hidden;
 }
 
-.gridSection {
-  display: grid;
-  align-items: center;
-  grid-template-columns: auto;
-  height: 100%;
-  width: 50%;
-  gap: 50px;
-  overflow-y: hidden;
-  scrollbar-width: none;
-  margin-top: 20px;
-  padding-top: 50px;
-  padding-bottom: 30px;
-}
-
 header {
   width: 100%;
   position: fixed;
@@ -262,37 +248,70 @@ main {
   color: orange;
 }
 
-.card {
+.gridSection {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin: 2rem auto 4rem;
+  padding: 0 1rem;
+  justify-content: center;
+  max-width: 1400px;
+}
+
+.card-ticket {
+  width: 300px;
+  min-height: 520px;
+  border-radius: 8px;
+  background: linear-gradient(180deg, #1a1a1a 0%, #111 100%);
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+  color: inherit;
+  text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
-  align-content: center;
-  text-align: center;
-  font-size: medium;
-  gap: 25px;
-  text-transform: uppercase;
-  font-family: "Open Sans", sans-serif;
+  scroll-snap-align: start;
+  flex: 0 0 auto;
+}
+.card-ticket:hover {
   cursor: pointer;
-  color: white;
-  height: 100%;
-  width: auto;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgb(0, 0, 0);
+  box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.3);
+  transform: scale(1.07) translateY(-4px);
+}
+
+h2 {
+  font-size: 20px;
+  text-align: center;
+  margin: 10px;
+  color: #ffcc00;
+}
+
+.card-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   padding: 1rem;
-  margin: 1rem;
 }
 
 .carousel {
-  position: relative;
   width: 100%;
-  height: 500px;
+  height: 200px;
+  position: relative;
+  overflow: hidden;
 }
 
 .carousel-img {
   width: 100%;
   height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
-  border-radius: 8px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 5px 5px 0 0;
+  border-bottom: 3px solid #ff9900;
+  transition: transform 0.2s ease;
+}
+.carousel-img:hover {
+  transform: scale(1.05);
 }
 
 .carousel-btn {
@@ -315,11 +334,45 @@ main {
 .carousel-btn.right {
   right: 10px;
 }
-.carousel-btn.carousel-btn:hover {
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* shadow-md */
+.carousel-btn:hover {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   background-color: transparent;
   -webkit-backdrop-filter: blur(12px) saturate(1.5);
           backdrop-filter: blur(12px) saturate(1.5);
+}
+
+.descriptionEvent {
+  font-size: 15px;
+  text-align: center;
+  color: #ccc;
+  line-height: 1.4;
+  opacity: 0.9;
+  margin: 10px 0;
+  min-height: 60px;
+  max-height: 80px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.stockEvent {
+  color: #ffa500;
+  font-weight: bold;
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 0.75rem;
+}
+
+.users {
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.4;
+  opacity: 0.9;
+  color: #ccc;
+  margin-bottom: 0.75rem;
+}
+.users:hover {
+  color: white;
+  transition: 0.3s;
 }
 
 .divImg {
@@ -328,23 +381,17 @@ main {
   justify-content: start;
   border-radius: 4px;
   background-color: rgba(65, 63, 63, 0.4);
-  padding: 5px;
-  width: auto;
-  text-wrap: nowrap;
-  color: #FDA703;
+  padding: 5px 10px;
+  color: #ff9900;
 }
 .divImg .userImage {
   width: 50px;
   height: 50px;
   border-radius: 50%;
   margin-right: 1rem;
-  background-size: contain;
+  -o-object-fit: cover;
+     object-fit: cover;
   border: 2px solid #ccc;
-}
-
-.users:hover {
-  color: white;
-  transition: 0.3s;
 }
 
 .infoDiv {
@@ -357,17 +404,14 @@ main {
   background-color: rgba(65, 63, 63, 0.4);
   gap: 50px;
   height: 200px;
-  background-size: contain 10;
-  background-repeat: repeat;
-  background-position: center;
   border-radius: 10px;
 }
 .infoDiv:hover {
-  color: #FDA703;
+  color: #ff9900;
   transition: 0.3s;
 }
 .infoDiv .stockEvent {
-  color: #FDA703;
+  color: #ff9900;
   background-color: black;
   padding: 10px;
   border-radius: 10px;
@@ -375,6 +419,41 @@ main {
 .infoDiv .stockEvent:hover {
   color: #fafafa;
   transform: scale(1.05);
+}
+
+.categoria-section {
+  margin-bottom: 2rem;
+}
+
+.categoria-title {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.horizontal-container {
+  display: flex;
+  gap: 1rem;
+  padding-bottom: 0.5rem;
+  scroll-behavior: smooth;
+}
+
+.horizontal-container::-webkit-scrollbar {
+  height: 8px;
+}
+
+.horizontal-container::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+.card {
+  min-width: 280px; /* ancho mínimo para cada card */
+  flex-shrink: 0; /* evitar que se achiquen */
+  background-color: #fff;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
 }
 
 .bodyEcommerce {

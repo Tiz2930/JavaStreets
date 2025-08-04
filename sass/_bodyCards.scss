@@ -1,34 +1,97 @@
-//! CARDS Y CAROUSEL DE TICKETS
+// VARIABLES
 
-.card {
+$color-texto: #ffffff;
+$color-acento: #ff9900;
+$color-acento-secundario: #ffcc00;
+$color-verde: #2ecc71;
+$color-stock: #ffa500;
+$color-card-bg: #1a1a1a;
+$color-card-bg-dark: #111;
+$color-detalle: #ccc;
+
+$box-shadow-default: 0px 4px 12px rgba(0, 0, 0, 0.2);
+$box-shadow-hover: 0px 6px 16px rgba(0, 0, 0, 0.3);
+$box-shadow-strong: 0px 8px 20px rgba(0, 0, 0, 0.4);
+
+$transition-default: 0.3s ease;
+
+// CONTENEDOR DE CARDS
+
+.gridSection {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 24px;
+	margin: 2rem auto 4rem;
+	padding: 0 1rem;
+	justify-content: center;
+	max-width: 1400px;
+}
+
+// CARD BASE
+
+.card-ticket {
+	width: 300px;
+	min-height: 520px;
+	border-radius: 8px;
+	background: linear-gradient(180deg, $color-card-bg 0%, $color-card-bg-dark 100%);
+	box-shadow: $box-shadow-default;
+	color: inherit;
+	text-decoration: none;
+	transition: transform $transition-default, box-shadow $transition-default;
+	overflow: hidden;
 	display: flex;
 	flex-direction: column;
-	align-content: center;
+	scroll-snap-align: start;
+	flex: 0 0 auto;
+
+	&:hover {
+		cursor: pointer;
+		box-shadow: $box-shadow-hover;
+		transform: scale(1.07) translateY(-4px);
+	}
+}
+
+// CABECERA
+
+h2 {
+	font-size: 20px;
 	text-align: center;
-	font-size: medium;
-	gap: 25px;
-	text-transform: uppercase;
-	font-family: "Open Sans", sans-serif;
-	cursor: pointer;
-	color: white;
-	height: 100%;
-	width: auto;
-	border-radius: 10px;
-	box-shadow: 0 4px 12px rgba(0, 0, 0, 02);
+	margin: 10px;
+	color: $color-acento-secundario;
+}
+
+// CONTENIDO
+
+.card-content {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 	padding: 1rem;
-	margin: 1rem;
 }
+
+// CARRUSEL / IMAGEN
+
 .carousel {
-	position: relative;
 	width: 100%;
-	height: 500px;
+	height: 200px;
+	position: relative;
+	overflow: hidden;
 }
+
 .carousel-img {
 	width: 100%;
 	height: 100%;
-	object-fit: contain;
-	border-radius: 8px;
+	object-fit: cover;
+	border-radius: 5px 5px 0 0;
+	border-bottom: 3px solid $color-acento;
+	transition: transform 0.2s ease;
+
+	&:hover {
+		transform: scale(1.05);
+	}
 }
+
 .carousel-btn {
 	position: absolute;
 	width: 80px;
@@ -42,43 +105,86 @@
 	cursor: pointer;
 	padding: 5px 10px;
 	z-index: 1;
+
 	&.left {
 		left: 10px;
 	}
+
 	&.right {
 		right: 10px;
 	}
-	&.carousel-btn:hover {
-		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* shadow-md */
+
+	&:hover {
+		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 		background-color: transparent;
 		backdrop-filter: blur(12px) saturate(1.5);
 	}
 }
+
+// DESCRIPCIÓN
+
+.descriptionEvent {
+	font-size: 15px;
+	text-align: center;
+	color: $color-detalle;
+	line-height: 1.4;
+	opacity: 0.9;
+	margin: 10px 0;
+	min-height: 60px;
+	max-height: 80px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+// STOCK
+
+.stockEvent {
+	color: $color-stock;
+	font-weight: bold;
+	font-size: 16px;
+	text-align: center;
+	margin-bottom: 0.75rem;
+}
+
+// USUARIO
+
+.users {
+	text-align: center;
+	font-size: 14px;
+	line-height: 1.4;
+	opacity: 0.9;
+	color: $color-detalle;
+	margin-bottom: 0.75rem;
+
+	&:hover {
+		color: white;
+		transition: 0.3s;
+	}
+}
+
+// AVATAR DE USUARIO
+
 .divImg {
 	display: flex;
 	align-items: center;
 	justify-content: start;
 	border-radius: 4px;
 	background-color: rgba(65, 63, 63, 0.4);
-	padding: 5px;
-	width: auto;
-	text-wrap: nowrap;
-	color: #FDA703;
+	padding: 5px 10px;
+	color: $color-acento;
+
 	.userImage {
 		width: 50px;
 		height: 50px;
 		border-radius: 50%;
 		margin-right: 1rem;
-		background-size: contain;
+		object-fit: cover;
 		border: 2px solid #ccc;
 	}
 }
-.users {
-	&:hover {
-		color: white;
-		transition: 0.3s;
-	}
-}
+
+// INFO EXTRA
+
 .infoDiv {
 	display: flex;
 	flex-direction: column;
@@ -89,22 +195,58 @@
 	background-color: rgba(65, 63, 63, 0.4);
 	gap: 50px;
 	height: 200px;
-	background-size: contain 10;
-	background-repeat: repeat;
-	background-position: center;
 	border-radius: 10px;
+
 	&:hover {
-		color: #FDA703;
+		color: $color-acento;
 		transition: 0.3s;
 	}
+
 	.stockEvent {
-		color: #FDA703;
+		color: $color-acento;
 		background-color: black;
 		padding: 10px;
 		border-radius: 10px;
+
 		&:hover {
 			color: #fafafa;
 			transform: scale(1.05);
 		}
 	}
+}
+
+
+.categoria-section {
+  margin-bottom: 2rem;
+}
+
+.categoria-title {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.horizontal-container {
+  display: flex;
+  gap: 1rem;
+  padding-bottom: 0.5rem;
+  scroll-behavior: smooth;
+}
+
+.horizontal-container::-webkit-scrollbar {
+  height: 8px;
+}
+
+.horizontal-container::-webkit-scrollbar-thumb {
+  background-color: rgba(0,0,0,0.2);
+  border-radius: 4px;
+}
+
+.card {
+  min-width: 280px; /* ancho mínimo para cada card */
+  flex-shrink: 0; /* evitar que se achiquen */
+  background-color: #fff;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  padding: 1rem;
 }

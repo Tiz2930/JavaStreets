@@ -23,19 +23,4 @@ body {
     overflow: scroll;
     overflow-x: hidden;
 }
-
-.gridSection {
-    display: grid;
-    align-items: center;
-    grid-template-columns: auto;
-    height: 100%;
-    width: 50%;
-    gap: 50px;
-    overflow-y: hidden;
-    scrollbar-width: none;
-    margin-top: 20px;
-    padding-top: 50px;
-    padding-bottom: 30px;
-  }
-
   

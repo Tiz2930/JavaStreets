@@ -7,7 +7,7 @@ fetch("../data/eventos.json")
     data.forEach((evento, index) => {
       // Creamos contenedor de la card
       const card = document.createElement("div");
-      card.className = "card";
+      card.className = "card-ticket";
 
       // Creamos el carrusel
       const carousel = document.createElement("div");
