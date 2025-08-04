@@ -1,8 +1,26 @@
 //! CARDS Y CAROUSEL DE TICKETS
+.boxGrid {
+	margin-top: 4rem;
+	width: 100%;
+}
+
+.gridSection {
+    display: grid;
+    align-items: center;
+    grid-template-columns: auto;
+    height: 100%;
+    width: 100%;
+    gap: 50px;
+    overflow-y: hidden;
+    scrollbar-width: none;
+    margin-top: 20px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+  }
 
 .card {
 	display: flex;
-	flex-direction: column;
+	flex-direction: wrap;
 	align-content: center;
 	text-align: center;
 	font-size: medium;
@@ -54,6 +72,19 @@
 		backdrop-filter: blur(12px) saturate(1.5);
 	}
 }
+
+.divContent {
+	width: 100%;	
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 20px;
+	width: auto;
+	height: auto;
+}
+
 .divImg {
 	display: flex;
 	align-items: center;

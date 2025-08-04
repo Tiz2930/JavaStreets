@@ -12,7 +12,8 @@
                     "/img/merch Lola back.jpg",
                     "/img/merch Lola detail.jfif"
                 ],
-                "price": 6
+                "price": 6,
+                "description": "Remera de algodón oficial del festival. Diseño cómodo y resistente."
             },
             {
                 "id": 2,
@@ -22,7 +23,8 @@
                     "/img/merch Lola 2.jfif",
                     "/img/merch Lola 2 side.jfif"
                 ],
-                "price": 5
+                "price": 5,
+                "description": "Vaso reutilizable de 1L, ideal para tus bebidas favoritas en el festival."
             },
             {
                 "id": 3,
@@ -32,7 +34,8 @@
                     "/img/merch Lola 3.jfif",
                     "/img/merch Lola 3 logo.jfif"
                 ],
-                "price": 120
+                "price": 120,
+                "description": "Gorras con diseño exclusivo de Lolla. Ajuste regulable y materiales premium."
             },
             {
                 "id": 4,
@@ -41,7 +44,8 @@
                 "image": [
                     "/img/merch Lola 4.jfif"
                 ],
-                "price": 550
+                "price": 550,
+                "description": "Pack oficial que incluye remera, vaso y gorra. ¡Ideal para fans!"
             }
         ]
     },
@@ -57,7 +61,8 @@
                     "/img/comicon merch.jpg",
                     "/img/comicon merch detail.jpg"
                 ],
-                "price": 150
+                "price": 150,
+                "description": "Bandana metálica inspirada en Naruto. Ideal para cosplay y colección."
             },
             {
                 "id": 6,
@@ -68,7 +73,8 @@
                     "/img/comicon merch 2 cover.jpg",
                     "/img/comicon merch 2 page.jpg"
                 ],
-                "price": 2000
+                "price": 2000,
+                "description": "Edición original del cómic Flash. Perfecto para coleccionistas."
             },
             {
                 "id": 7,
@@ -79,7 +85,8 @@
                     "/img/comicon merch 3 alt1.png",
                     "/img/comicon merch 3 alt2.jpg"
                 ],
-                "price": 10
+                "price": 10,
+                "description": "Colgantes inspirados en series anime clásicas. Ligeros y duraderos."
             },
             {
                 "id": 8,
@@ -90,7 +97,8 @@
                     "/img/comicon merch 4 side.jpg",
                     "/img/comicon merch 4 inside.jpg"
                 ],
-                "price": 500
+                "price": 500,
+                "description": "Replica detallada del casco Stormtrooper. Talla real, edición limitada."
             },
             {
                 "id": 9,
@@ -101,7 +109,8 @@
                     "/img/comicon merch 5 box.jfif",
                     "/img/comicon merch 5 detail.png"
                 ],
-                "price": 150
+                "price": 150,
+                "description": "Set de 7 esferas del dragón con caja. Producto de colección."
             },
             {
                 "id": 10,
@@ -110,7 +119,8 @@
                 "image": [
                     "/img/comicon merch 6.jpg"
                 ],
-                "price": 99
+                "price": 99,
+                "description": "Réplica de varitas mágicas de la saga Harry Potter. Detalles realistas."
             },
             {
                 "id": 11,
@@ -119,7 +129,8 @@
                 "image": [
                     "/img/comicon merch 7.jfif"
                 ],
-                "price": 250
+                "price": 250,
+                "description": "Casco Iron Man con luces LED. Ideal para exhibición o cosplay."
             }
         ]
     },
@@ -136,7 +147,8 @@
                     "/img/river merch back.png",
                     "/img/river merch shield.png"
                 ],
-                "price": 200
+                "price": 200,
+                "description": "Camiseta oficial temporada 2025. Tecnología Dry-Fit y escudo bordado."
             },
             {
                 "id": 13,
@@ -147,7 +159,8 @@
                     "/img/river merch 1 side.png",
                     "/img/river merch 1 open.png"
                 ],
-                "price": 60
+                "price": 60,
+                "description": "Termo de acero inoxidable. Grabado láser y tapa antifugas."
             },
             {
                 "id": 14,
@@ -157,7 +170,8 @@
                     "/img/river merch 2.png",
                     "/img/river merch 2 long.png"
                 ],
-                "price": 50
+                "price": 50,
+                "description": "Bufanda de lana con logo oficial. Ideal para días fríos."
             },
             {
                 "id": 15,
@@ -168,7 +182,8 @@
                     "/img/river merch 3 back.png",
                     "/img/river merch 3 hood.png"
                 ],
-                "price": 300
+                "price": 300,
+                "description": "Campera rompeviento con cierre completo. Diseño ergonómico y liviano."
             },
             {
                 "id": 16,
@@ -178,7 +193,8 @@
                     "/img/river merch 4.png",
                     "/img/river merch 4 logo.png"
                 ],
-                "price": 120
+                "price": 120,
+                "description": "Gorro tejido de alta calidad con escudo bordado de River Plate."
             },
             {
                 "id": 17,
@@ -189,7 +205,8 @@
                     "/img/river merch 5 front.png",
                     "/img/river merch 5 back.png"
                 ],
-                "price": 330
+                "price": 330,
+                "description": "Mochila espaciosa con compartimientos reforzados. Diseño oficial del club."
             }
         ]
     }
