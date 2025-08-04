@@ -1,0 +1,82 @@
+[
+    {
+        "titulo": "50% OFF en Zapatillas Deportivas",
+        "descripcion": "Aprovechá nuestras ofertas por tiempo limitado en calzado deportivo.",
+        "imagen": "/img/publicidades/zapatillas.jpg",
+        "enlace": "https://www.deportesmax.com.ar/zapatillas",
+        "categoria": "Moda",
+        "anunciante": "Deportes Max"
+    },
+    {
+        "titulo": "Cursos Online de Programación",
+        "descripcion": "Aprendé desde cero con profesores en vivo y certificados oficiales.",
+        "imagen": "/img/publicidades/cursos.jpg",
+        "enlace": "https://www.aprendeonline.com.ar/programacion",
+        "categoria": "Educación",
+        "anunciante": "Aprendé Online"
+    },
+    {
+        "titulo": "2x1 en Hamburguesas Gourmet",
+        "descripcion": "Todos los miércoles en locales adheridos.",
+        "imagen": "/img/publicidades/hamburguesas.jpg",
+        "enlace": "https://www.burgerhouse.com/promos",
+        "categoria": "Comida",
+        "anunciante": "Burger House"
+    },
+    {
+        "titulo": "Internet 300MB por $4999",
+        "descripcion": "Promoción exclusiva para nuevos clientes. Sin instalación.",
+        "imagen": "/img/publicidades/internet.jpg",
+        "enlace": "https://www.supernet.com.ar/internet300",
+        "categoria": "Tecnología",
+        "anunciante": "Supernet"
+    },
+    {
+        "titulo": "Gimnasio 24hs con descuento",
+        "descripcion": "Inscribite hoy y obtené un 20% de descuento por 3 meses.",
+        "imagen": "/img/publicidades/gimnasio.jpg",
+        "enlace": "https://www.fitnesscenter.com.ar",
+        "categoria": "Salud",
+        "anunciante": "Fitness Center"
+    },
+    {
+        "titulo": "Viajes a Bariloche desde $99.000",
+        "descripcion": "Incluye transporte, hotel y excursiones. Salidas en octubre.",
+        "imagen": "/img/publicidades/bariloche.jpg",
+        "enlace": "https://www.andesviajes.tur.ar/bariloche",
+        "categoria": "Turismo",
+        "anunciante": "Andes Viajes"
+    },
+    {
+        "titulo": "Notebook HP en 12 cuotas sin interés",
+        "descripcion": "Con procesador i5 y SSD 512GB. Envío gratis a todo el país.",
+        "imagen": "/img/publicidades/notebook.jpg",
+        "enlace": "https://www.electrotech.com.ar/notebooks/hp",
+        "categoria": "Electrónica",
+        "anunciante": "ElectroTech"
+    },
+    {
+        "titulo": "Remeras Oversize desde $3999",
+        "descripcion": "Nuevos diseños urbanos y cómodos para el día a día.",
+        "imagen": "/img/publicidades/remeras.jpg",
+        "enlace": "https://www.streetstyle.com.ar/remeras",
+        "categoria": "Moda",
+        "anunciante": "Street Style"
+    },
+    {
+        "titulo": "Seguro para el hogar desde $2900",
+        "descripcion": "Protegé tu casa ante robos e incendios. Cotizá online.",
+        "imagen": "/img/publicidades/seguro.jpg",
+        "enlace": "https://www.seguroplus.com.ar/hogar",
+        "categoria": "Seguros",
+        "anunciante": "SeguroPlus"
+    },
+    {
+        "titulo": "Auriculares inalámbricos con cancelación",
+        "descripcion": "Disfrutá tu música sin interrupciones. Batería de 30 horas.",
+        "imagen": "/img/publicidades/auriculares.jpg",
+        "enlace": "https://www.audiolux.com.ar/auris",
+        "categoria": "Tecnología",
+        "anunciante": "AudioLux"
+    }
+]

@@ -4,43 +4,64 @@ const formEvento = document.getElementById('form-evento');
 const formMerch = document.getElementById('form-merch');
 const formTitle = document.getElementById('form-title');
 
-//Mostrar Formularios
-
+// Mostrar Formularios
 btnEvento.addEventListener('click', () => {
     formEvento.style.display = 'block';
     formMerch.style.display = 'none';
-    formTitle.textContent = 'Publicar Evento'
+    formTitle.textContent = 'Publicar Evento';
 });
 
 btnMerch.addEventListener('click', () => {
     formMerch.style.display = 'block';
     formEvento.style.display = 'none';
-    formTitle.textContent = 'Publicar Merchandising'
+    formTitle.textContent = 'Publicar Merchandising';
 });
 
-//Cuando el usuario apreta el formulario
-
+// Validar formularios antes de enviar
 formEvento.addEventListener('submit', (e) => {
     e.preventDefault();
-    eventoPublicado();
-    formEvento.reset();
-    formEvento.style.display = 'none';
-    formTitle.textContent = 'Completa todos los campos'
-})
+
+    if (validarFormulario(formEvento)) {
+        eventoPublicado();
+        formEvento.reset();
+        formEvento.style.display = 'none';
+        formTitle.textContent = 'Completa todos los campos';
+    } else {
+        rechazoPublicacion();
+    }
+});
 
 formMerch.addEventListener('submit', (e) => {
     e.preventDefault();
-    merchPublicado();
-    formMerch.reset();
-    formMerch.style.display = 'none';
-    formTitle.textContent = 'Completa todos los campos'
-})
 
-//Alertas exitosas
+    if (validarFormulario(formMerch)) {
+        merchPublicado();
+        formMerch.reset();
+        formMerch.style.display = 'none';
+        formTitle.textContent = 'Completa todos los campos';
+    } else {
+        rechazoPublicacion();
+    }
+});
 
+// Validar que todos los campos estén completos
+function validarFormulario(formulario) {
+    const inputs = formulario.querySelectorAll('input, textarea, select');
+    for (let input of inputs) {
+        if (input.type !== "file" && input.offsetParent !== null && !input.value.trim()) {
+            return false;
+        }
+        if (input.type === "file" && input.required && input.files.length === 0) {
+            return false;
+        }
+    }
+    return true;
+}
+
+// Alertas exitosas
 function eventoPublicado() {
     Swal.fire({
-        title: "Evento publicado con exito",
+        title: "Evento publicado con éxito",
         icon: "success",
         timer: 1500,
         showConfirmButton: false
@@ -49,39 +70,35 @@ function eventoPublicado() {
 
 function merchPublicado() {
     Swal.fire({
-        title: "Merchandising publicado con exito",
+        title: "Merchandising publicado con éxito",
         icon: "success",
         timer: 1500,
         showConfirmButton: false
     });
 };
 
-//Alertas rechazo
-
+// Alerta de rechazo
 function rechazoPublicacion() {
     Swal.fire({
-        title: "Porfavor completa todos los campos",
-        icon: "Opps...",
+        title: "Por favor completá todos los campos",
+        icon: "warning",
         timer: 1500,
         showConfirmButton: false
     });
 };
 
-//Preview imagen
-
-
+// Preview de imágenes
 document.addEventListener('DOMContentLoaded', () => {
     // Evento
     const inputEvento = document.getElementById('evento-imagen');
     const previewEvento = document.getElementById('img-preview-container');
 
     inputEvento.addEventListener('change', () => {
-        previewEvento.innerHTML = ''; // limpio preview
+        previewEvento.innerHTML = '';
 
         const files = Array.from(inputEvento.files);
-
-        // Límite de imágenes
         const maxFiles = 6;
+
         if (files.length > maxFiles) {
             Swal.fire({
                 title: `Solo podés subir hasta ${maxFiles} imágenes.`,
@@ -89,8 +106,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 timer: 1500,
                 showConfirmButton: false
             });
-            inputEvento.value = ''; // borro selección
-            previewEvento.classList.remove('with-border'); // sin borde porque no hay imágenes
+            inputEvento.value = '';
+            previewEvento.classList.remove('with-border');
             return;
         }
 
@@ -113,8 +130,8 @@ document.addEventListener('DOMContentLoaded', () => {
     merchInput.addEventListener('change', () => {
         merchPreview.innerHTML = '';
         const files = Array.from(merchInput.files);
-
         const maxFiles = 6;
+
         if (files.length > maxFiles) {
             Swal.fire({
                 title: `Solo podés subir hasta ${maxFiles} imágenes.`,
@@ -123,7 +140,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 showConfirmButton: false
             });
 
-            merchInput.value = ''; // Borrar selección
+            merchInput.value = '';
             return;
         }
 

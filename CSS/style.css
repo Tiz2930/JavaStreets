@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap');
 
+<<<<<<< HEAD
+* {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  scrollbar-width: thin;
+  scrollbar-color: #FDA703 #000000;
+=======
 html,
 body {
   height: 100%;
@@ -10,11 +18,47 @@ body {
 * {
   font-family: 'Montserrat', sans-serif;
   margin: 0;
+>>>>>>> 6019d95c8707fd0f826c595026004be055822b0a
 }
 
 body {
   display: flex;
   flex-direction: column;
+<<<<<<< HEAD
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  background-image: url(/img/fip.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+/*Header*/
+
+header {
+  width: 100%;
+  position: fixed;
+  z-index: 3;
+  min-height: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10 20px;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(6px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  left: 0;
+  top: 0;
+}
+
+/*Logo*/
+
+=======
   min-height: 100vh;
   background-image: url(/Imagenes/fip.jpg);
   background-size: cover;
@@ -33,12 +77,17 @@ header {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
+>>>>>>> 6019d95c8707fd0f826c595026004be055822b0a
 .logo-busqueda {
   position: absolute;
   left: 20px;
   display: flex;
   align-items: center;
   gap: 30px;
+<<<<<<< HEAD
+  border-style: none;
+=======
+>>>>>>> 6019d95c8707fd0f826c595026004be055822b0a
 }
 
 .logo-busqueda-link {
@@ -46,6 +95,15 @@ header {
 }
 
 .join {
+<<<<<<< HEAD
+  color: #ffffff;
+}
+
+.us {
+  background: linear-gradient(90deg, #ffcc00, #ff9900);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+=======
   font-weight: bold;
   color: black;
 }
@@ -60,6 +118,7 @@ header input {
   border-radius: 5px;
   height: 30px;
   width: 250px;
+>>>>>>> 6019d95c8707fd0f826c595026004be055822b0a
 }
 
 /* Iconos */
@@ -126,6 +185,13 @@ header input {
   align-items: center;
 }
 
+<<<<<<< HEAD
+.user-info img {
+  cursor: pointer;
+}
+
+=======
+>>>>>>> 6019d95c8707fd0f826c595026004be055822b0a
 .user-info h1 {
   font-weight: 500;
 }
@@ -226,14 +292,25 @@ header input {
   border-bottom: none;
 }
 
+<<<<<<< HEAD
+/* Main y carrusel */
+main {
+  flex: 1;
+  margin-top: 90px;
+=======
 /* Main: para que crezca y empuje footer */
 main {
   flex: 1;
+>>>>>>> 6019d95c8707fd0f826c595026004be055822b0a
 }
 
 /*Footer */
 
 .footer {
+<<<<<<< HEAD
+  width: 100%;
+=======
+>>>>>>> 6019d95c8707fd0f826c595026004be055822b0a
   background-color: #000;
   color: #fff;
   padding: 20px 0;
@@ -262,8 +339,12 @@ main {
 
 .social-icons a:hover {
   color: orange;
+<<<<<<< HEAD
+}
+=======
 }
 
 
 
 
+>>>>>>> 6019d95c8707fd0f826c595026004be055822b0a
