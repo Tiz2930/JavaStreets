@@ -8,38 +8,7 @@
         ],
         "description": "Bandas en vivo, food trucks y actividades culturales.",
         "stock": 500,
-        "link": "ticket.html",
-        "categoria": "Música"
-    },
-    {
-        "user": "Banda Sinfónica Local",
-        "name": "Concierto al Atardecer",
-        "images": [
-            "../img/concierto atardecer.jpg"
-        ],
-        "description": "Música clásica en espacios verdes de la ciudad.",
-        "stock": 150,
-        "categoria": "Música"
-    },
-    {
-        "user": "Orquesta Juvenil",
-        "name": "Recital de Jazz y Blues",
-        "images": [
-            "../img/recital_jazz.jpg"
-        ],
-        "description": "Noche de jazz y blues con músicos locales.",
-        "stock": 130,
-        "categoria": "Música"
-    },
-    {
-        "user": "Festival de Rock Local",
-        "name": "Rock en la Plaza",
-        "images": [
-            "../img/rock_en_plaza.jpg"
-        ],
-        "description": "Bandas emergentes de rock en vivo.",
-        "stock": 220,
-        "categoria": "Música"
+        "link": "ticket.html"
     },
     {
         "user": "Escuela de Gastronomía",
@@ -49,38 +18,7 @@
             "../img/Feria Gastronómica Regional2.jfif"
         ],
         "description": "Sabores autóctonos y recetas tradicionales.",
-        "stock": 300,
-        "categoria": "Gastronomía"
-    },
-    {
-        "user": "Productores Locales",
-        "name": "Feria de Productos Orgánicos",
-        "images": [
-            "../img/minayon_feria_organica.jpg"
-        ],
-        "description": "Venta directa de frutas, verduras y productos artesanales.",
-        "stock": 200,
-        "categoria": "Gastronomía"
-    },
-    {
-        "user": "Food Truck Festival",
-        "name": "Festival de Food Trucks",
-        "images": [
-            "../img/food_trucks.jpg"
-        ],
-        "description": "Variedad de food trucks con comida internacional.",
-        "stock": 250,
-        "categoria": "Gastronomía"
-    },
-    {
-        "user": "Cocineros Regionales",
-        "name": "Clases Magistrales de Cocina",
-        "images": [
-            "../img/clases_cocina.jpg"
-        ],
-        "description": "Talleres de cocina para aficionados y profesionales.",
-        "stock": 100,
-        "categoria": "Gastronomía"
+        "stock": 300
     },
     {
         "user": "Municipio Local",
@@ -90,38 +28,7 @@
             "../img/Charla Motivacional para Jóvenes2.jfif"
         ],
         "description": "Historias de superación de oradores reconocidos.",
-        "stock": 200,
-        "categoria": "Educación"
-    },
-    {
-        "user": "Universidad Abierta",
-        "name": "Conferencia sobre Liderazgo",
-        "images": [
-            "../img/conferencia_liderazgo.jpg"
-        ],
-        "description": "Desarrollo de habilidades de liderazgo personal y profesional.",
-        "stock": 180,
-        "categoria": "Educación"
-    },
-    {
-        "user": "Centro de Formación",
-        "name": "Curso de Habilidades Blandas",
-        "images": [
-            "../img/curso_habilidades_blandas.jpg"
-        ],
-        "description": "Capacitación en comunicación, trabajo en equipo y gestión de conflictos.",
-        "stock": 150,
-        "categoria": "Educación"
-    },
-    {
-        "user": "Instituto Educativo",
-        "name": "Taller de Resolución de Problemas",
-        "images": [
-            "../img/taller_resolucion.jpg"
-        ],
-        "description": "Ejercicios prácticos para mejorar el pensamiento crítico.",
-        "stock": 120,
-        "categoria": "Educación"
+        "stock": 200
     },
     {
         "user": "Night Club XYZ",
@@ -131,38 +38,7 @@
             "../img/Noche de Stand Up2.jfif"
         ],
         "description": "Comedia con talentos locales del humor.",
-        "stock": 150,
-        "categoria": "Entretenimiento"
-    },
-    {
-        "user": "Sala de Eventos",
-        "name": "Concierto de Magia y Humor",
-        "images": [
-            "../img/magia_humor.jpg"
-        ],
-        "description": "Show de magia acompañado de comedia.",
-        "stock": 90,
-        "categoria": "Entretenimiento"
-    },
-    {
-        "user": "Teatro Local",
-        "name": "Improvisación y Sketches",
-        "images": [
-            "../img/improvisacion.jpg"
-        ],
-        "description": "Noche de humor con artistas improvisadores.",
-        "stock": 130,
-        "categoria": "Entretenimiento"
-    },
-    {
-        "user": "Club de Comedia",
-        "name": "Festival de Humor Local",
-        "images": [
-            "../img/festival_humor.jpg"
-        ],
-        "description": "Competencia de stand up con premios.",
-        "stock": 110,
-        "categoria": "Entretenimiento"
+        "stock": 150
     },
     {
         "user": "Miranda Caicedo",
@@ -172,38 +48,7 @@
             "../img/Encuentro de Emprendedores2.jfif"
         ],
         "description": "Charlas, networking y proyectos innovadores.",
-        "stock": 100,
-        "categoria": "Negocios"
-    },
-    {
-        "user": "Cámara de Comercio",
-        "name": "Feria de Innovación Empresarial",
-        "images": [
-            "../img/feria_innovacion.jpg"
-        ],
-        "description": "Presentación de nuevas tecnologías para negocios.",
-        "stock": 140,
-        "categoria": "Negocios"
-    },
-    {
-        "user": "Red de Emprendedores",
-        "name": "Workshop de Marketing Digital",
-        "images": [
-            "../img/workshop_marketing.jpg"
-        ],
-        "description": "Capacitación para potenciar negocios online.",
-        "stock": 90,
-        "categoria": "Negocios"
-    },
-    {
-        "user": "Asociación Empresarial",
-        "name": "Mesa Redonda de Finanzas",
-        "images": [
-            "../img/mesa_finanzas.jpg"
-        ],
-        "description": "Debate sobre estrategias financieras para emprendedores.",
-        "stock": 70,
-        "categoria": "Negocios"
+        "stock": 100
     },
     {
         "user": "Cine Paris Olavarría",
@@ -212,38 +57,7 @@
             "../img/cine paris.jpg"
         ],
         "description": "Proyecciones de películas nacionales e internacionales.",
-        "stock": 120,
-        "categoria": "Cine"
-    },
-    {
-        "user": "Ciclo de Cine Argentino",
-        "name": "Semana del Cine Nacional",
-        "images": [
-            "../img/cine_nacional.jpg"
-        ],
-        "description": "Selección de películas argentinas clásicas y modernas.",
-        "stock": 110,
-        "categoria": "Cine"
-    },
-    {
-        "user": "Festival Internacional",
-        "name": "Muestra de Cortometrajes",
-        "images": [
-            "../img/cortometrajes.jpg"
-        ],
-        "description": "Proyección de cortos de diferentes países.",
-        "stock": 90,
-        "categoria": "Cine"
-    },
-    {
-        "user": "Cine Club Local",
-        "name": "Cine Debate",
-        "images": [
-            "../img/cine_debate.jpg"
-        ],
-        "description": "Proyección y análisis de películas independientes.",
-        "stock": 80,
-        "categoria": "Cine"
+        "stock": 120
     },
     {
         "user": "Club de Lectura Juvenil",
@@ -252,38 +66,7 @@
             "../img/club de lectura.jpg"
         ],
         "description": "Lectura grupal y análisis de libros contemporáneos.",
-        "stock": 80,
-        "categoria": "Literatura"
-    },
-    {
-        "user": "Biblioteca Central",
-        "name": "Encuentro de Escritores",
-        "images": [
-            "../img/encuentro_escritores.jpg"
-        ],
-        "description": "Charlas y firmas de libros con autores locales.",
-        "stock": 70,
-        "categoria": "Literatura"
-    },
-    {
-        "user": "Casa Cultural",
-        "name": "Taller de Escritura Creativa",
-        "images": [
-            "../img/taller_escritura.jpg"
-        ],
-        "description": "Clases para desarrollar habilidades narrativas.",
-        "stock": 50,
-        "categoria": "Literatura"
-    },
-    {
-        "user": "Revista Literaria",
-        "name": "Concurso de Cuentos Cortos",
-        "images": [
-            "../img/concurso_cuentos.jpg"
-        ],
-        "description": "Competencia literaria con premios para jóvenes escritores.",
-        "stock": 60,
-        "categoria": "Literatura"
+        "stock": 80
     },
     {
         "user": "Asociación de Artesanos",
@@ -292,38 +75,7 @@
             "../img/artesanos.jpg"
         ],
         "description": "Productos hechos a mano y talleres en vivo.",
-        "stock": 250,
-        "categoria": "Arte y Oficios"
-    },
-    {
-        "user": "Taller de Cerámica",
-        "name": "Exposición de Cerámica Local",
-        "images": [
-            "../img/ceramica.jpg"
-        ],
-        "description": "Muestras y ventas de cerámica artesanal.",
-        "stock": 130,
-        "categoria": "Arte y Oficios"
-    },
-    {
-        "user": "Feria de Telar",
-        "name": "Demostración de Telar Tradicional",
-        "images": [
-            "../img/telar.jpg"
-        ],
-        "description": "Talleres y venta de productos tejidos.",
-        "stock": 110,
-        "categoria": "Arte y Oficios"
-    },
-    {
-        "user": "Mercado de Artesanía",
-        "name": "Venta de Objetos Artesanales",
-        "images": [
-            "../img/objetos_artesanales.jpg"
-        ],
-        "description": "Variedad de productos hechos a mano.",
-        "stock": 150,
-        "categoria": "Arte y Oficios"
+        "stock": 250
     },
     {
         "user": "Centro Cultural Municipal",
@@ -332,38 +84,7 @@
             "../img/teatro.jpg"
         ],
         "description": "Obras teatrales con elencos locales.",
-        "stock": 180,
-        "categoria": "Teatro"
-    },
-    {
-        "user": "Compañía de Teatro Local",
-        "name": "Obra de Teatro Clásica",
-        "images": [
-            "../img/teatro_clasico.jpg"
-        ],
-        "description": "Presentación de una obra clásica adaptada.",
-        "stock": 120,
-        "categoria": "Teatro"
-    },
-    {
-        "user": "Teatro Juvenil",
-        "name": "Festival de Teatro para Jóvenes",
-        "images": [
-            "../img/teatro_juvenil.jpg"
-        ],
-        "description": "Obras y talleres para adolescentes.",
-        "stock": 100,
-        "categoria": "Teatro"
-    },
-    {
-        "user": "Teatro Experimental",
-        "name": "Obras Innovadoras y Experimentales",
-        "images": [
-            "../img/teatro_experimental.jpg"
-        ],
-        "description": "Presentaciones teatrales con formatos no convencionales.",
-        "stock": 90,
-        "categoria": "Teatro"
+        "stock": 180
     },
     {
         "user": "Comunidad Gamer",
@@ -372,38 +93,7 @@
             "../img/torneo videojuegos.png"
         ],
         "description": "Competencias de eSports y premios para los ganadores.",
-        "stock": 90,
-        "categoria": "Tecnología"
-    },
-    {
-        "user": "Centro Juvenil de Tecnología",
-        "name": "Expo Tecnología Estudiantil",
-        "images": [
-            "../img/expo tecn.jpg"
-        ],
-        "description": "Proyectos de robótica, programación y videojuegos.",
-        "stock": 180,
-        "categoria": "Tecnología"
-    },
-    {
-        "user": "Tech Innovators",
-        "name": "Hackathon Local",
-        "images": [
-            "../img/hackathon.jpg"
-        ],
-        "description": "Competencia de desarrollo de software y hardware.",
-        "stock": 140,
-        "categoria": "Tecnología"
-    },
-    {
-        "user": "Escuela de Programación",
-        "name": "Curso de Introducción a la IA",
-        "images": [
-            "../img/curso_ia.jpg"
-        ],
-        "description": "Capacitación en fundamentos de inteligencia artificial.",
-        "stock": 110,
-        "categoria": "Tecnología"
+        "stock": 90
     },
     {
         "user": "Escuela de Danza Contemporánea",
@@ -412,38 +102,16 @@
             "../img/expresioncorporalchicos.jpg"
         ],
         "description": "Clases abiertas para todas las edades con música en vivo.",
-        "stock": 60,
-        "categoria": "Danza"
+        "stock": 60
     },
     {
-        "user": "Compañía de Danza",
-        "name": "Presentación de Danza Moderna",
+        "user": "Productores Locales",
+        "name": "Feria de Productos Orgánicos",
         "images": [
-            "../img/danza_moderna.jpg"
+            "../img/minayon_feria_organica.jpg"
         ],
-        "description": "Espectáculo de danza contemporánea y moderna.",
-        "stock": 80,
-        "categoria": "Danza"
-    },
-    {
-        "user": "Escuela de Ballet",
-        "name": "Clases Abiertas de Ballet",
-        "images": [
-            "../img/ballet.jpg"
-        ],
-        "description": "Talleres para iniciarse en ballet clásico.",
-        "stock": 70,
-        "categoria": "Danza"
-    },
-    {
-        "user": "Festival de Danza",
-        "name": "Competencia de Danza Urbana",
-        "images": [
-            "../img/danza_urbana.jpg"
-        ],
-        "description": "Batallas y shows de danza urbana y hip hop.",
-        "stock": 90,
-        "categoria": "Danza"
+        "description": "Venta directa de frutas, verduras y productos artesanales.",
+        "stock": 200
     },
     {
         "user": "Museo de Ciencias Naturales",
@@ -452,38 +120,7 @@
             "../img/noche en el museo.jpg"
         ],
         "description": "Recorridos guiados y actividades interactivas nocturnas.",
-        "stock": 100,
-        "categoria": "Ciencia"
-    },
-    {
-        "user": "Centro de Divulgación Científica",
-        "name": "Charla sobre Cambio Climático",
-        "images": [
-            "../img/cambio_climatico.jpg"
-        ],
-        "description": "Conferencias y debates sobre medio ambiente.",
-        "stock": 120,
-        "categoria": "Ciencia"
-    },
-    {
-        "user": "Planetario Local",
-        "name": "Observación Astronómica",
-        "images": [
-            "../img/observacion_astro.jpg"
-        ],
-        "description": "Sesiones de observación con telescopios.",
-        "stock": 80,
-        "categoria": "Ciencia"
-    },
-    {
-        "user": "Laboratorio de Investigación",
-        "name": "Exposición de Proyectos Científicos",
-        "images": [
-            "../img/proyectos_cientificos.jpg"
-        ],
-        "description": "Muestra de trabajos de investigación locales.",
-        "stock": 90,
-        "categoria": "Ciencia"
+        "stock": 100
     },
     {
         "user": "Fundación Ambiental",
@@ -492,38 +129,7 @@
             "../img/Limpieza-Reserva-natural-7.jpeg"
         ],
         "description": "Acciones ecológicas con voluntarios y charlas educativas.",
-        "stock": 300,
-        "categoria": "Medio Ambiente"
-    },
-    {
-        "user": "Organización Verde",
-        "name": "Campaña de Reforestación",
-        "images": [
-            "../img/reforestacion.jpg"
-        ],
-        "description": "Plantación de árboles en espacios públicos.",
-        "stock": 150,
-        "categoria": "Medio Ambiente"
-    },
-    {
-        "user": "Eco Club",
-        "name": "Taller de Reciclaje Creativo",
-        "images": [
-            "../img/reciclaje.jpg"
-        ],
-        "description": "Aprender a reutilizar materiales con arte.",
-        "stock": 130,
-        "categoria": "Medio Ambiente"
-    },
-    {
-        "user": "Grupo de Voluntarios",
-        "name": "Charlas sobre Sustentabilidad",
-        "images": [
-            "../img/sustentabilidad.jpg"
-        ],
-        "description": "Educación ambiental para la comunidad.",
-        "stock": 100,
-        "categoria": "Medio Ambiente"
+        "stock": 300
     },
     {
         "user": "Club de Ajedrez",
@@ -532,38 +138,25 @@
             "../img/torneo ajedrez.jpg"
         ],
         "description": "Competencia para todas las categorías con premios.",
-        "stock": 120,
-        "categoria": "Deportes Mentales"
+        "stock": 120
     },
     {
-        "user": "Asociación de Ajedrez",
-        "name": "Curso de Estrategias Avanzadas",
+        "user": "Banda Sinfónica Local",
+        "name": "Concierto al Atardecer",
         "images": [
-            "../img/estrategias_ajedrez.jpg"
+            "../img/concierto atardecer.jpg"
         ],
-        "description": "Taller para jugadores intermedios y avanzados.",
-        "stock": 80,
-        "categoria": "Deportes Mentales"
+        "description": "Música clásica en espacios verdes de la ciudad.",
+        "stock": 150
     },
     {
-        "user": "Club Escolar",
-        "name": "Competencia Escolar de Ajedrez",
+        "user": "Centro Juvenil de Tecnología",
+        "name": "Expo Tecnología Estudiantil",
         "images": [
-            "../img/ajedrez_escolar.jpg"
+            "../img/expo tecn.jpg"
         ],
-        "description": "Torneo para estudiantes de colegios locales.",
-        "stock": 100,
-        "categoria": "Deportes Mentales"
-    },
-    {
-        "user": "Torneo Regional",
-        "name": "Copa de Ajedrez Amateur",
-        "images": [
-            "../img/copa_ajedrez.jpg"
-        ],
-        "description": "Competencia para amateurs con premios simbólicos.",
-        "stock": 70,
-        "categoria": "Deportes Mentales"
+        "description": "Proyectos de robótica, programación y videojuegos.",
+        "stock": 180
     },
     {
         "user": "Grupo de Senderismo",
@@ -572,38 +165,7 @@
             "../img/Deportes-Correcaminata-Sierras-Bayas.jpg"
         ],
         "description": "Trekking guiado con observación astronómica.",
-        "stock": 75,
-        "categoria": "Aventura"
-    },
-    {
-        "user": "Exploradores Urbanos",
-        "name": "Excursión a Cueva Natural",
-        "images": [
-            "../img/excursion_cueva.jpg"
-        ],
-        "description": "Tour guiado con equipo de seguridad.",
-        "stock": 80,
-        "categoria": "Aventura"
-    },
-    {
-        "user": "Club de Montaña",
-        "name": "Ascenso a Cerro Local",
-        "images": [
-            "../img/ascenso_cerro.jpg"
-        ],
-        "description": "Actividad de trekking para aficionados.",
-        "stock": 90,
-        "categoria": "Aventura"
-    },
-    {
-        "user": "Aventureros Sin Fronteras",
-        "name": "Campamento de Supervivencia",
-        "images": [
-            "../img/campamento_supervivencia.jpg"
-        ],
-        "description": "Curso intensivo de supervivencia en la naturaleza.",
-        "stock": 70,
-        "categoria": "Aventura"
+        "stock": 75
     },
     {
         "user": "Asociación de Yoga Local",
@@ -612,38 +174,7 @@
             "../img/yoga airelibre.jpg"
         ],
         "description": "Sesión gratuita en el parque con instructores certificados.",
-        "stock": 100,
-        "categoria": "Bienestar"
-    },
-    {
-        "user": "Centro de Bienestar",
-        "name": "Taller de Mindfulness",
-        "images": [
-            "../img/mindfulness.jpg"
-        ],
-        "description": "Prácticas de atención plena para reducir estrés.",
-        "stock": 80,
-        "categoria": "Bienestar"
-    },
-    {
-        "user": "Estudio de Yoga",
-        "name": "Clase de Yoga para Principiantes",
-        "images": [
-            "../img/yoga_principiantes.jpg"
-        ],
-        "description": "Sesiones para quienes comienzan en yoga.",
-        "stock": 90,
-        "categoria": "Bienestar"
-    },
-    {
-        "user": "Grupo de Meditación",
-        "name": "Retiro de Meditación Urbana",
-        "images": [
-            "../img/retiro_meditacion.jpg"
-        ],
-        "description": "Jornadas para desconectarse y relajar mente y cuerpo.",
-        "stock": 70,
-        "categoria": "Bienestar"
+        "stock": 100
     },
     {
         "user": "Galería de Arte Independiente",
@@ -652,37 +183,6 @@
             "../img/expo arte joven.jpg"
         ],
         "description": "Obras visuales de artistas emergentes locales.",
-        "stock": 90,
-        "categoria": "Arte"
-    },
-    {
-        "user": "Museo de Arte Moderno",
-        "name": "Muestra de Pintura Contemporánea",
-        "images": [
-            "../img/pintura_contemporanea.jpg"
-        ],
-        "description": "Exposición de obras actuales de artistas locales.",
-        "stock": 120,
-        "categoria": "Arte"
-    },
-    {
-        "user": "Colectivo de Artistas",
-        "name": "Taller de Arte Urbano",
-        "images": [
-            "../img/arte_urbano.jpg"
-        ],
-        "description": "Clases y murales en espacios públicos.",
-        "stock": 110,
-        "categoria": "Arte"
-    },
-    {
-        "user": "Fundación Cultural",
-        "name": "Exposición de Escultura",
-        "images": [
-            "../img/escultura.jpg"
-        ],
-        "description": "Muestra de esculturas en espacio abierto.",
-        "stock": 100,
-        "categoria": "Arte"
+        "stock": 90
     }
 ]
